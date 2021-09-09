@@ -1,0 +1,1157 @@
+IndicatorCode,Indicator,ValueType,ParentLocationCode,ParentLocation,Location type,SpatialDimValueCode,Location,Period type,Period,IsLatestYear,Dim1 type,Dim1,Dim1ValueCode,Dim2 type,Dim2,Dim2ValueCode,Dim3 type,Dim3,Dim3ValueCode,DataSourceDimValueCode,DataSource,FactValueNumericPrefix,FactValueNumeric,FactValueUoM,FactValueNumericLowPrefix,FactValueNumericLow,FactValueNumericHighPrefix,FactValueNumericHigh,Value,FactValueTranslationID,FactComments,Language,DateModified
+IHR05,Preparedness,numeric,AFR,Africa,Country,BDI,Burundi,Year,2017,TRUE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,DJI,Djibouti,Year,2017,TRUE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SOM,Somalia,Year,2017,TRUE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,YEM,Yemen,Year,2017,TRUE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ARM,Armenia,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRA,Brazil,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CPV,Cabo Verde,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CUB,Cuba,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CYP,Cyprus,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DNK,Denmark,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DEU,Germany,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GUY,Guyana,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISL,Iceland,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IND,India,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NER,Niger,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NOR,Norway,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,PRT,Portugal,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZAF,South Africa,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GBR,United Kingdom of Great Britain and Northern Ireland,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,URY,Uruguay,Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2017,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ALB,Albania,Year,2017,TRUE,,,,,,,,,,,,,17,,,,,,17,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MLI,Mali,Year,2017,TRUE,,,,,,,,,,,,,17,,,,,,17,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2017,TRUE,,,,,,,,,,,,,17,,,,,,17,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COG,Congo,Year,2017,TRUE,,,,,,,,,,,,,18,,,,,,18,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2017,TRUE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2017,TRUE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ERI,Eritrea,Year,2017,TRUE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GAB,Gabon,Year,2017,TRUE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GMB,Gambia,Year,2017,TRUE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SMR,San Marino,Year,2017,TRUE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BEN,Benin,Year,2017,TRUE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BWA,Botswana,Year,2017,TRUE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TCD,Chad,Year,2017,TRUE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NGA,Nigeria,Year,2017,TRUE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2017,TRUE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2017,TRUE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PER,Peru,Year,2017,TRUE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SEN,Senegal,Year,2017,TRUE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BFA,Burkina Faso,Year,2017,TRUE,,,,,,,,,,,,,37,,,,,,37,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2017,TRUE,,,,,,,,,,,,,37,,,,,,37,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GNB,Guinea-Bissau,Year,2017,TRUE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2017,TRUE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2017,TRUE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NAM,Namibia,Year,2017,TRUE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PRY,Paraguay,Year,2017,TRUE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2017,TRUE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2017,TRUE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2017,TRUE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2017,TRUE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2017,TRUE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COM,Comoros,Year,2017,TRUE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MRT,Mauritania,Year,2017,TRUE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SSD,South Sudan,Year,2017,TRUE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MLT,Malta,Year,2017,TRUE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GHA,Ghana,Year,2017,TRUE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2017,TRUE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LSO,Lesotho,Year,2017,TRUE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2017,TRUE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TGO,Togo,Year,2017,TRUE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZWE,Zimbabwe,Year,2017,TRUE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ARG,Argentina,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CMR,Cameroon,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,KEN,Kenya,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MDG,Madagascar,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TUV,Tuvalu,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,UKR,Ukraine,Year,2017,TRUE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2017,TRUE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2017,TRUE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PAN,Panama,Year,2017,TRUE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2017,TRUE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2017,TRUE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2017,TRUE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2017,TRUE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2017,TRUE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LIE,Liechtenstein,Year,2017,TRUE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2017,TRUE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MWI,Malawi,Year,2017,TRUE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SRB,Serbia,Year,2017,TRUE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MNE,Montenegro,Year,2017,TRUE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2017,TRUE,,,,,,,,,,,,,67,,,,,,67,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2017,TRUE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2017,TRUE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,RWA,Rwanda,Year,2017,TRUE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SUR,Suriname,Year,2017,TRUE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SLV,El Salvador,Year,2017,TRUE,,,,,,,,,,,,,72,,,,,,72,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GTM,Guatemala,Year,2017,TRUE,,,,,,,,,,,,,72,,,,,,72,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CIV,Côte d’Ivoire,Year,2017,TRUE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZMB,Zambia,Year,2017,TRUE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2017,TRUE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2017,TRUE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GNQ,Equatorial Guinea,Year,2017,TRUE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2017,TRUE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MUS,Mauritius,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TUR,Turkey,Year,2017,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2017,TRUE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2017,TRUE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2017,TRUE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,POL,Poland,Year,2017,TRUE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ROU,Romania,Year,2017,TRUE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,UGA,Uganda,Year,2017,TRUE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2017,TRUE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2017,TRUE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GIN,Guinea,Year,2017,TRUE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2017,TRUE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2017,TRUE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,AGO,Angola,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CHL,Chile,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HRV,Croatia,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LBR,Liberia,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NLD,Netherlands,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2017,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CZE,Czechia,Year,2017,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2017,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LVA,Latvia,Year,2017,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MCO,Monaco,Year,2017,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,KNA,Saint Kitts and Nevis,Year,2017,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2017,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2016,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRA,Brazil,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CUB,Cuba,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CYP,Cyprus,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DNK,Denmark,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISL,Iceland,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IND,India,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISR,Israel,Year,2016,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2016,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2016,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NOR,Norway,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,PRT,Portugal,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2016,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SUR,Suriname,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GBR,United Kingdom of Great Britain and Northern Ireland,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2016,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2016,FALSE,,,,,,,,,,,,,17,,,,,,17,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BEN,Benin,Year,2016,FALSE,,,,,,,,,,,,,18,,,,,,18,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2016,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ERI,Eritrea,Year,2016,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GAB,Gabon,Year,2016,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TCD,Chad,Year,2016,FALSE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2016,FALSE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2016,FALSE,,,,,,,,,,,,,28,,,,,,28,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2016,TRUE,,,,,,,,,,,,,28,,,,,,28,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GRD,Grenada,Year,2016,TRUE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GTM,Guatemala,Year,2016,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CMR,Cameroon,Year,2016,FALSE,,,,,,,,,,,,,37,,,,,,37,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CHL,Chile,Year,2016,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CIV,Côte d’Ivoire,Year,2016,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2016,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PRY,Paraguay,Year,2016,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SRB,Serbia,Year,2016,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2016,FALSE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MLT,Malta,Year,2016,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GHA,Ghana,Year,2016,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NAM,Namibia,Year,2016,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COG,Congo,Year,2016,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2016,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2016,TRUE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2016,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2016,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2016,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2016,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GNB,Guinea-Bissau,Year,2016,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PAN,Panama,Year,2016,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2016,TRUE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BHS,Bahamas,Year,2016,TRUE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2016,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PER,Peru,Year,2016,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2016,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2016,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2016,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MNE,Montenegro,Year,2016,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2016,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2016,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2016,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2016,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2016,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2016,FALSE,,,,,,,,,,,,,72,,,,,,72,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2016,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2016,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2016,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HTI,Haiti,Year,2016,TRUE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ITA,Italy,Year,2016,TRUE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2016,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2016,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2016,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BDI,Burundi,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CPV,Cabo Verde,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LSO,Lesotho,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MUS,Mauritius,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NER,Niger,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NGA,Nigeria,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TUR,Turkey,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZWE,Zimbabwe,Year,2016,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ARG,Argentina,Year,2016,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2016,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2016,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,POL,Poland,Year,2016,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ROU,Romania,Year,2016,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2016,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LIE,Liechtenstein,Year,2016,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2016,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HRV,Croatia,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SLV,El Salvador,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NLD,Netherlands,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,URY,Uruguay,Year,2016,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2016,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2016,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2016,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,JAM,Jamaica,Year,2016,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LVA,Latvia,Year,2016,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MCO,Monaco,Year,2016,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BHS,Bahamas,Year,2015,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BWA,Botswana,Year,2015,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ARG,Argentina,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ARM,Armenia,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRA,Brazil,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CUB,Cuba,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DNK,Denmark,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GUY,Guyana,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISR,Israel,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NOR,Norway,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,PRT,Portugal,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZAF,South Africa,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SUR,Suriname,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TJK,Tajikistan,Year,2015,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TUV,Tuvalu,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,UKR,Ukraine,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2015,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MRT,Mauritania,Year,2015,FALSE,,,,,,,,,,,,,17,,,,,,17,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2015,FALSE,,,,,,,,,,,,,18,,,,,,18,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2015,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2015,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TCD,Chad,Year,2015,FALSE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HTI,Haiti,Year,2015,FALSE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,RWA,Rwanda,Year,2015,FALSE,,,,,,,,,,,,,27,,,,,,27,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GRD,Grenada,Year,2015,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,KNA,Saint Kitts and Nevis,Year,2015,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2015,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2015,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GNB,Guinea-Bissau,Year,2015,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PRY,Paraguay,Year,2015,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2015,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2015,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2015,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2015,FALSE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2015,FALSE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2015,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BLZ,Belize,Year,2015,TRUE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MUS,Mauritius,Year,2015,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2015,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2015,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2015,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2015,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NGA,Nigeria,Year,2015,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2015,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2015,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2015,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2015,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PAN,Panama,Year,2015,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CHL,Chile,Year,2015,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2015,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2015,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GIN,Guinea,Year,2015,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2015,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TGO,Togo,Year,2015,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MNE,Montenegro,Year,2015,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2015,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2015,FALSE,,,,,,,,,,,,,72,,,,,,72,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2015,FALSE,,,,,,,,,,,,,72,,,,,,72,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2015,TRUE,,,,,,,,,,,,,72,,,,,,72,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2015,FALSE,,,,,,,,,,,,,72,,,,,,72,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2015,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2015,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CZE,Czechia,Year,2015,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LIE,Liechtenstein,Year,2015,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2015,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2015,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2015,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BDI,Burundi,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GTM,Guatemala,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2015,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2015,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2015,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ROU,Romania,Year,2015,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2015,FALSE,,,,,,,,,,,,,82,,,,,,82,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2015,TRUE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2015,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HRV,Croatia,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SLV,El Salvador,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FIN,Finland,Year,2015,TRUE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NLD,Netherlands,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NER,Niger,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PER,Peru,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SSD,South Sudan,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,URY,Uruguay,Year,2015,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2015,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2015,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ERI,Eritrea,Year,2015,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2015,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2015,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,JAM,Jamaica,Year,2015,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LVA,Latvia,Year,2015,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,AGO,Angola,Year,2014,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2014,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GMB,Gambia,Year,2014,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MWI,Malawi,Year,2014,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SOM,Somalia,Year,2014,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ARG,Argentina,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ARM,Armenia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRA,Brazil,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CMR,Cameroon,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CUB,Cuba,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DNK,Denmark,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FJI,Fiji,Year,2014,TRUE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DEU,Germany,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GUY,Guyana,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IND,India,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LVA,Latvia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MCO,Monaco,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NOR,Norway,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,PRT,Portugal,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZAF,South Africa,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TJK,Tajikistan,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZMB,Zambia,Year,2014,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2014,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MRT,Mauritania,Year,2014,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2014,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2014,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2014,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,YEM,Yemen,Year,2014,FALSE,,,,,,,,,,,,,18,,,,,,18,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HTI,Haiti,Year,2014,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2014,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2014,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2014,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2014,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TCD,Chad,Year,2014,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,DJI,Djibouti,Year,2014,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NRU,Nauru,Year,2014,TRUE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,RWA,Rwanda,Year,2014,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CYP,Cyprus,Year,2014,FALSE,,,,,,,,,,,,,28,,,,,,28,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2014,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2014,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GNB,Guinea-Bissau,Year,2014,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2014,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2014,FALSE,,,,,,,,,,,,,36,,,,,,36,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SRB,Serbia,Year,2014,FALSE,,,,,,,,,,,,,36,,,,,,36,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BHS,Bahamas,Year,2014,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MDG,Madagascar,Year,2014,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2014,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GTM,Guatemala,Year,2014,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2014,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BEN,Benin,Year,2014,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2014,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2014,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BFA,Burkina Faso,Year,2014,FALSE,,,,,,,,,,,,,51,,,,,,51,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GHA,Ghana,Year,2014,FALSE,,,,,,,,,,,,,51,,,,,,51,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MUS,Mauritius,Year,2014,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NGA,Nigeria,Year,2014,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2014,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2014,FALSE,,,,,,,,,,,,,56,,,,,,56,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2014,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2014,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2014,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2014,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PAN,Panama,Year,2014,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PNG,Papua New Guinea,Year,2014,TRUE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2014,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CHL,Chile,Year,2014,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2014,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2014,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2014,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2014,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TUR,Turkey,Year,2014,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2014,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GIN,Guinea,Year,2014,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2014,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TGO,Togo,Year,2014,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZWE,Zimbabwe,Year,2014,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2014,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MNE,Montenegro,Year,2014,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NAM,Namibia,Year,2014,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2014,FALSE,,,,,,,,,,,,,66,,,,,,66,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2014,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2014,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2014,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2014,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2014,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2014,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2014,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2014,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,JAM,Jamaica,Year,2014,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NIU,Niue,Year,2014,TRUE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AZE,Azerbaijan,Year,2014,TRUE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BLR,Belarus,Year,2014,TRUE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CZE,Czechia,Year,2014,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MLT,Malta,Year,2014,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2014,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2014,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2014,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BDI,Burundi,Year,2014,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2014,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2014,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NLD,Netherlands,Year,2014,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2014,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2014,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BGR,Bulgaria,Year,2014,TRUE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2014,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,POL,Poland,Year,2014,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ROU,Romania,Year,2014,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2014,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2014,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2014,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2014,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LIE,Liechtenstein,Year,2014,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SUR,Suriname,Year,2014,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2014,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HRV,Croatia,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SLV,El Salvador,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FIN,Finland,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISL,Iceland,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PER,Peru,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SSD,South Sudan,Year,2014,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ERI,Eritrea,Year,2014,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2014,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2014,TRUE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TKM,Turkmenistan,Year,2014,TRUE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,UZB,Uzbekistan,Year,2014,TRUE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BWA,Botswana,Year,2013,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2013,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2013,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ARG,Argentina,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CMR,Cameroon,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CHL,Chile,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HRV,Croatia,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CUB,Cuba,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DNK,Denmark,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FJI,Fiji,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GTM,Guatemala,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NOR,Norway,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,POL,Poland,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZMB,Zambia,Year,2013,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2013,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COG,Congo,Year,2013,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GRD,Grenada,Year,2013,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2013,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SOM,Somalia,Year,2013,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2013,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2013,FALSE,,,,,,,,,,,,,16,,,,,,16,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2013,FALSE,,,,,,,,,,,,,18,,,,,,18,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,YEM,Yemen,Year,2013,FALSE,,,,,,,,,,,,,18,,,,,,18,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2013,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HTI,Haiti,Year,2013,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MUS,Mauritius,Year,2013,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,AGO,Angola,Year,2013,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COM,Comoros,Year,2013,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BLZ,Belize,Year,2013,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2013,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CYP,Cyprus,Year,2013,FALSE,,,,,,,,,,,,,28,,,,,,28,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2013,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2013,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2013,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,DJI,Djibouti,Year,2013,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2013,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LSO,Lesotho,Year,2013,FALSE,,,,,,,,,,,,,36,,,,,,36,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,KNA,Saint Kitts and Nevis,Year,2013,FALSE,,,,,,,,,,,,,36,,,,,,36,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2013,FALSE,,,,,,,,,,,,,36,,,,,,36,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2013,FALSE,,,,,,,,,,,,,38,,,,,,38,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2013,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MDG,Madagascar,Year,2013,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PNG,Papua New Guinea,Year,2013,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2013,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2013,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2013,FALSE,,,,,,,,,,,,,43,,,,,,43,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BFA,Burkina Faso,Year,2013,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ERI,Eritrea,Year,2013,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NGA,Nigeria,Year,2013,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2013,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SUR,Suriname,Year,2013,FALSE,,,,,,,,,,,,,48,,,,,,48,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2013,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BDI,Burundi,Year,2013,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CIV,Côte d’Ivoire,Year,2013,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2013,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GHA,Ghana,Year,2013,FALSE,,,,,,,,,,,,,51,,,,,,51,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,KEN,Kenya,Year,2013,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PRY,Paraguay,Year,2013,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2013,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2013,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2013,FALSE,,,,,,,,,,,,,56,,,,,,56,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2013,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2013,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2013,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2013,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2013,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2013,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2013,FALSE,,,,,,,,,,,,,61,,,,,,61,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2013,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2013,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FIN,Finland,Year,2013,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GMB,Gambia,Year,2013,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2013,FALSE,,,,,,,,,,,,,63,,,,,,63,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MNE,Montenegro,Year,2013,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PER,Peru,Year,2013,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2013,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2013,FALSE,,,,,,,,,,,,,66,,,,,,66,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2013,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2013,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MCO,Monaco,Year,2013,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NIU,Niue,Year,2013,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2013,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PAN,Panama,Year,2013,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2013,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,JAM,Jamaica,Year,2013,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2013,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2013,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ROU,Romania,Year,2013,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AZE,Azerbaijan,Year,2013,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CZE,Czechia,Year,2013,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MLT,Malta,Year,2013,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2013,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2013,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TCD,Chad,Year,2013,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GNQ,Equatorial Guinea,Year,2013,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,RWA,Rwanda,Year,2013,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2013,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2013,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2013,FALSE,,,,,,,,,,,,,8,,,,,,8,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2013,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2013,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NLD,Netherlands,Year,2013,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NER,Niger,Year,2013,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TGO,Togo,Year,2013,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TON,Tonga,Year,2013,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,UGA,Uganda,Year,2013,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2013,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2013,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2013,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,URY,Uruguay,Year,2013,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2013,FALSE,,,,,,,,,,,,,81,,,,,,81,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2013,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZAF,South Africa,Year,2013,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2013,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2013,FALSE,,,,,,,,,,,,,83,,,,,,83,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRA,Brazil,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SLV,El Salvador,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GUY,Guyana,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IND,India,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SSD,South Sudan,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2013,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ARM,Armenia,Year,2013,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2013,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2013,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2013,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2013,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TUV,Tuvalu,Year,2013,FALSE,,,,,,,,,,,,,91,,,,,,91,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2012,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,DJI,Djibouti,Year,2012,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GRD,Grenada,Year,2012,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MRT,Mauritania,Year,2012,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2012,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2012,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2012,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BLZ,Belize,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PRY,Paraguay,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VCT,Saint Vincent and the Grenadines,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SLB,Solomon Islands,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TON,Tonga,Year,2012,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ARG,Argentina,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ARM,Armenia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,COK,Cook Islands,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CUB,Cuba,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISL,Iceland,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LVA,Latvia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NOR,Norway,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TUV,Tuvalu,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZMB,Zambia,Year,2012,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2012,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2012,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GTM,Guatemala,Year,2012,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2012,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2012,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2012,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2012,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BEN,Benin,Year,2012,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BFA,Burkina Faso,Year,2012,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2012,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SEN,Senegal,Year,2012,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BDI,Burundi,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FJI,Fiji,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NGA,Nigeria,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NIU,Niue,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,KNA,Saint Kitts and Nevis,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,YEM,Yemen,Year,2012,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SLV,El Salvador,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GHA,Ghana,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PAN,Panama,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PNG,Papua New Guinea,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PER,Peru,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SUR,Suriname,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2012,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CMR,Cameroon,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IND,India,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MLT,Malta,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MCO,Monaco,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,UGA,Uganda,Year,2012,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CHL,Chile,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COG,Congo,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,KEN,Kenya,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MNE,Montenegro,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NLD,Netherlands,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TUR,Turkey,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2012,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FIN,Finland,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DEU,Germany,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,IRL,Ireland,Year,2012,TRUE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZAF,South Africa,Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2012,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CZE,Czechia,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GUY,Guyana,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,JAM,Jamaica,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,POL,Poland,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TJK,Tajikistan,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2012,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CAF,Central African Republic,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TCD,Chad,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GNQ,Equatorial Guinea,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GAB,Gabon,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GIN,Guinea,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,KGZ,Kyrgyzstan,Year,2011,TRUE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MRT,Mauritania,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SRB,Serbia,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2011,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2011,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BDI,Burundi,Year,2011,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,VEN,Venezuela (Bolivarian Republic of),Year,2011,FALSE,,,,,,,,,,,,,10,,,,,,10,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AZE,Azerbaijan,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BLR,Belarus,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRA,Brazil,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CHL,Chile,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CZE,Czechia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DNK,Denmark,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LVA,Latvia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,PRT,Portugal,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TJK,Tajikistan,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,UZB,Uzbekistan,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2011,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CYP,Cyprus,Year,2011,FALSE,,,,,,,,,,,,,12,,,,,,12,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2011,FALSE,,,,,,,,,,,,,12,,,,,,12,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TGO,Togo,Year,2011,FALSE,,,,,,,,,,,,,12,,,,,,12,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,AGO,Angola,Year,2011,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BLZ,Belize,Year,2011,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2011,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PNG,Papua New Guinea,Year,2011,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SUR,Suriname,Year,2011,FALSE,,,,,,,,,,,,,20,,,,,,20,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2011,FALSE,,,,,,,,,,,,,22,,,,,,22,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2011,FALSE,,,,,,,,,,,,,22,,,,,,22,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2011,FALSE,,,,,,,,,,,,,22,,,,,,22,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MKD,The former Yugoslav Republic of Macedonia,Year,2011,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GTM,Guatemala,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HTI,Haiti,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2011,FALSE,,,,,,,,,,,,,30,,,,,,30,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ERI,Eritrea,Year,2011,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GHA,Ghana,Year,2011,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LBR,Liberia,Year,2011,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MLI,Mali,Year,2011,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SEN,Senegal,Year,2011,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2011,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,TUN,Tunisia,Year,2011,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BEN,Benin,Year,2011,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2011,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2011,FALSE,,,,,,,,,,,,,37,,,,,,37,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2011,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2011,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MDG,Madagascar,Year,2011,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2011,FALSE,,,,,,,,,,,,,40,,,,,,40,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2011,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GRD,Grenada,Year,2011,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,KEN,Kenya,Year,2011,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2011,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2011,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2011,FALSE,,,,,,,,,,,,,45,,,,,,45,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2011,FALSE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2011,FALSE,,,,,,,,,,,,,47,,,,,,47,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2011,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZAF,South Africa,Year,2011,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,UGA,Uganda,Year,2011,FALSE,,,,,,,,,,,,,50,,,,,,50,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2011,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ARG,Argentina,Year,2011,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,NGA,Nigeria,Year,2011,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2011,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2011,FALSE,,,,,,,,,,,,,52,,,,,,52,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BOL,Bolivia (Plurinational State of),Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BGR,Bulgaria,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CMR,Cameroon,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CIV,Côte d’Ivoire,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GMB,Gambia,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IND,India,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,IRL,Ireland,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TON,Tonga,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZWE,Zimbabwe,Year,2011,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LSO,Lesotho,Year,2011,FALSE,,,,,,,,,,,,,57,,,,,,57,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MLT,Malta,Year,2011,FALSE,,,,,,,,,,,,,57,,,,,,57,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2011,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,WSM,Samoa,Year,2011,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2011,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2011,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FIN,Finland,Year,2011,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2011,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2011,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2011,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TZA,United Republic of Tanzania,Year,2011,FALSE,,,,,,,,,,,,,65,,,,,,65,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ITA,Italy,Year,2011,FALSE,,,,,,,,,,,,,67,,,,,,67,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2011,FALSE,,,,,,,,,,,,,67,,,,,,67,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZMB,Zambia,Year,2011,FALSE,,,,,,,,,,,,,67,,,,,,67,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MCO,Monaco,Year,2011,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,POL,Poland,Year,2011,FALSE,,,,,,,,,,,,,70,,,,,,70,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BHS,Bahamas,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DEU,Germany,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,NLD,Netherlands,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,NIC,Nicaragua,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PRY,Paraguay,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2011,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HRV,Croatia,Year,2011,FALSE,,,,,,,,,,,,,77,,,,,,77,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISL,Iceland,Year,2011,FALSE,,,,,,,,,,,,,77,,,,,,77,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,PAN,Panama,Year,2011,FALSE,,,,,,,,,,,,,77,,,,,,77,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COG,Congo,Year,2011,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2011,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2011,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2011,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ARM,Armenia,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CUB,Cuba,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,SLV,El Salvador,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GUY,Guyana,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TKM,Turkmenistan,Year,2011,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,JAM,Jamaica,Year,2011,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,KAZ,Kazakhstan,Year,2011,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MWI,Malawi,Year,2011,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ROU,Romania,Year,2011,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2011,FALSE,,,,,,,,,,,,,90,,,,,,90,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BWA,Botswana,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KHM,Cambodia,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,MEX,Mexico,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SMR,San Marino,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SYC,Seychelles,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SLE,Sierra Leone,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,TGO,Togo,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VUT,Vanuatu,Year,2010,FALSE,,,,,,,,,,,,,0,,,,,,0,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,AUS,Australia,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AUT,Austria,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HRV,Croatia,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CZE,Czechia,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DNK,Denmark,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GEO,Georgia,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,JPN,Japan,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,KWT,Kuwait,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MYS,Malaysia,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MHL,Marshall Islands,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,OMN,Oman,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,RUS,Russian Federation,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SAU,Saudi Arabia,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,SGP,Singapore,Year,2010,FALSE,,,,,,,,,,,,,100,,,,,,100,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AND,Andorra,Year,2010,FALSE,,,,,,,,,,,,,12,,,,,,12,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FJI,Fiji,Year,2010,FALSE,,,,,,,,,,,,,12,,,,,,12,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,TON,Tonga,Year,2010,FALSE,,,,,,,,,,,,,12,,,,,,12,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,ARE,United Arab Emirates,Year,2010,FALSE,,,,,,,,,,,,,12,,,,,,12,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRA,Brazil,Year,2010,FALSE,,,,,,,,,,,,,14,,,,,,14,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DOM,Dominican Republic,Year,2010,FALSE,,,,,,,,,,,,,14,,,,,,14,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,KEN,Kenya,Year,2010,FALSE,,,,,,,,,,,,,14,,,,,,14,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LSO,Lesotho,Year,2010,FALSE,,,,,,,,,,,,,14,,,,,,14,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,LBR,Liberia,Year,2010,FALSE,,,,,,,,,,,,,14,,,,,,14,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,NPL,Nepal,Year,2010,FALSE,,,,,,,,,,,,,14,,,,,,14,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,PRK,Democratic People's Republic of Korea,Year,2010,FALSE,,,,,,,,,,,,,19,,,,,,19,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,GUY,Guyana,Year,2010,FALSE,,,,,,,,,,,,,19,,,,,,19,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,JAM,Jamaica,Year,2010,FALSE,,,,,,,,,,,,,19,,,,,,19,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SYR,Syrian Arab Republic,Year,2010,FALSE,,,,,,,,,,,,,19,,,,,,19,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CYP,Cyprus,Year,2010,FALSE,,,,,,,,,,,,,21,,,,,,21,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IND,India,Year,2010,FALSE,,,,,,,,,,,,,25,,,,,,25,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COD,Democratic Republic of the Congo,Year,2010,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,SWZ,Eswatini,Year,2010,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,TLS,Timor-Leste,Year,2010,FALSE,,,,,,,,,,,,,26,,,,,,26,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,IRL,Ireland,Year,2010,FALSE,,,,,,,,,,,,,28,,,,,,28,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBN,Lebanon,Year,2010,FALSE,,,,,,,,,,,,,28,,,,,,28,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ECU,Ecuador,Year,2010,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ETH,Ethiopia,Year,2010,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,TUR,Turkey,Year,2010,FALSE,,,,,,,,,,,,,32,,,,,,32,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BRB,Barbados,Year,2010,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BIH,Bosnia and Herzegovina,Year,2010,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ERI,Eritrea,Year,2010,FALSE,,,,,,,,,,,,,33,,,,,,33,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,AZE,Azerbaijan,Year,2010,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRQ,Iraq,Year,2010,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,VNM,Viet Nam,Year,2010,FALSE,,,,,,,,,,,,,35,,,,,,35,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BGD,Bangladesh,Year,2010,FALSE,,,,,,,,,,,,,39,,,,,,39,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,BRN,Brunei Darussalam,Year,2010,FALSE,,,,,,,,,,,,,39,,,,,,39,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LUX,Luxembourg,Year,2010,FALSE,,,,,,,,,,,,,39,,,,,,39,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,LCA,Saint Lucia,Year,2010,FALSE,,,,,,,,,,,,,39,,,,,,39,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,AFG,Afghanistan,Year,2010,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CMR,Cameroon,Year,2010,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,IRN,Iran (Islamic Republic of),Year,2010,FALSE,,,,,,,,,,,,,41,,,,,,41,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LTU,Lithuania,Year,2010,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,POL,Poland,Year,2010,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVK,Slovakia,Year,2010,FALSE,,,,,,,,,,,,,42,,,,,,42,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,DZA,Algeria,Year,2010,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,DMA,Dominica,Year,2010,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GMB,Gambia,Year,2010,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,SDN,Sudan,Year,2010,FALSE,,,,,,,,,,,,,46,,,,,,46,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,GHA,Ghana,Year,2010,FALSE,,,,,,,,,,,,,48,,,,,,48,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,ZAF,South Africa,Year,2010,FALSE,,,,,,,,,,,,,48,,,,,,48,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,MDA,Republic of Moldova,Year,2010,FALSE,,,,,,,,,,,,,51,,,,,,51,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,LKA,Sri Lanka,Year,2010,FALSE,,,,,,,,,,,,,51,,,,,,51,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,TTO,Trinidad and Tobago,Year,2010,FALSE,,,,,,,,,,,,,51,,,,,,51,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,COL,Colombia,Year,2010,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CRI,Costa Rica,Year,2010,FALSE,,,,,,,,,,,,,53,,,,,,53,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ROU,Romania,Year,2010,FALSE,,,,,,,,,,,,,55,,,,,,55,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,FSM,Micronesia (Federated States of),Year,2010,FALSE,,,,,,,,,,,,,58,,,,,,58,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,EST,Estonia,Year,2010,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FRA,France,Year,2010,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,LVA,Latvia,Year,2010,FALSE,,,,,,,,,,,,,60,,,,,,60,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SVN,Slovenia,Year,2010,FALSE,,,,,,,,,,,,,62,,,,,,62,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MMR,Myanmar,Year,2010,FALSE,,,,,,,,,,,,,66,,,,,,66,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PHL,Philippines,Year,2010,FALSE,,,,,,,,,,,,,66,,,,,,66,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,HUN,Hungary,Year,2010,FALSE,,,,,,,,,,,,,67,,,,,,67,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ITA,Italy,Year,2010,FALSE,,,,,,,,,,,,,67,,,,,,67,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,MDV,Maldives,Year,2010,FALSE,,,,,,,,,,,,,67,,,,,,67,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BLZ,Belize,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,BTN,Bhutan,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,COG,Congo,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,HND,Honduras,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MRT,Mauritania,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,MOZ,Mozambique,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,PAK,Pakistan,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,STP,Sao Tome and Principe,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ESP,Spain,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,UGA,Uganda,Year,2010,FALSE,,,,,,,,,,,,,7,,,,,,7,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,IDN,Indonesia,Year,2010,FALSE,,,,,,,,,,,,,71,,,,,,71,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,BHS,Bahamas,Year,2010,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,FIN,Finland,Year,2010,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ISR,Israel,Year,2010,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,LAO,Lao People's Democratic Republic,Year,2010,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,CHE,Switzerland,Year,2010,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,SEAR,South-East Asia,Country,THA,Thailand,Year,2010,FALSE,,,,,,,,,,,,,73,,,,,,73,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,ARM,Armenia,Year,2010,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,CPV,Cabo Verde,Year,2010,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,MAR,Morocco,Year,2010,FALSE,,,,,,,,,,,,,75,,,,,,75,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,BEL,Belgium,Year,2010,FALSE,,,,,,,,,,,,,78,,,,,,78,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AFR,Africa,Country,BEN,Benin,Year,2010,FALSE,,,,,,,,,,,,,78,,,,,,78,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,CAN,Canada,Year,2010,FALSE,,,,,,,,,,,,,78,,,,,,78,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,DEU,Germany,Year,2010,FALSE,,,,,,,,,,,,,78,,,,,,78,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,JOR,Jordan,Year,2010,FALSE,,,,,,,,,,,,,78,,,,,,78,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,LBY,Libya,Year,2010,FALSE,,,,,,,,,,,,,78,,,,,,78,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,EGY,Egypt,Year,2010,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,SWE,Sweden,Year,2010,FALSE,,,,,,,,,,,,,80,,,,,,80,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,ATG,Antigua and Barbuda,Year,2010,FALSE,,,,,,,,,,,,,85,,,,,,85,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KIR,Kiribati,Year,2010,FALSE,,,,,,,,,,,,,85,,,,,,85,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NRU,Nauru,Year,2010,FALSE,,,,,,,,,,,,,85,,,,,,85,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,KOR,Republic of Korea,Year,2010,FALSE,,,,,,,,,,,,,85,,,,,,85,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,AMR,Americas,Country,USA,United States of America,Year,2010,FALSE,,,,,,,,,,,,,87,,,,,,87,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,BHR,Bahrain,Year,2010,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,CHN,China,Year,2010,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EUR,Europe,Country,GRC,Greece,Year,2010,TRUE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,MNG,Mongolia,Year,2010,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,NZL,New Zealand,Year,2010,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,WPR,Western Pacific,Country,PLW,Palau,Year,2010,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
+IHR05,Preparedness,numeric,EMR,Eastern Mediterranean,Country,QAT,Qatar,Year,2010,FALSE,,,,,,,,,,,,,92,,,,,,92,,,EN,2021-06-13T23:00:00.000Z
