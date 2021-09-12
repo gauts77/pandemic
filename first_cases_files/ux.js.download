@@ -1,0 +1,591 @@
+/***********************/
+/***** UX SCRIPTS *****/
+/***********************/
+
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0   Go to Top BTN script 
+2.0   Preloader Script
+3.0   Viewport
+4.0   Scroll in View
+5.0   Article & Project Highlight
+
+6.0   Click Toggles
+7.0   Navigation
+8.0   Sidebar Toggle
+9.0   Highlight correct section
+10.0  Microformatting Box - Expand on Click
+
+11.0  Smooth scrolling
+12.0  Article Increase
+13.0  Cookie & Privacy Policy PopUp
+14.0  Dynamic Sidebar Height
+15.0  Sticky Top Leaderboard
+
+16.0  Top Leaderboard Close Button
+17.0  Lightbox Gallery
+18.0  Password Reset Modal
+19.0  Hashtag URL Offset
+
+*/
+
+
+
+
+/*-------------------------------------------------------------- */
+/* 1.0 Go to Top BTN script */
+/*-------------------------------------------------------------- */
+jQuery(document).ready(function() {
+			jQuery(window).scroll(function() {
+				if (jQuery(this).scrollTop() > 1000) {
+					jQuery('.go-top').fadeIn(200);
+				} else {
+					jQuery('.go-top').fadeOut(200);
+				}
+			});
+			jQuery('.go-top').click(function(event) {
+				event.preventDefault();
+
+				jQuery('html, body').animate({scrollTop: 0}, 1000);
+			})
+		});
+
+
+
+
+
+/*-------------------------------------------------------------- */
+/* 2.0 Preloader Script */
+/*-------------------------------------------------------------- */
+function preloader2() {
+	jQuery('.l-preloader').fadeOut();
+}
+function preloader() {
+    jQuery(".l-preloader").fadeTo( 10, 0, function() {
+    setTimeout("preloader2()",600);
+  });
+}
+setTimeout("preloader()",500);
+
+
+
+
+
+/* 3.0 Viewport */
+
+var setHeight = jQuery('.post-detail-row').outerHeight(true);
+var	win = jQuery(window);
+var	body = jQuery('body');
+
+
+
+
+
+/* 4.0 Scroll in View */
+
+function isScrolledIntoView(elem) {
+    var docViewTop = jQuery(window).scrollTop()+300;
+    var docViewBottom = docViewTop + jQuery(window).height();
+    var elemTop = jQuery(elem).offset().top;
+    var elemBottom = elemTop + jQuery(elem).height();
+    return ((elemTop <= docViewTop));
+}
+
+
+
+
+
+/* 5.0 Article & Project Highlight */
+var firstHeading = '';
+var projectOverviewHidden = false;
+jQuery(window).scroll(function () {
+    jQuery('.entry-title').each(function () {
+    	  if (typeof(firstHeading) != "undefined" && firstHeading !== null && firstHeading == '') {
+    	    firstHeading = jQuery(this).text();
+    	  }
+        if (isScrolledIntoView(this) === true) {
+           jQuery(this).addClass('inviewtest');
+		var currentHeading = jQuery( ".inviewtest:last" ).text();
+		jQuery('.fixedIndexContent').html(currentHeading);
+
+		var item = jQuery('.timeline-article h3 a');
+		for (var i = 0; i <= item.length; i++) {
+		       if (jQuery(item[i]).text() == currentHeading) {
+		             jQuery(item[i]).closest('.timeline-article').prevAll().hide();
+		             jQuery(item[i]).addClass('inviewtest2');
+		             jQuery(item[i]).closest('.timeline-article').addClass('subheader');
+		             jQuery('.project-overview').hide();
+		             projectOverviewHidden = true;
+		          }
+		     }
+
+			jQuery('.sal .cf').each(function () {
+				var currentListElement = jQuery(this);
+				var currentValue = jQuery(currentListElement).find('a').text();
+				if (currentHeading == currentValue) {
+						jQuery(currentListElement).addClass('current');
+						jQuery(currentListElement).addClass('subheader');
+						jQuery(currentListElement).addClass('fixed');
+						jQuery(currentListElement).show();
+						jQuery(currentListElement).prevAll('.timeline-article').hide();
+				} else {
+						jQuery(currentListElement).removeClass('current');
+						jQuery(currentListElement).removeClass('subheader');
+						jQuery(currentListElement).removeClass('fixed');
+				}
+			});
+
+	          	 if (currentHeading == firstHeading && projectOverviewHidden == true) {
+		        	jQuery('.project-overview').show();
+		       }
+
+        } else {
+        	jQuery(this).removeClass('inviewtest');
+        }
+    });
+});
+
+
+
+
+
+/* 6.0 Click Toggles */
+
+jQuery( document ).ready(function() {
+	jQuery(document).on('click', '.share-title', function(event){
+	    jQuery(this).next(".share-main").toggle(200);
+	});
+	jQuery(".login-toggle").click(function(){
+	    jQuery("body").toggleClass("login-open");
+	});
+	jQuery(".mobile-toggle").click(function(){
+	    jQuery(".mobile-menu").toggleClass("mobilemenu-open");
+	});
+	jQuery(".search-mobile").click(function(){
+	    jQuery(".thesearch").toggleClass("thesearchopen");
+	    jQuery("body").toggleClass("theoverflow");
+	});
+	jQuery(".myaccount-toggle").click(function(){
+	    jQuery("body").toggleClass("myaccount-open");
+	});
+	jQuery(".search-toggle").click(function(){
+	    jQuery("body").toggleClass("search-open");
+	});
+	jQuery(".sidebar-toggle").click(function(){
+	    jQuery("body").toggleClass("sidebar-closed");
+	});
+	jQuery("#myDropdown").click(function(){
+	    jQuery("body").toggleClass("login-open");
+	});
+	jQuery(".login-link").click(function(){
+	    jQuery("body").toggleClass("login-open");
+	});
+	jQuery(".close-modal").click(function(){
+	    jQuery("body").toggleClass("login-open");
+	});
+});
+
+
+
+
+
+/* 7.0 Navigation */
+
+jQuery(".nav-all").hover(function() {
+    jQuery("body").addClass("megamenuopen");
+    jQuery(".site-nav").addClass("overflow");
+}, function() {
+    jQuery("body").removeClass("megamenuopen");
+    jQuery(".site-nav").removeClass("overflow");
+});
+
+
+
+
+
+
+/* 8.0 Sidebar Toggle */
+
+if (jQuery( ".timeline-sidebar" ) && jQuery( ".timeline-sidebar" ).length ) {
+	var stickyTop = jQuery('.timeline-sidebar').offset().top;
+	jQuery(window).on( 'scroll', function(){
+	    if (jQuery(window).scrollTop() >= stickyTop) {
+	        jQuery('.timeline-sidebar').addClass('fixed-sidebar');
+					jQuery('.sidebar-toggle').addClass('fixed-sidebar');
+	    } else {
+	        jQuery('.timeline-sidebar').removeClass('fixed-sidebar');
+					jQuery('.sidebar-toggle').removeClass('fixed-sidebar');
+	    }
+	});
+}
+
+
+
+
+
+/* 9.0 Highlight correct section */
+
+jQuery( document ).ready(function() {
+	jQuery('#sal li').each(function () {
+		var currentListElement = jQuery(this);
+		var currentListElementText = jQuery(this).attr("class");
+           if( jQuery('.entry-content h2').length ) {
+		    var highlightPc1 = jQuery('.entry-content h2#'+currentListElementText).offset().top;
+           } else {
+               var highlightPc1 = jQuery('.entry-content b#'+currentListElementText).offset().top;
+           }
+		jQuery(window).on( 'scroll', function(){
+		    if (jQuery(window).scrollTop()+400 >= highlightPc1) {
+		        jQuery(currentListElement).addClass('current-section');
+		    } else {
+		        jQuery(currentListElement).removeClass('current-section');
+		    }
+		});
+	});
+});
+
+
+
+
+
+/* 10.0 Microformatting Box - Expand on Click*/
+
+jQuery(document).on('click', '.microformatting .project-expand', function(event){
+    jQuery('.microformatting .large-3').fadeIn();
+    jQuery(this).hide();
+});
+
+
+
+
+
+/* 11.0 Smooth scrolling */
+
+jQuery(document).on('click', '.timeline a', function(event){
+    jQuery('html, body').animate({
+        scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top-200
+    }, 500);
+});
+
+
+
+
+
+
+/* 12.0 Article Increase */
+
+createCookie('articleincrease', '1', 1);
+
+
+
+
+
+/* 13.0 Cookie & Privacy Policy PopUp */
+
+  if (!readCookie('cookiePopUp')) {
+  	jQuery('#cookiepopup').fadeIn();
+  }
+  jQuery('#cookiepopup-closebutton').click(function() {
+    jQuery('#cookiepopup').hide();
+    createCookie('cookiePopUp', true, 100);
+    return false;
+  });
+  jQuery('#cookiepopup-continue').click(function() {
+    jQuery('#cookiepopup').hide();
+    createCookie('cookiePopUp', true, 100);
+    return false;
+  });
+
+
+// And generic cookie logic
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  }
+  else var expires = "";
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+
+/* 14.0 Dynamic Sidebar Height */
+
+jQuery(window).scroll(function () {
+    jQuery('.post-detail-row').each(function () {
+    	if (!jQuery(this).hasClass('marked')) {
+
+    		jQuery(this).prevAll('.post-detail-row').find(".sidebar-mpu-2").empty();
+    		jQuery(this).prevAll('.post-detail-row').find(".sidebar-mpu-3").empty();
+    		jQuery(this).prevAll('.bottom-leaderboard-wrapper').empty();
+
+    		if (jQuery(".post-detail-row").prev().length > 0) {
+    			googletag.pubads().refresh([slot5]);
+    			googletag.pubads().refresh([slot3]);
+    			googletag.pubads().refresh([slot2]);
+    			//googletag.pubads().refresh([slot1]);
+    		}
+
+		var contentHeight = jQuery(this).find('.primary-content').height();
+		var sidebarHeight = jQuery(this).find('.primary-content').next('.secondary-content').height();
+		var sidebarContainer = jQuery(this).find('.primary-content').next('.secondary-content');
+		if (sidebarHeight > contentHeight) {
+			//jQuery(sidebarContainer).find('#thb_widget_reports-2').hide();
+		}
+		jQuery(this).addClass('marked');
+		var value = readCookie('articleincrease');
+		value = parseInt(value)+1;
+		createCookie('articleincrease', value, 1);
+
+          /* Companies carousel */
+          jQuery(this).find('.carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            lazyLoad: 'ondemand',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true
+          });
+
+
+
+    	}
+    });
+});
+
+
+
+
+
+/* 15.0 Sticky Top Leaderboard */
+
+jQuery(document).scroll(function(){
+    if( jQuery('.sidebar-mpu-1').length ) {
+        if(jQuery(this).scrollTop() >= jQuery('.sidebar-mpu-1').offset().top - 300) {
+            jQuery("body").addClass("scrolled-to-mpu");
+        } else {
+            jQuery("body").removeClass("scrolled-to-mpu");
+        }
+    }
+	if( jQuery('.sidebar-mpu-2').length ) {
+        if(jQuery(this).scrollTop() >= jQuery('.sidebar-mpu-2').offset().top - 300) {
+            jQuery("body").addClass("scrolled-to-mpu");
+        } else {
+            jQuery("body").removeClass("scrolled-to-mpu");
+        }
+    }
+    if( jQuery('.alerts').length ) {
+        if(jQuery(this).scrollTop() >= jQuery('.alerts').offset().top - 100) {
+            jQuery(".post-content").addClass("show-email-alert");
+        } else {
+            jQuery("body").removeClass("scrolled-to-mpu");
+        }
+    }
+    if( jQuery('.trending').length ) {
+        if(jQuery(this).scrollTop() >= jQuery('.trending').offset().top - 100) {
+            jQuery("body").addClass("scrolled-to-mpu");
+        } else {
+            jQuery("body").removeClass("scrolled-to-mpu");
+        }
+    }
+});
+
+
+
+
+
+/* 16.0 Top Leaderboard Close Button */
+jQuery(document).ready(function() {
+  jQuery(document).on('click', '.top-leaderboard-close', function(event){
+      jQuery(".top-leaderboard").hide();
+  });
+});
+
+
+
+
+
+/* 17.0 Lightbox Gallery */
+
+jQuery('.post-gallery-cta').magnificPopup({
+	delegate: 'a', // child items selector, by clicking on it popup will open
+	type: 'image',
+	mainClass: 'mfp-fade',
+	gallery:{
+	  enabled:true
+	}
+});
+
+
+
+
+
+/* 18.0 Password Reset Modal */
+jQuery(document).ready(function() {
+  if (!readCookie('hidePopUp')) {
+		var ModalEffects = (function() {
+			function init() {
+				var overlay = document.querySelector( '.md-overlay' );
+				[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
+					var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
+						close = modal.querySelector( '.md-close' );
+					function removeModal( hasPerspective ) {
+						classie.remove( modal, 'md-show' );
+						if( hasPerspective ) {
+							classie.remove( document.documentElement, 'md-perspective' );
+						}
+					}
+					function removeModalHandler() {
+						removeModal( classie.has( el, 'md-setperspective' ) );
+					}
+					function pwdResetPopup() {
+						classie.add( modal, 'md-show' );
+						overlay.removeEventListener( 'click', removeModalHandler );
+						overlay.addEventListener( 'click', removeModalHandler );
+
+						if( classie.has( el, 'md-setperspective' ) ) {
+							setTimeout( function() {
+								classie.add( document.documentElement, 'md-perspective' );
+							}, 25 );
+						}
+					};
+					setTimeout(pwdResetPopup, 2000);
+					close.addEventListener( 'click', function( ev ) {
+						ev.stopPropagation();
+						removeModalHandler();
+					});
+				} );
+			}
+			init();
+		})();
+  }
+
+  jQuery('#close').click(function() {
+    jQuery('#modal-1').hide();
+    createCookie('hidePopUp', true, 1000);
+    return false;
+  });
+
+  jQuery('.md-overlay').click(function() {
+    jQuery('#modal-1').hide();
+    createCookie('hidePopUp', true, 1000);
+    return false;
+  });
+
+
+});
+
+
+
+
+
+
+
+/* 19.0 Hashtag URL Offset */
+
+
+(function(document, history, location) {
+  var HISTORY_SUPPORT = !!(history && history.pushState);
+
+  var anchorScrolls = {
+    ANCHOR_REGEX: /^#[^ ]+$/,
+    OFFSET_HEIGHT_PX: 100,
+
+    init: function() {
+      this.scrollToCurrent();
+      window.addEventListener('hashchange', this.scrollToCurrent.bind(this));
+      document.body.addEventListener('click', this.delegateAnchors.bind(this));
+    },
+
+    getFixedOffset: function() {
+      return this.OFFSET_HEIGHT_PX;
+    },
+
+    scrollIfAnchor: function(href, pushToHistory) {
+      var match, rect, anchorOffset;
+
+      if(!this.ANCHOR_REGEX.test(href)) {
+        return false;
+      }
+
+      match = document.getElementById(href.slice(1));
+
+      if(match) {
+        rect = match.getBoundingClientRect();
+        anchorOffset = window.pageYOffset + rect.top - this.getFixedOffset();
+        window.scrollTo(window.pageXOffset, anchorOffset);
+
+        if(HISTORY_SUPPORT && pushToHistory) {
+          history.pushState({}, document.title, location.pathname + href);
+        }
+      }
+
+      return !!match;
+    },
+
+    scrollToCurrent: function() {
+      this.scrollIfAnchor(window.location.hash);
+    },
+
+    delegateAnchors: function(e) {
+      var elem = e.target;
+
+      if(
+        elem.nodeName === 'A' &&
+        this.scrollIfAnchor(elem.getAttribute('href'), true)
+      ) {
+        e.preventDefault();
+      }
+    }
+  };
+
+  window.addEventListener(
+    'DOMContentLoaded', anchorScrolls.init.bind(anchorScrolls)
+  );
+})(window.document, window.history, window.location);
+
+
+// COVID-19 Publishing time conversion to local time
+jQuery( document ).ready( function(){
+	var today = new Date();
+	var date = today.getFullYear() +"/"+ ( today.getMonth() + 1 ) +"/"+ today.getDate();
+
+	jQuery( ".js-hidden-on-start" ).each( function(){
+		let originalTime = jQuery( this ).text().toUpperCase();
+		let gmtOffset = jQuery( this ).data( "gmt-offset" );
+		let offsetString = gmtOffset > 0 ? "GMT+"+ gmtOffset : "GMT-"+ gmtOffset;
+		let convertedToLocalTime = formatAMPM( new Date( date +" "+ originalTime +" "+ offsetString ) );
+
+		jQuery( this ).html( convertedToLocalTime ).removeClass( "js-hidden-on-start" );
+	} );
+} );
+
+
+function formatAMPM(date) {
+	var hours = date.getHours();
+	var minutes = date.getMinutes();
+	var ampm = hours >= 12 ? 'pm' : 'am';
+	hours = hours % 12;
+	hours = hours ? hours : 12; // the hour '0' should be '12'
+	minutes = minutes < 10 ? '0' + minutes : minutes;
+	var strTime = hours + ':' + minutes + ' ' + ampm;
+	return strTime;
+  }

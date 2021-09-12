@@ -1,0 +1,58 @@
+var notFoundImg = "/img/to/imagenotfound.jpg";
+var listOfImages = document.querySelectorAll("img[data-src]");
+var belowTheVisiblePart = 200;
+
+if (
+  "IntersectionObserver" in window &&
+  "IntersectionObserverEntry" in window &&
+  "intersectionRatio" in window.IntersectionObserverEntry.prototype
+) {
+  const loadImgAPI = function (entries, observer) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.src = entry.target.dataset.src;
+      observer.unobserve(entry.target);
+    });
+  };
+
+  const imgObserver = new IntersectionObserver(loadImgAPI, {
+    root: null,
+    threshold: 0.1,
+    rootMargin: belowTheVisiblePart + "px",
+  });
+
+  listOfImages.forEach((img) => imgObserver.observe(img));
+} else {
+  function loadAnImage(obj) {
+    let getAlink = obj.getAttribute("data-src");
+    if (getAlink != null) {
+      obj.setAttribute("src", getAlink);
+      obj.addEventListener("error", function () {
+        // on ERROR set image not found
+        obj.setAttribute("src", notFoundImg);
+      });
+      obj.removeAttribute("data-src");
+    }
+  }
+
+  function showVisibleImages() {
+    listOfImages.forEach(function (img) {
+      if (
+        window.pageYOffset + window.innerHeight + belowTheVisiblePart >=
+        img.getBoundingClientRect().top
+      )
+        loadAnImage(img);
+    });
+  }
+
+  let ticking = false;
+  document.addEventListener("scroll", function (e) {
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        showVisibleImages();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+}

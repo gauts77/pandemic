@@ -1,0 +1,47 @@
+jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" error
+	$('.misha_loadmore').click(function(){
+		var exclude_ids = $(this).attr('data-exclude-ids');
+		var limit = $(this).data('limit');
+		var posts = $(this).attr('data-posts');
+		var type = $(this).data('type');
+		var tags = $(this).data('tag');
+		var author_id = $(this).data('author-id');
+
+		if(limit == 0){
+			limit=4;
+		}
+		
+		var button = $(this),
+		    data = {
+			'action': 'loadmore',
+			'query': misha_loadmore_params.posts, // that's how we get params from wp_localize_script() function
+			'page' : misha_loadmore_params.current_page,
+			'exclude_ids' : exclude_ids,
+			'limit' : limit,
+			'type' : type,
+			'tags' : tags,
+			'author_id' : author_id
+		};
+ 
+		$.ajax({ // you can also use $.post here
+			url : misha_loadmore_params.ajaxurl, // AJAX handler
+			data : data,
+			type : 'POST',
+			success : function( response ){
+				response = JSON.parse(response);
+				
+				button.closest("div").prev().append(response.data);
+				$(button).attr('data-exclude-ids', `[${response.exclude_ids}]`);
+				
+				posts = parseInt(posts) - limit;
+				
+				if (posts > 0) {
+					$('.found-posts').html(posts);
+					$(button).attr("data-posts", posts);
+				} else {
+					$('.show-more').remove();
+				}
+			}
+		});
+	});
+});

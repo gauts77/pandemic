@@ -1,0 +1,229 @@
+waitforiFrameResize = setInterval(function () {
+    if (typeof iFrameResize == "undefined") {
+        console.log('waiting for iframe resize');
+        return;
+    }
+    console.log('iframe resize ready');
+    clearInterval(waitforiFrameResize);
+    iFrameResize();
+    var polllist = {};
+    window.addEventListener('message', receiveMessage, false);
+    if (Sgpolls.jsOptions.jspollsSeparate) {
+        sgSeparate();
+    }
+	let pud = localStorage.getItem('permutive-id');
+    console.log('Pud '+pud);
+	if (typeof permutive != 'undefined' && typeof permutive.context != 'undefined' && typeof permutive.context.user_id != 'undefined') {
+		pud = permutive.context.user_id;
+        localStorage.setItem('permutive-id', pud);
+		localStorage.setItem('nsmspollspud', pud);
+	}
+
+	if (pud) {
+        console.log('pud value is : ');
+        console.log(pud);
+
+		for (var i in Sgpolls.polls) {
+			buildIframe(Sgpolls.polls[i]+'?permutive_user_id='+pud);
+		}
+	}
+    else{
+        console.log('here..');
+        for (var i in Sgpolls.polls) {
+            buildIframe(Sgpolls.polls[i]);
+        }
+    }
+
+
+    function buildIframe(block) {
+
+        if (jQuery('#Sgpollsputhere').not(':first').length) {
+            jQuery('#Sgpollsputhere').not(':first').remove();
+        }
+        if (typeof block != "string") {
+            return;
+        }
+        polllist[block] = {
+            index: Sgpolls.polls.indexOf(block),
+            src: block
+        };
+        var iframeblock = '<iframe src="' + block + '" height="0px" scrolling="no" frameborder="0" width="100%"></iframe>'
+        jQuery('#pollstoshow').append('<li data-src="' + block + '">' + block + '</li>');
+        jQuery('#Sgpollsputhere').append(iframeblock);
+    }
+    intEnsureIsResized = setInterval(function () {
+        if (!jQuery('.sgloaded').length) {
+            console.log('waiting for .sgloaded');
+            return;
+        }
+        if (jQuery('.sgloaded').height() > 0) {
+            console.log('sgloaded ok');
+            clearInterval(intEnsureIsResized);
+            return;
+        }
+        console.log(jQuery('.sgloaded').height());
+        var src = jQuery('.sgloaded').eq(0).attr('src');
+        console.log('src ' + src + ' not loaded');
+        console.log('reloading');
+        jQuery('.sgloaded').removeAttr('src');
+        jQuery('.sgloaded').attr('src', src);
+        iFrameResize();
+    }, 3000);
+    intOrdering = setInterval(function () {
+        qty = 7;
+        parts = ['.entry-content', '.c-post-single__content', '.article-body .cell:last-of-type'];
+        for (var i in parts) {
+            if (!jQuery(parts[i]).length) {
+
+                continue;
+            }
+            part = jQuery(parts[i]).eq(0);
+            if (part.find('>p').length < qty) {
+                qty = part.find('>p').length + 1;
+            } else { console.log(part.find('>p').length); }
+        }
+        if (typeof (part) != 'undefined') {
+            part.find('>p').eq(qty).after(jQuery('#Sgpollsputhere'));
+            clearInterval(intOrdering);
+        }
+    }, 500);
+    intDupeRemove = setInterval(function () {
+        jQuery('p>iframe[src*="surveygizmo"]').remove();
+        jQuery('#Sgpollsputhere').not(':first').remove();
+    }, 500);
+    intIfrWait = setInterval(function () {
+        if (jQuery('.sgloaded').length) {
+            var loadedpoll = { src: jQuery('.sgloaded').attr('src'), answers: "false" };
+            jQuery('#Sgpollscstyle').remove();
+            if (Sgpolls.jsOptions.jspollsCalc == "1") {
+                permutiveSend(loadedpoll);
+                console.log('counted');
+            } else {
+                console.log('not counted');
+                jQuery('.sgloaded').eq(0).attr('id', 'sgPollIframe');
+            }
+            clearInterval(intIfrWait);
+        }
+
+    }, 2500);
+    function receiveMessage(event) {
+        if (event.data == 'formsubmit') {
+            jQuery('.sgloaded').css('visibility', 'hidden');
+        } else {
+            setTimeout(function () {
+                jQuery('.sgloaded').css('visibility', 'visible');
+            }, 2000);
+        }
+        if (typeof event.data['sg'] === "undefined") {
+            return;
+        }
+        surveysrc = event.data['sg'];
+        console.log('received message from ' + surveysrc);
+        polllist[surveysrc].message = true;
+        iframesrc = '#Sgpollsputhere iframe[src="' + surveysrc + '"]';
+        jQuery(iframesrc).addClass('sgloaded');
+        jQuery(iframesrc).attr('id', 'tmpClass');
+        sendMessage('tmpClass');
+        jQuery(iframesrc).removeAttr('id');
+        iframeDisplay();
+        if (event.data['isLastPage']) {
+            permutiveSend({ src: surveysrc, answers: event.data.submissions });
+        }
+        sgreport(polllist);
+    }
+    function iframeDisplay() {
+        if (typeof idisplay != 'undefined') {
+            clearTimeout(idisplay);
+        }
+        idisplay = setTimeout(function () {
+            jQuery('#Sgpollsputhere iframe').not('.sgloaded').each(function () {
+                $src = jQuery(this).attr('src');
+                polllist[$src].hidden = true;
+                jQuery(this).remove();
+            });
+            jQuery('#Sgpollsputhere .sgloaded').not(':first').each(function () {
+                $src = jQuery(this).attr('src');
+                polllist[$src].hidden = true;
+                jQuery(this).remove();
+            });
+            iFrameResize();
+        }, 1000);
+    }
+    function sgreport(list) {
+        if (typeof sgreporttimeout != 'undefined') {
+            clearTimeout(sgreporttimeout);
+        }
+        sgreporttimeout = setTimeout(function () {
+            var report = {};
+            for (var i in Sgpolls.polls) {
+                report[i] = list[Sgpolls.polls[i]];
+            }
+            console.log(report);
+        }, 5000)
+    }
+    function sendMessage(id) {
+        let css = Sgpolls.css.replace(/\\(.)/mg, "$1");
+        css = css.replace('__LOGO__', jQuery('img[itemprop="logo"]').attr('src'));
+        if (typeof Sgpolls.css != "string") {
+            return;
+        }
+        if (!jQuery('#' + id).length) {
+            return;
+        }
+        var targetFrame = document.getElementById(id).contentWindow;
+        targetFrame.postMessage({ css: css }, '*');
+        window.pollframe = targetFrame;
+    }
+
+    function permutiveSend(survey) {
+        if (typeof permutive == 'undefined') {
+            console.log('Permutive not found');
+            return;
+        }
+        var options = {
+            success: function (event) {
+            },
+            error: function (errors) {
+                console.log(errors);
+            }
+        }
+        var date = new Date();
+        var evalues = {
+            sg: Sgpolls.options
+        };
+
+        evalues.sg.title = document.title;
+        evalues.sg.time = date.toISOString();
+        evalues.sg.answers = survey.answers;
+        evalues.sg.source = survey.src;
+        //delete evalues.sg.css;
+        permutive.track('sgPoll', evalues, options);
+    }
+}, 100);
+function sgSeparate() {
+    let pollsnotseparated = { odd: [], even: [] };
+    let pollsseparated = [];
+    checkpatt = /all-sites|all-websites|t-t-poll/;
+    for (i = 0; i <= Sgpolls.polls.length; i++) {
+        if (typeof Sgpolls.polls[i] == 'undefined') {
+            continue;
+        }
+        poll = (Sgpolls.polls[i].toLowerCase());
+        if (checkpatt.test(poll)) {
+            key = 'odd';
+        } else {
+            key = 'even';
+        }
+        pollsnotseparated[key].push(Sgpolls.polls[i]);
+    }
+    console.log(pollsnotseparated);
+    keys = ['even', 'odd'];
+    while (pollsnotseparated[keys[0]].length > 0 || pollsnotseparated[keys[1]].length > 0) {
+        keys = keys.reverse();
+        if (pollsnotseparated[keys[0]].length > 0) {
+            pollsseparated.push(pollsnotseparated[keys[0]].pop());
+        }
+    }
+    Sgpolls.polls=pollsseparated;
+}
+// 2.0b
