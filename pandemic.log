@@ -1,0 +1,19 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\gauta\Documents\GitHub\pandemic\pandemic.log
+  log type:  text
+ opened on:  13 Sep 2021, 10:37:51
+
+. 
+. *initial analysis - 12/09/21 (GHSI_Overall and stock_1/stock_WHO2)
+. use "./Data/pandemic.dta", clear
+
+. keep Country stock_1 stock_WHO2 GHSI_Overall
+
+. drop if stock_WHO2 ==.
+(171 observations deleted)
+
+. 
+end of do-file
+
+. exit, clear

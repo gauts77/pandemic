@@ -1,10 +1,8 @@
-//inspect 
-
 clear
-cd "C:/Users/gauta/Documents/GitHub/pandemic"
+cd "C:/Users/gauta/Documents/GitHub/pandemic/Data"
 
-//cleaning/renaming ghsi data
-import excel "./data/GHSI_2019_data.xlsx", sheet("Sheet2") firstrow clear
+//GHSI DATA (X1a)
+import excel "./GHSI_2019_data.xlsx", sheet("Sheet2") firstrow clear
 drop J K L M N O P Q R S T U
 
 rename Overall GHSI_Overall
@@ -20,6 +18,37 @@ save ghsi.dta, replace
 //looking for outliers/inspecting data
 sum 
 inspect 
+
+//STOCK MARKET DATA (Y)
+
+import excel "./stockdata/stockfluctuations_1.xlsx", firstrow clear
+save fluctuations.dta, replace
+
+merge 1:1 Country using ghsi.dta
+drop if _merge !=3
+drop _merge
+save pandemic.dta, replace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//only downloaded/merged x and y thus far, for a subsample of countries. No control variables yet.
 
 //todo: download subsample of stock market data when the pandemic hit. 
 	//first, download time series stock market excel sheets for Jan/Feb/March/April each country. Have this dataset available (so that we can edit the lags if needed in next step) - DONE
