@@ -28,5 +28,5 @@ for(indx in indx_list){
 }
 ##todo:
   ## adjust y-axis
-  ## add a single graph with them all using facet wrap
+  ## add a single graph with them all using facet wrap.
   
