@@ -12,6 +12,7 @@ stock$Week <- as.Date(stock$Week, format = "%d/%m/%y")
 
 indx_list <- unique(stock$Index)
 
+##for loop generating time series by country
 for(indx in indx_list){
   
   stock_to_plot <- stock %>%
