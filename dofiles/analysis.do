@@ -14,6 +14,11 @@ scatter stock_WHO2 GHSI_Overall
 asdoc reg stock_1 GHSI_Overall, robust
 asdoc reg stock_WHO2 GHSI_Overall, robust
 
-*Analysis 2: Regressing GHSI_Overall on Weekly Stock data from Datastream (different sample of countries).
+*Analysis 2: Regressing GHSI_Overall on Weekly Stock data from Datastream (different sample of countries). (19/09/21)
+use "./Data/pandemic.dta", clear
+keep Country dstr_WHO GHSI_Overall 
+scatter dstr_WHO GHSI_Overall
+
+asdoc reg dstr_WHO GHSI_Overall, robust replace dec(5)
 
 log close

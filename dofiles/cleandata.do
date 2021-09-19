@@ -15,15 +15,37 @@ rename I GHSI_risk
 
 save ghsi.dta, replace
 
+*here - when working with other potential explanatorys, create a master X file
+
 //looking for outliers/inspecting data
 sum 
 inspect 
 
 //STOCK MARKET DATA (Y)
 
+*stock market data from Investing.com
 import excel "./stockdata/stockfluctuations_1.xlsx", firstrow clear
-save fluctuations.dta, replace
+save inv_fluctuations.dta, replace
 
+*Datastream data - For Loop generating % change between 06/03 and 13/03
+import excel "./stockdata/DataStream/data/stock_ts.xlsx", sheet(Table1) firstrow clear
+
+*generating WHO crash - can adjust this for loop in the future to generate % drop in week of first case, etc. 
+keep Country K L
+foreach i in Country {
+	gen dstr_WHO = ((L - K)/K)
+	}
+
+drop K L
+save dtsr_fluctuations.dta, replace
+
+*saving master stock fluctuations file
+merge 1:1 Country using inv_fluctuations.dta
+drop if _merge !=3
+drop _merge
+save master_fluctuations.dta, replace
+
+*merging master stock and GHSI data
 merge 1:1 Country using ghsi.dta
 drop if _merge !=3
 drop _merge
