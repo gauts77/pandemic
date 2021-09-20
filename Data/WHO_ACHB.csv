@@ -1,29 +1,4 @@
-﻿INDICATOR,HFA_478,,,
-,,,,
-HFA_478,Acute care hospital beds per 100 000,,,
-,,,,
-UNIT_TYPE,Unit,,,
-BEDS_100K,beds per 100 000 population,,,
-,,,,
-EXTERNID,ID in the originating data source,,,
-,,,,
-DATA_SOURCE,Data source,,,
-HFA,European Health for All database,,,
-,,,,
-DATA_TYPE_REPRESENTATION,Data type representation,,,
-RATIO,Ratio,,,
-,,,,
-DATA_SET,Data set,,,
-HFA,European Health for All database (WHO),,,
-,,,,
-DATA_MASK,Mask for controlling the output format of values,,,
-,,,,
-SEX,Sex,,,
-FEMALE,Female,,,
-MALE,Male,,,
-ALL,All,,,
-,,,,
-COUNTRY,COUNTRY_GRP,SEX,YEAR,VALUE
+﻿COUNTRY,COUNTRY_GRP,SEX,YEAR,VALUE
 ALB,,ALL,1988,329.08
 ALB,,ALL,1989,359.76
 ALB,,ALL,1990,344.83

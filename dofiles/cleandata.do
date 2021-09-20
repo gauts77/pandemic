@@ -1,6 +1,8 @@
 clear
-cd "C:/Users/gauta/Documents/GitHub/pandemic/Data"
+cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
 
+
+*X Variables
 //GHSI DATA (X1a)
 import excel "./GHSI_2019_data.xlsx", sheet("Sheet2") firstrow clear
 drop J K L M N O P Q R S T U
@@ -15,20 +17,41 @@ rename I GHSI_risk
 
 save ghsi.dta, replace
 
-*here - when working with other potential explanatorys, create a master X file
+*Acute Care Hospital Beds (X1b)
 
-//looking for outliers/inspecting data
-sum 
-inspect 
+import excel "./WHO_ACHB.xlsx", firstrow clear
+encode COUNTRY, gen(panel_id)
+drop if panel_id ==.
+xtset panel_id YEAR
+kountry COUNTRY, from(iso3c)
+rename NAMES_STD Country
+rename VALUE WHO_ACHB_p100k
+rename YEAR Year
+keep Country panel_id Year WHO_ACHB_p100k
+
+
+//generating cross-section of most recent value
+bysort panel_id(Year) : gen diff = panel_id != panel_id[_n+1]
+drop if diff != 1
+drop if Year ==.
+save WHO_ACHB.dta, replace
+
+drop panel_id diff Year
+merge 1:1 Country using ghsi.dta
+drop _merge
+save master_X, replace
+
+//-----------------------------------------------------------------------------
 
 //STOCK MARKET DATA (Y)
+cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata"
 
 *stock market data from Investing.com
-import excel "./stockdata/stockfluctuations_1.xlsx", firstrow clear
+import excel "stockfluctuations_1.xlsx", firstrow clear
 save inv_fluctuations.dta, replace
 
 *Datastream data - For Loop generating % change between 06/03 and 13/03
-import excel "./stockdata/DataStream/data/stock_ts.xlsx", sheet(Table1) firstrow clear
+import excel "DataStream/data/stock_ts.xlsx", sheet(Table1) firstrow clear
 
 *generating WHO crash - can adjust this for loop in the future to generate % drop in week of first case, etc. 
 keep Country K L
@@ -41,15 +64,14 @@ save dtsr_fluctuations.dta, replace
 
 *saving master stock fluctuations file
 merge 1:1 Country using inv_fluctuations.dta
-drop if _merge !=3
 drop _merge
-save master_fluctuations.dta, replace
+save master_Y.dta, replace
 
-*merging master stock and GHSI data
-merge 1:1 Country using ghsi.dta
-drop if _merge !=3
-drop _merge
-save pandemic.dta, replace
+*merging master Y and X data
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/master_X.dta"
+save "C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta", replace
+
+
 
 
 
