@@ -37,7 +37,7 @@ drop if Year ==.
 save WHO_ACHB.dta, replace
 
 drop panel_id diff Year
-merge 1:1 Country using ghsi.dta
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/ghsi.dta"
 drop _merge
 save master_X, replace
 

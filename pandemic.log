@@ -138,3 +138,211 @@ WHO_ACHB_p100k |   5.25e-06   .0000654     0.08   0.938    -.0001404    .0001509
 . 
 end of do-file
 
+. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
+
+. clear
+
+. cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
+C:\Users\gauta\Documents\GitHub\pandemic\Data\Xvar
+
+. 
+. 
+. *X Variables
+. //GHSI DATA (X1a)
+. import excel "./GHSI_2019_data.xlsx", sheet("Sheet2") firstrow clear
+(20 vars, 196 obs)
+
+. drop J K L M N O P Q R S T U
+
+. 
+. rename Overall GHSI_Overall
+
+. rename D GHSI_prev
+
+. rename E GHSI_det
+
+. rename F GHSI_resp
+
+. rename G GHSI_hea_sec
+
+. rename H GHSI_commit
+
+. rename I GHSI_risk
+
+. 
+. save ghsi.dta, replace
+file ghsi.dta saved
+
+. 
+. *Acute Care Hospital Beds (X1b)
+. 
+. import excel "./WHO_ACHB.xlsx", firstrow clear
+(5 vars, 1,449 obs)
+
+. encode COUNTRY, gen(panel_id)
+
+. drop if panel_id ==.
+(231 observations deleted)
+
+. xtset panel_id YEAR
+       panel variable:  panel_id (unbalanced)
+        time variable:  YEAR, 1970 to 2015, but with gaps
+                delta:  1 unit
+
+. kountry COUNTRY, from(iso3c)
+
+----------------------------------------
+The command has finished.
+The new variable is named NAMES_STD.
+----------------------------------------
+
+. rename NAMES_STD Country
+
+. rename VALUE WHO_ACHB_p100k
+
+. rename YEAR Year
+
+. keep Country panel_id Year WHO_ACHB_p100k
+
+. 
+. 
+. //generating cross-section of most recent value
+. bysort panel_id(Year) : gen diff = panel_id != panel_id[_n+1]
+
+. drop if diff != 1
+(1,162 observations deleted)
+
+. drop if Year ==.
+(5 observations deleted)
+
+. save WHO_ACHB.dta, replace
+file WHO_ACHB.dta saved
+
+. 
+. drop panel_id diff Year
+
+. merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/ghsi.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                           151
+        from master                         3  (_merge==1)
+        from using                        148  (_merge==2)
+
+    matched                                48  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. save master_X, replace
+file master_X.dta saved
+
+. 
+. //-----------------------------------------------------------------------------
+. 
+. //STOCK MARKET DATA (Y)
+. cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata"
+C:\Users\gauta\Documents\GitHub\pandemic\Data\stockdata
+
+. 
+. *stock market data from Investing.com
+. import excel "stockfluctuations_1.xlsx", firstrow clear
+(7 vars, 195 obs)
+
+. save inv_fluctuations.dta, replace
+file inv_fluctuations.dta saved
+
+. 
+. *Datastream data - For Loop generating % change between 06/03 and 13/03
+. import excel "DataStream/data/stock_ts.xlsx", sheet(Table1) firstrow clear
+(24 vars, 22 obs)
+
+. 
+. *generating WHO crash - can adjust this for loop in the future to generate % drop in week of first case, etc. 
+. keep Country K L
+
+. foreach i in Country {
+  2.         gen dstr_WHO = ((L - K)/K)
+  3.         }
+
+. 
+. drop K L
+
+. save dtsr_fluctuations.dta, replace
+file dtsr_fluctuations.dta saved
+
+. 
+. *saving master stock fluctuations file
+. merge 1:1 Country using inv_fluctuations.dta
+(note: variable Country was str14, now str29 to accommodate using data's values)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                           175
+        from master                         1  (_merge==1)
+        from using                        174  (_merge==2)
+
+    matched                                21  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. save master_Y.dta, replace
+file master_Y.dta saved
+
+. 
+. *merging master Y and X data
+. merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/master_X.dta"
+(note: variable Country was str29, now str58 to accommodate using data's values)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             5
+        from master                         1  (_merge==1)
+        from using                          4  (_merge==2)
+
+    matched                               195  (_merge==3)
+    -----------------------------------------
+
+. save "C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta", replace
+file C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta saved
+
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. //only downloaded/merged x and y thus far, for a subsample of countries. No control variables yet.
+. 
+. //todo: download subsample of stock market data when the pandemic hit. 
+.         //first, download time series stock market excel sheets for Jan/Feb/March/April each country. Have this dataset available (so that we can edit the lags if neede
+> d in next step) - DONE
+.                 //then cut in STATA - for each country, 4 variables: stock market performance on the day it hit, 1 week, 2 weeks and 1 month after. Dates: https://www.n
+> cbi.nlm.nih.gov/pmc/articles/PMC7068164/
+.                         //then merge into GHSI data.
+.         
+.         //pandemic timeline: do a variable of stock returns following: WHO pandemic announcement (11th March) + 2 day and 1 week lags. For lags - do average of daily fl
+> uctuations or? Probably. Could do sum of variation (don't think this would have an effect).
+.         //then also do 1st case in country + lags.
+.         
+. //regression: % change_i = a + bGHSI_i + u_i. No control variables yet; dependent variable varies depending on dates.
+. 
+end of do-file
+
