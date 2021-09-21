@@ -2,347 +2,122 @@
       name:  <unnamed>
        log:  C:\Users\gauta\Documents\GitHub\pandemic\pandemic.log
   log type:  text
- opened on:  20 Sep 2021, 11:44:44
+ opened on:  21 Sep 2021, 12:03:57
+
+. 
+. *Analysis 1: stock_1/stock_WHO2 ~ GHSI_Overall (12/09/21)
+. use "./Data/pandemic_master.dta", clear
+
+. keep Country inv_stock_1 inv_stock_WHO2 GHSI_Overall
+
+. 
+. scatter inv_stock_1 GHSI_Overall || lfit inv_stock_1 GHSI_Overall
+
+. graph export("C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/istock1_GSHI.png") replace
+Users not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
+
+. scatter inv_stock_1 GHSI_Overall || lfit inv_stock_1 GHSI_Overall
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_1 GHSI_Overall.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_1 GHSI_Overall.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
+
+. scatter inv_stock_WHO2 GHSI_Overall ||lfit inv_stock_WHO2 GHSI_Overall
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_WHO2 GHSI_Overall.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_WHO2 GHSI_Overall.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
 
 . use "./Data/pandemic_master.dta", clear
 
-. keep Country stock_1 stock_WHO2 WHO_ACHB_p100k
+. keep Country dstr_WHO GHSI_Overall 
+
+. scatter dstr_WHO GHSI_Overall || lfit dstr_WHO GHSI_Overall, xtitle("GHSI") ytitle("dstr_WHO")
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\dstr_WHO GHSI_Overall.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\dstr_WHO GHSI_Overall.gph saved)
 
-. reg stock_1 WHO_ACHB_p100k //n = 
-
-      Source |       SS           df       MS      Number of obs   =         9
--------------+----------------------------------   F(1, 7)         =      0.42
-       Model |  .000193467         1  .000193467   Prob > F        =    0.5362
-    Residual |  .003201108         7  .000457301   R-squared       =    0.0570
--------------+----------------------------------   Adj R-squared   =   -0.0777
-       Total |  .003394576         8  .000424322   Root MSE        =    .02138
-
---------------------------------------------------------------------------------
-       stock_1 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
----------------+----------------------------------------------------------------
-WHO_ACHB_p100k |    .000033   .0000508     0.65   0.536     -.000087    .0001531
-         _cons |   -.018929   .0242132    -0.78   0.460    -.0761842    .0383263
---------------------------------------------------------------------------------
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
-
-. reg stock_WHO2 WHO_ACHB_p100k//
-/ invalid name
-r(198);
-
-end of do-file
-
-r(198);
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
-
-. reg stock_WHO2 WHO_ACHB_p100k//
-/ invalid name
-r(198);
-
-end of do-file
-
-r(198);
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
-
-. reg stock_WHO2 WHO_ACHB_p100k //
-
-      Source |       SS           df       MS      Number of obs   =        11
--------------+----------------------------------   F(1, 9)         =      0.93
-       Model |  .000700531         1  .000700531   Prob > F        =    0.3599
-    Residual |  .006775317         9  .000752813   R-squared       =    0.0937
--------------+----------------------------------   Adj R-squared   =   -0.0070
-       Total |  .007475847        10  .000747585   Root MSE        =    .02744
-
---------------------------------------------------------------------------------
-    stock_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
----------------+----------------------------------------------------------------
-WHO_ACHB_p100k |  -.0000524   .0000543    -0.96   0.360    -.0001753    .0000705
-         _cons |  -.0878456   .0240741    -3.65   0.005    -.1423051   -.0333862
---------------------------------------------------------------------------------
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
 
 . use "./Data/pandemic_master.dta", clear
 
-. keep Country dtsr_WHO WHO_ACHB_p100k
-variable dtsr_WHO not found
-r(111);
+. keep Country inv_stock_1 inv_stock_WHO2 WHO_ACHB_p100k
 
-end of do-file
-
-r(111);
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
+. 
+. scatter inv_stock_1 WHO_ACHB_p100k || lfit inv_stock_1 WHO_ACHB_p100k
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
 
-. keep Country dtsr_WHO WHO_ACHB_p100k
-variable dtsr_WHO not found
+. scatter inv_stock_1 WHO_ACHB_p100k || lfit inv_stock_1 WHO_ACHB_p100k, xtitle("ACHB per 100,000") ytitle("Stock Fluctuation on Day of 1st Case")
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
+
+. 
+. scatter inv_stock_1 WHO_ACHB_p100k || lfit inv_stock_1 WHO_ACHB_p100k, xtitle("ACHB per 100,000") ytitle("Stock Fluctuation on" "Day of 1st Case")
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_1 WHO_ACHB_p100k.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_1 WHO_ACHB_p100k.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
+
+. scatter inv_stock_WHO2 WHO_ACHB_p100k || lfit inv_stock_WHO2 WHO_ACHB_p100k, xtitle("ACHB per 100,000") ytitle("Stock Fluctuation on 12th March")
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_WHO2 WHO_ACHB_p100k.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\inv_stock_WHO2 WHO_ACHB_p100k.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
+
+. scatter dstr_WHO WHO_ACHB_p100k|| lfit dstr_WHO WHO_ACHB_p100k, xtitle("ACHB per 100,000") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20")
+variable dstr_WHO not found
 r(111);
 
 end of do-file
 
 r(111);
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD34a4_000000.tmp"
+
+. use "./Data/pandemic_master.dta", clear
 
 . keep Country dstr_WHO WHO_ACHB_p100k
 
 . 
-. scatter dstr_WHO WHO_ACHB_p100k
+. scatter dstr_WHO WHO_ACHB_p100k|| lfit dstr_WHO WHO_ACHB_p100k, xtitle("ACHB per 100,000") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20")
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\dstr_WHO WHO_ACHB_p100k.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\scatterplots\dstr_WHO WHO_ACHB_p100k.gph saved)
 
-. reg dstr_WHO WHO_ACHB_p100k
-
-      Source |       SS           df       MS      Number of obs   =        12
--------------+----------------------------------   F(1, 10)        =      0.01
-       Model |  5.8524e-06         1  5.8524e-06   Prob > F        =    0.9376
-    Residual |  .009075995        10  .000907599   R-squared       =    0.0006
--------------+----------------------------------   Adj R-squared   =   -0.0993
-       Total |  .009081847        11  .000825622   Root MSE        =    .03013
-
---------------------------------------------------------------------------------
-      dstr_WHO |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
----------------+----------------------------------------------------------------
-WHO_ACHB_p100k |   5.25e-06   .0000654     0.08   0.938    -.0001404    .0001509
-         _cons |  -.1631927   .0270658    -6.03   0.000    -.2234989   -.1028864
---------------------------------------------------------------------------------
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD3a44_000000.tmp"
-
-. clear
-
-. cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
-C:\Users\gauta\Documents\GitHub\pandemic\Data\Xvar
-
-. 
-. 
-. *X Variables
-. //GHSI DATA (X1a)
-. import excel "./GHSI_2019_data.xlsx", sheet("Sheet2") firstrow clear
-(20 vars, 196 obs)
-
-. drop J K L M N O P Q R S T U
-
-. 
-. rename Overall GHSI_Overall
-
-. rename D GHSI_prev
-
-. rename E GHSI_det
-
-. rename F GHSI_resp
-
-. rename G GHSI_hea_sec
-
-. rename H GHSI_commit
-
-. rename I GHSI_risk
-
-. 
-. save ghsi.dta, replace
-file ghsi.dta saved
-
-. 
-. *Acute Care Hospital Beds (X1b)
-. 
-. import excel "./WHO_ACHB.xlsx", firstrow clear
-(5 vars, 1,449 obs)
-
-. encode COUNTRY, gen(panel_id)
-
-. drop if panel_id ==.
-(231 observations deleted)
-
-. xtset panel_id YEAR
-       panel variable:  panel_id (unbalanced)
-        time variable:  YEAR, 1970 to 2015, but with gaps
-                delta:  1 unit
-
-. kountry COUNTRY, from(iso3c)
-
-----------------------------------------
-The command has finished.
-The new variable is named NAMES_STD.
-----------------------------------------
-
-. rename NAMES_STD Country
-
-. rename VALUE WHO_ACHB_p100k
-
-. rename YEAR Year
-
-. keep Country panel_id Year WHO_ACHB_p100k
-
-. 
-. 
-. //generating cross-section of most recent value
-. bysort panel_id(Year) : gen diff = panel_id != panel_id[_n+1]
-
-. drop if diff != 1
-(1,162 observations deleted)
-
-. drop if Year ==.
-(5 observations deleted)
-
-. save WHO_ACHB.dta, replace
-file WHO_ACHB.dta saved
-
-. 
-. drop panel_id diff Year
-
-. merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/ghsi.dta"
-
-    Result                           # of obs.
-    -----------------------------------------
-    not matched                           151
-        from master                         3  (_merge==1)
-        from using                        148  (_merge==2)
-
-    matched                                48  (_merge==3)
-    -----------------------------------------
-
-. drop _merge
-
-. save master_X, replace
-file master_X.dta saved
-
-. 
-. //-----------------------------------------------------------------------------
-. 
-. //STOCK MARKET DATA (Y)
-. cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata"
-C:\Users\gauta\Documents\GitHub\pandemic\Data\stockdata
-
-. 
-. *stock market data from Investing.com
-. import excel "stockfluctuations_1.xlsx", firstrow clear
-(7 vars, 195 obs)
-
-. save inv_fluctuations.dta, replace
-file inv_fluctuations.dta saved
-
-. 
-. *Datastream data - For Loop generating % change between 06/03 and 13/03
-. import excel "DataStream/data/stock_ts.xlsx", sheet(Table1) firstrow clear
-(24 vars, 22 obs)
-
-. 
-. *generating WHO crash - can adjust this for loop in the future to generate % drop in week of first case, etc. 
-. keep Country K L
-
-. foreach i in Country {
-  2.         gen dstr_WHO = ((L - K)/K)
-  3.         }
-
-. 
-. drop K L
-
-. save dtsr_fluctuations.dta, replace
-file dtsr_fluctuations.dta saved
-
-. 
-. *saving master stock fluctuations file
-. merge 1:1 Country using inv_fluctuations.dta
-(note: variable Country was str14, now str29 to accommodate using data's values)
-
-    Result                           # of obs.
-    -----------------------------------------
-    not matched                           175
-        from master                         1  (_merge==1)
-        from using                        174  (_merge==2)
-
-    matched                                21  (_merge==3)
-    -----------------------------------------
-
-. drop _merge
-
-. save master_Y.dta, replace
-file master_Y.dta saved
-
-. 
-. *merging master Y and X data
-. merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/master_X.dta"
-(note: variable Country was str29, now str58 to accommodate using data's values)
-
-    Result                           # of obs.
-    -----------------------------------------
-    not matched                             5
-        from master                         1  (_merge==1)
-        from using                          4  (_merge==2)
-
-    matched                               195  (_merge==3)
-    -----------------------------------------
-
-. save "C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta", replace
-file C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta saved
-
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. 
-. //only downloaded/merged x and y thus far, for a subsample of countries. No control variables yet.
-. 
-. //todo: download subsample of stock market data when the pandemic hit. 
-.         //first, download time series stock market excel sheets for Jan/Feb/March/April each country. Have this dataset available (so that we can edit the lags if neede
-> d in next step) - DONE
-.                 //then cut in STATA - for each country, 4 variables: stock market performance on the day it hit, 1 week, 2 weeks and 1 month after. Dates: https://www.n
-> cbi.nlm.nih.gov/pmc/articles/PMC7068164/
-.                         //then merge into GHSI data.
-.         
-.         //pandemic timeline: do a variable of stock returns following: WHO pandemic announcement (11th March) + 2 day and 1 week lags. For lags - do average of daily fl
-> uctuations or? Probably. Could do sum of variation (don't think this would have an effect).
-.         //then also do 1st case in country + lags.
-.         
-. //regression: % change_i = a + bGHSI_i + u_i. No control variables yet; dependent variable varies depending on dates.
-. 
-end of do-file
-
+. exit, clear

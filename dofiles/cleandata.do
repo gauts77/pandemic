@@ -48,6 +48,11 @@ cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata"
 
 *stock market data from Investing.com
 import excel "stockfluctuations_1.xlsx", firstrow clear
+rename stock_1 inv_stock_1
+rename stock_2 inv_stock_2
+rename stock_7 inv_stock_7
+rename stock_WHO1 inv_stock_WHO1
+rename stock_WHO2 inv_stock_WHO2
 save inv_fluctuations.dta, replace
 
 *Datastream data - For Loop generating % change between 06/03 and 13/03
