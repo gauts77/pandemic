@@ -59,12 +59,13 @@ save inv_fluctuations.dta, replace
 import excel "DataStream/data/stock_ts.xlsx", sheet(Table1) firstrow clear
 
 *generating WHO crash - can adjust this for loop in the future to generate % drop in week of first case, etc. 
-keep Country K L
+keep Country K L M
 foreach i in Country {
 	gen dstr_WHO = ((L - K)/K)
+	gen dstr_WHO2 = ((M - K)/K)
 	}
 
-drop K L
+drop K L M
 save dtsr_fluctuations.dta, replace
 
 *saving master stock fluctuations file
