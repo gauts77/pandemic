@@ -1,7 +1,5 @@
 clear
 cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
-
-
 *X Variables
 //GHSI DATA (X1a)
 import excel "./GHSI_2019_data.xlsx", sheet("Sheet2") firstrow clear
@@ -66,7 +64,7 @@ foreach i in Country {
 	}
 
 drop K L M
-save dtsr_fluctuations.dta, replace
+save dstr_fluctuations.dta, replace
 
 *saving master stock fluctuations file
 merge 1:1 Country using inv_fluctuations.dta
@@ -77,13 +75,90 @@ save master_Y.dta, replace
 merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/master_X.dta"
 save "C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta", replace
 
+//------------------------------------------------------------------------------------------------
+
+*Playing around with datasets.
+//WHO Expediture on Immunisation Programs as % of Health Expenditure. n=78. Currently merging with Datastream yields n=6. Prob not worth it.
+cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
+import excel "WHO_immperc.xlsx", firstrow clear
+encode Countries, gen(id)
+rename Countries Country
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata/dstr_fluctuations.dta"
+
+//WB Hospital Beds per 1000. n = 248 (includes some aggregated groups). After merge n currently = 21. Much more promising.
+import excel "WB_Hosp_Beds_p1000.xlsx", sheet("Table2") firstrow clear
+encode CountryName, gen(id)
+rename Attribute Year
+encode Year, gen(Yearid)
+rename Value WB_hb_p1000
+xtset id Yearid
+
+//generating cross-section of most recent value
+bysort CountryName(Year) : gen diff = CountryName != CountryName[_n+1]
+drop if diff != 1
+drop if Yearid ==.
+save WB_HB_p100k.dta, replace
+
+rename CountryName Country
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata/dstr_fluctuations.dta"
+drop if _merge !=3
+
+*MOVE TO ANALYSIS DO FILE.
+reg dstr_WHO WB_hb_p1000, robust //neg and significant!
+reg dstr_WHO2 WB_hb_p1000, robust
+
+*readyscore. n = 103 (after dropping incomplete countries.) n = 6; but some countries are probably not merged properly. 
+import excel "readyscore.xlsx", sheet(Sheet2) firstrow clear
+rename country Country
+keep if status == "Completed"
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata/dstr_fluctuations.dta"
+
+*eurostat available beds per 100k. n = 39. Merged n = 11 and could definitely increase. Worth doing.
+import excel "euro_beds.xlsx", firstrow clear
+encode Country, gen(id)
+encode Year, gen(yearid)
+xtset id yearid
+
+drop if euro_abeds_p100k == ":"
+bysort Country(year) : gen diff = Country != Country[_n+1]
+drop if diff !=1
+save euro_abeds_p100k.dta, replace
+
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata/dstr_fluctuations.dta"
+
+*eurostat curative beds per 100k. n = 36. Merged n = 10: same as above.
+import excel "euro_beds.xlsx", sheet(loop_c) firstrow clear 
+encode Country, gen(id)
+encode Year, gen(yearid)
+xtset id yearid
+
+drop if euro_cbeds_p100k == ":"
+bysort Country(year) : gen diff = Country != Country[_n+1]
+drop if diff !=1
+save euro_cbeds_p100k.dta, replace
+
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata/dstr_fluctuations.dta"
+
+*WB Current Health Expenditure as % of GDP. n = 187, Merged n = 21. Can def boost to 30, use.
+import excel "WB_HEGDP.xlsx", firstrow clear
+rename BK WHO_2018_HE_GDP //this is lazy - as a formality create a loop to ensure most recent value is used.
+save WB_HEGDP.dta, replace
+
+keep Country WHO_2018_HE_GDP
+merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/stockdata/dstr_fluctuations.dta"
+drop if _merge != 3
+
+reg dstr_WHO WHO_2018_HE_GDP, robust
+reg dstr_WHO2 WHO_2018_HE_GDP, robust //both negative and insignificant.
 
 
 
 
+*NEXT STEP: Look through the XVars - which countries would be useful to have data for?
+//+ maybe add in a systematic conversion to country codes, to ensure no countries are lost in the merge?
+//integrate the code into the Xvar section properly.
 
-
-
+//CURRENTLY thinking: use eurostat beds, WB beds and WB_HEGDP. Don't do WHO Immunisation, IHR Preparation or Readyscore.
 
 
 
