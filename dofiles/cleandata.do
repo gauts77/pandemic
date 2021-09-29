@@ -39,6 +39,36 @@ merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/ghsi
 drop _merge
 save master_X, replace
 
+//WB Hosptial beds per 1000
+import excel "WB_Hosp_Beds_p1000.xlsx", sheet("Table2") firstrow clear
+encode CountryName, gen(id)
+rename Attribute Year
+encode Year, gen(Yearid)
+rename Value WB_hb_p1000
+xtset id Yearid
+
+//generating cross-section of most recent value
+bysort CountryName(Year) : gen diff = CountryName != CountryName[_n+1]
+drop if diff != 1
+drop if Yearid ==.
+save WB_HB_p100k.dta, replace
+
+rename CountryName Country
+keep Country WB_hb_p1000
+merge 1:1 Country using master_X
+drop _merge
+save master_X, replace
+
+//WB Current Health Expenditure as %GDP
+import excel "WB_HEGDP.xlsx", firstrow clear
+rename BK WHO_2018_HE_GDP //this is lazy - as a formality create a loop to ensure most recent value is used.
+save WB_HEGDP.dta, replace
+
+keep Country WHO_2018_HE_GDP
+merge 1:1 Country using master_X
+drop _merge
+save master_X, replace
+
 //-----------------------------------------------------------------------------
 
 //STOCK MARKET DATA (Y)
