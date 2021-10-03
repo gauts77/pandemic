@@ -107,7 +107,7 @@ save "C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta", replac
 
 //------------------------------------------------------------------------------------------------
 
-*Playing around with datasets.
+/**Playing around with datasets.
 //WHO Expediture on Immunisation Programs as % of Health Expenditure. n=78. Currently merging with Datastream yields n=6. Prob not worth it.
 cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
 import excel "WHO_immperc.xlsx", firstrow clear
