@@ -1,0 +1,202 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\gauta\Documents\GitHub\pandemic\graphing.log
+  log type:  text
+ opened on:   6 Oct 2021, 13:10:19
+
+. 
+. //generate bar charts of Hospital Beds/1000
+. use "./Data/pandemic_master.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
+
+. drop if dstr_WHO ==.
+(261 observations deleted)
+
+. 
+. graph bar WB_hb_p1000, over(id)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph hbar WB_hb_p1000, over(id)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. set scheme plottig
+
+. graph bar WB_hb_p1000, over(id, sort(1))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(45)))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90)))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. use "./Data/pandemic_master.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
+
+. drop if dstr_WHO ==.
+(261 observations deleted)
+
+. drop if WB_hb_p1000==.
+(3 observations deleted)
+
+. set scheme plottig
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90)))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) xlabel("Country") ylabel("Hospital Beds per 1000")
+xlabels(Country") not allowed, " invalid name
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) xtitle("Country"") ytitle("Hospital Beds per 1000")
+parentheses do not balance
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) xtitle("Country") ytitle("Hospital Beds per 1000")
+xtitle(Country") not allowed, " invalid name
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) xtitle(Country) ytitle("Hospital Beds per 1000")
+xtitle(Country) not allowed, xaxis1 does not exist
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) ytitle("Hospital Beds per 1000")
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) title({bf: Hospital Beds per 1000:} {it: a cross-country comparison}, size(8pt)) ytitle("Hospital Beds per 100
+> 0")
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) title({bf: Hospital Beds per 1000:} {it: a cross-country comparison}, size(8pt)) ytitle("Hospital Beds per 100
+> 0")
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) title({bf: Hospital Beds per 1000:} {it: A Cross-Country Comparison}, size(8pt)) ytitle("Hospital Beds per 100
+> 0")
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. //generate bar charts of Hospital Beds/1000
+. use "./Data/pandemic_master.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
+
+. drop if dstr_WHO ==.
+(261 observations deleted)
+
+. drop if WB_hb_p1000==.
+(3 observations deleted)
+
+. 
+. set scheme plottig
+
+. graph bar WB_hb_p1000, over(id, sort(1) label(angle(90))) title({bf: Hospital Beds per 1000:} {it: A Cross-Country Comparison}, size(8pt)) ytitle("Hospital Beds per 100
+> 0")
+
+. 
+. graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/xvars/pres_bar_1.gph", replace
+(note: file C:/Users/gauta/Documents/GitHub/pandemic/figures/xvars/pres_bar_1.gph not found)
+(file C:/Users/gauta/Documents/GitHub/pandemic/figures/xvars/pres_bar_1.gph saved)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD5d04_000000.tmp"
+
+. use "./Data/pandemic_master.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
+
+. drop if dstr_WHO ==.
+(261 observations deleted)
+
+. drop if WHO_2018_HE_GDP==.
+(3 observations deleted)
+
+. 
+. set scheme plottig
+
+. graph bar WHO_2018_HE_GDP, over(id, sort(1) label(angle(90))) title({bf: Health Expenditure as % of GDP:} {it: A Cross-Country Comparison}, size(8pt)) ytitle("Health Ex
+> penditure (% of GDP)")
+
+. 
+. graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/xvars/pres_bar_2.gph", replace
+(note: file C:/Users/gauta/Documents/GitHub/pandemic/figures/xvars/pres_bar_2.gph not found)
+(file C:/Users/gauta/Documents/GitHub/pandemic/figures/xvars/pres_bar_2.gph saved)
+
+. 
+end of do-file
+
+. exit, clear

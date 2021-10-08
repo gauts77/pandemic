@@ -103,6 +103,11 @@ save master_Y.dta, replace
 
 *merging master Y and X data
 merge 1:1 Country using "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar/master_X.dta"
+drop _merge
+kountry Country, from(other) stuck
+rename _ISO3N_ iso3
+kountry iso3, from(iso3n) to(iso3c)
+rename _ISO3C_ id
 save "C:/Users/gauta/Documents/GitHub/pandemic/Data/pandemic_master.dta", replace
 
 //------------------------------------------------------------------------------------------------

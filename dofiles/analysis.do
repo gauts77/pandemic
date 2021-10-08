@@ -43,22 +43,71 @@ scatter dstr_WHO2 WHO_ACHB_p100k|| lfit dstr_WHO2 WHO_ACHB_p100k, xtitle("ACHB p
 asdoc reg dstr_WHO WHO_ACHB_p100k, robust replace dec(5) //n = 16, positive insignificant.
 asdoc reg dstr_WHO2 WHO_ACHB_p100k, robust replace dec(5)
 
+
+
+
+
+
 *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
 use "./Data/pandemic_master.dta", clear
-keep Country dstr_WHO dstr_WHO2 WB_hb_p1000
+keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
 
-scatter dstr_WHO WB_hb_p1000|| lfit dstr_WHO WB_hb_p1000, xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20")
-scatter dstr_WHO2 WB_hb_p1000|| lfit dstr_WHO2 WB_hb_p1000, xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20")
+
+//graphing for presentation - 
+gen pos = 3
+replace pos = 6 if id=="ITA"
+replace pos = 5 if id=="DNK"
+replace pos = 6 if id=="SGP"
+replace pos = 6 if id=="ESP"
+replace pos = 7 if id=="BRA"
+replace pos =9 if id=="TUR"
+replace pos =6 if id=="NZI"
+
+
+set scheme plottig
+twoway scatter dstr_WHO WB_hb_p1000, msize (1pt) mlabel(id) mlabsize(tiny) mlabv(pos) title("Hospital Beds and Stock Index Performance (week of WHO Announcement)", size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20") || lfit dstr_WHO WB_hb_p1000
+
+
+//main graphing
+replace pos = 3
+replace pos = 12 if id=="NLD"
+replace pos = 2 if id=="VNM"
+replace pos = 4 if id=="TUR"
+replace pos = 6 if id=="NZL"
+replace pos = 12 if id=="POL"
+replace pos = 1 if id=="HRV"
+replace pos = 2 if id=="DEU"
+replace pos = 8 if id=="ESP"
+replace pos = 12 if id=="SWE"
+replace pos = 6 if id=="MEX"
+replace pos = 4 if id=="ISR"
+
+scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off)|| lfit dstr_WHO2 WB_hb_p1000, lcolor(black)
+
+graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_1.gph", replace
 
 asdoc reg dstr_WHO WB_hb_p1000, robust replace dec(5) //n =32, negative and insignificant
 asdoc reg dstr_WHO2 WB_hb_p1000, robust replace dec(5) //n = 32, negative and insignificant.
 
 *Analysis 6: dstr_WHO ~ WB Health Expenditure.
 use "./Data/pandemic_master.dta", clear
-keep Country dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
+keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
 
 scatter dstr_WHO WHO_2018_HE_GDP|| lfit dstr_WHO WHO_2018_HE_GDP, xtitle("Health Expenditure as % of GDP") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20")
-scatter dstr_WHO2 WHO_2018_HE_GDP|| lfit dstr_WHO2 WHO_2018_HE_GDP, xtitle("Health Expenditure as % of GDP") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20")
+
+//main
+gen pos = 3
+replace pos = 2 if id=="DEU"
+replace pos = 6 if id=="SGP"
+replace pos = 6 if id=="NZL"
+replace pos = 6 if id=="AUT"
+replace pos = 2 if id=="BEL"
+replace pos = 9 if id=="JPN"
+
+
+scatter dstr_WHO2 WHO_2018_HE_GDP, title({bf:Health Expenditure and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Health Expenditure as % of GDP") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off)|| lfit dstr_WHO2 WHO_2018_HE_GDP, lcolor(black)
+
+graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_2.gph", replace
 
 asdoc reg dstr_WHO WHO_2018_HE_GDP, robust replace dec(5)
 asdoc reg dstr_WHO2 WHO_2018_HE_GDP, robust replace dec(5)
