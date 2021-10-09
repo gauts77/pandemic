@@ -51,7 +51,7 @@ asdoc reg dstr_WHO2 WHO_ACHB_p100k, robust replace dec(5)
 *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
 use "./Data/pandemic_master.dta", clear
 keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
-
+//drop if WB_hb_p1000 > 15 (for graphing purposes)
 
 //graphing for presentation - 
 gen pos = 3
@@ -67,7 +67,6 @@ replace pos =6 if id=="NZI"
 set scheme plottig
 twoway scatter dstr_WHO WB_hb_p1000, msize (1pt) mlabel(id) mlabsize(tiny) mlabv(pos) title("Hospital Beds and Stock Index Performance (week of WHO Announcement)", size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20") || lfit dstr_WHO WB_hb_p1000
 
-
 //main graphing
 replace pos = 3
 replace pos = 12 if id=="NLD"
@@ -81,8 +80,10 @@ replace pos = 8 if id=="ESP"
 replace pos = 12 if id=="SWE"
 replace pos = 6 if id=="MEX"
 replace pos = 4 if id=="ISR"
+replace pos = 12 if id=="KOR"
+replace pos = 9 if id== "GBR"
 
-scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off)|| lfit dstr_WHO2 WB_hb_p1000, lcolor(black)
+twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black) 
 
 graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_1.gph", replace
 

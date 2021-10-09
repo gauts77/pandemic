@@ -21,13 +21,13 @@ for(indx in indx_list){
     filter(Index == indx) 
   
   my_plot <- ggplot(data = stock_to_plot, aes(x = Week, y = Closing.Price)) +
-    geom_point(colour = "blue", size = 0.5) +
+    geom_point(colour = "dodgerblue", size = 0.5) +
     geom_line(aes(group = 1), colour = "blue") +
     theme_minimal() +
     geom_vline(xintercept = as.numeric(stock$Week[9]), linetype = 4, colour = "red") +
-    geom_vline(xintercept = as.numeric(stock$Week[10]), linetype = 4, colour = "red") +
-    labs(title = paste(indx, "Time Series (highlighted area is week of WHO announcement)", sep = " "), x = "Month", y = "(Weekly) Closing Price") +
-    geom_rect(xmin = as.numeric(stock$Week[9]), xmax = as.numeric(stock$Week[10]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01)
+    geom_vline(xintercept = as.numeric(stock$Week[11]), linetype = 4, colour = "red") +
+    labs(title = paste(indx, "Time Series (highlighted area is 6th March - 20th March)", sep = " "), x = "Month", y = "(Weekly) Closing Price") +
+    geom_rect(xmin = as.numeric(stock$Week[9]), xmax = as.numeric(stock$Week[11]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01)
   
   ggsave(filename = paste(indx, "_time_series.png", sep = ""), plot = my_plot, path = "C:/Users/gauta/Documents/GitHub/pandemic/figures/stock_time_series")
   
@@ -37,14 +37,14 @@ for(indx in indx_list){
 p <- ggplot(data = stock, aes(x = Week, y = Closing.Price)) +
   geom_point(size = 0.001) +
   facet_wrap(~ï..Country, nrow = 5, scale = "free_y") + 
-  geom_line(aes(group = 1), colour = "blue") +
+  geom_line(aes(group = 1), colour = "dodgerblue") +
   theme_minimal() +
-  labs(title = paste("Time Series (highlighted area is week of WHO announcement)"), x = "Month", y = "(Weekly) Closing Price") +
+  labs(title = paste("Time Series (highlighted area is 6th March - 20th March)"), x = "Month", y = "(Weekly) Closing Price") +
   theme(axis.text.y = element_blank()) +
   theme(axis.text.x = element_text(angle = 90)) +
   geom_vline(xintercept = as.numeric(stock$Week[9]), linetype = 4, colour = "red") +
-  geom_vline(xintercept = as.numeric(stock$Week[10]), linetype = 4, colour = "red") +
-  geom_rect(xmin = as.numeric(stock$Week[9]), xmax = as.numeric(stock$Week[10]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01) 
+  geom_vline(xintercept = as.numeric(stock$Week[11]), linetype = 4, colour = "red") +
+  geom_rect(xmin = as.numeric(stock$Week[9]), xmax = as.numeric(stock$Week[11]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01) 
 
 ggsave(filename = "grouped_time_series.png", plot = p, path = "C:/Users/gauta/Documents/GitHub/pandemic/figures/stock_time_series")
   
@@ -72,10 +72,11 @@ for(indx in indx_list){
     geom_point(colour = "blue", size = 0.5) +
     geom_line(aes(group = 1), colour = "blue") +
     theme_minimal() +
+    geom_hline(yintercept = 1.0, colour = "dodgerblue") +
     geom_vline(xintercept = as.numeric(stock$week[9]), linetype = 4, colour = "red") +
-    geom_vline(xintercept = as.numeric(stock$week[10]), linetype = 4, colour = "red") +
-    labs(title = paste(indx, "Normalised Time Series (highlighted area is week of WHO announcement)", sep = " "), x = "Month", y = "(Weekly) Closing Price") +
-    geom_rect(xmin = as.numeric(stock$week[9]), xmax = as.numeric(stock$week[10]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01)
+    geom_vline(xintercept = as.numeric(stock$week[11]), linetype = 4, colour = "red") +
+    labs(title = paste(indx, "Normalised Time Series (highlighted area is 6th March - 20th March)", sep = " "), x = "Month", y = "(Weekly) Closing Price") +
+    geom_rect(xmin = as.numeric(stock$week[9]), xmax = as.numeric(stock$week[11]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01)
   
   ggsave(filename = paste(indx, "_rel_time_series.png", sep = ""), plot = my_plot, path = "C:/Users/gauta/Documents/GitHub/pandemic/figures/stock_time_series/relative")
   
@@ -87,12 +88,26 @@ p <- ggplot(data = stock, aes(x = week, y = rel_closingprice)) +
   facet_wrap(~Ã.country, nrow = 5, scale = "free_y") + 
   geom_line(aes(group = 1), colour = "blue") +
   theme_minimal() +
-  labs(title = paste("Time Series (highlighted area is week of WHO announcement)"), x = "Month", y = "(Weekly) Closing Price") +
+  labs(title = paste("Time Series (highlighted area is 6th March - 20th March)"), x = "Month", y = "(Weekly) Closing Price") +
   theme(axis.text.y = element_blank()) +
   theme(axis.text.x = element_text(angle = 90)) +
+  geom_hline(yintercept = 1.0, colour = "dodgerblue") +
   geom_vline(xintercept = as.numeric(stock$week[9]), linetype = 4, colour = "red") +
-  geom_vline(xintercept = as.numeric(stock$week[10]), linetype = 4, colour = "red") +
-  geom_rect(xmin = as.numeric(stock$week[9]), xmax = as.numeric(stock$week[10]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01) 
+  geom_vline(xintercept = as.numeric(stock$week[11]), linetype = 4, colour = "red") +
+  geom_rect(xmin = as.numeric(stock$week[9]), xmax = as.numeric(stock$week[11]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.01) 
 
 ggsave(filename = "rel_grouped_time_series.png", plot = p, path = "C:/Users/gauta/Documents/GitHub/pandemic/figures/stock_time_series/relative")
+
+#Relatives on one.
+
+q <- ggplot(data = stock, aes(x = week, y = rel_closingprice, group = Ã.country)) +
+  geom_line(colour = "dodgerblue", linetype = 1) +
+  theme_minimal() +
+  geom_hline(yintercept = 1.0, colour = "blue") +
+  geom_vline(xintercept = as.numeric(stock$week[9]), linetype = 4, colour = "red") +
+  geom_vline(xintercept = as.numeric(stock$week[11]), linetype = 4, colour = "red") +
+  labs(title = paste("Normalised Time Series (highlighted area is 6th March - 20th March)", sep = " "), x = "Month", y = "Normalised (Weekly) Closing Price") +
+  geom_rect(xmin = as.numeric(stock$week[9]), xmax = as.numeric(stock$week[11]), ymin = 0, ymax = Inf, fill = "red", alpha = 0.005)
+
+ggsave(filename = "rel_grouped_time_series_2.png", plot = q, path = "C:/Users/gauta/Documents/GitHub/pandemic/figures/stock_time_series/relative")
   

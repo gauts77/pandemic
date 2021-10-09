@@ -1,55 +1,92 @@
-------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
        log:  C:\Users\gauta\Documents\GitHub\pandemic\pandemic.log
   log type:  text
- opened on:   8 Oct 2021, 10:01:24
+ opened on:   9 Oct 2021, 16:14:06
 
 . 
 end of do-file
 
-.  do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
+. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
 . use "./Data/pandemic_master.dta", clear
 
 . keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
 
-. 
-end of do-file
-
-.  do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. asdoc reg dstr_WHO2 WB_hb_p1000, robust replace dec(5) //n = 32, negative and insignificant.
-
-Linear regression                               Number of obs     =         32
-                                                F(1, 30)          =       0.72
-                                                Prob > F          =     0.4016
-                                                R-squared         =     0.0106
-                                                Root MSE          =     .07574
-
-------------------------------------------------------------------------------
-             |               Robust
-   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
--------------+----------------------------------------------------------------
- WB_hb_p1000 |   .0031139     .00366     0.85   0.402    -.0043607    .0105885
-       _cons |  -.2068941   .0234994    -8.80   0.000    -.2548862    -.158902
-------------------------------------------------------------------------------
-(note: file Myfile.doc not found)
-Click to Open File:  Myfile.doc
+. drop if WB_hb_p1000 > 15
+(48 observations deleted)
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
-. asdoc reg dstr_WHO2 WHO_2018_HE_GDP, robust replace dec(5)
-variable WHO_2018_HE_GDP not found
-r(111);
+. gen pos = 3
 
+. 
 end of do-file
 
-r(111);
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+
+. replace pos = 12 if id=="NLD"
+(1 real change made)
+
+. replace pos = 2 if id=="VNM"
+(1 real change made)
+
+. replace pos = 4 if id=="TUR"
+(1 real change made)
+
+. replace pos = 6 if id=="NZL"
+(1 real change made)
+
+. replace pos = 12 if id=="POL"
+(1 real change made)
+
+. replace pos = 1 if id=="HRV"
+(1 real change made)
+
+. replace pos = 2 if id=="DEU"
+(1 real change made)
+
+. replace pos = 8 if id=="ESP"
+(1 real change made)
+
+. replace pos = 12 if id=="SWE"
+(1 real change made)
+
+. replace pos = 6 if id=="MEX"
+(1 real change made)
+
+. replace pos = 4 if id=="ISR"
+(1 real change made)
+
+. replace pos = 12 if id=="KOR"
+(2 real changes made)
+
+. replace pos = 9 if id== "GBR"
+(1 real change made)
+
+. 
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle(
+> "Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black) 
+
+. 
+. graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_1.gph", replace
+(file C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_1.gph saved)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
 . use "./Data/pandemic_master.dta", clear
 
@@ -58,22 +95,57 @@ r(111);
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+
+. gen pos = 3
+
+. replace pos = 2 if id=="DEU"
+(1 real change made)
+
+. replace pos = 6 if id=="SGP"
+(1 real change made)
+
+. replace pos = 6 if id=="NZL"
+(1 real change made)
+
+. replace pos = 6 if id=="AUT"
+(1 real change made)
+
+. replace pos = 2 if id=="BEL"
+(1 real change made)
+
+. replace pos = 9 if id=="JPN"
+(1 real change made)
+
+. 
+. 
+. scatter dstr_WHO2 WHO_2018_HE_GDP, title({bf:Health Expenditure and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Health Expenditure as % of
+>  GDP") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off)|| lfit dstr_WHO2 WHO_2018_HE_GDP, lcolor(
+> black)
+
+. 
+. graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_2.gph", replace
+(file C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_2.gph saved)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
 . asdoc reg dstr_WHO2 WHO_2018_HE_GDP, robust replace dec(5)
 
-Linear regression                               Number of obs     =         32
-                                                F(1, 30)          =       0.33
-                                                Prob > F          =     0.5722
-                                                R-squared         =     0.0130
-                                                Root MSE          =     .07564
+Linear regression                               Number of obs     =         34
+                                                F(1, 32)          =       0.30
+                                                Prob > F          =     0.5873
+                                                R-squared         =     0.0117
+                                                Root MSE          =     .07345
 
 ---------------------------------------------------------------------------------
                 |               Robust
       dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
 ----------------+----------------------------------------------------------------
-WHO_2018_HE_GDP |   .0030144   .0052791     0.57   0.572     -.007767    .0137958
-          _cons |  -.2202281    .048984    -4.50   0.000    -.3202668   -.1201894
+WHO_2018_HE_GDP |   .0028513   .0052009     0.55   0.587    -.0077426    .0134452
+          _cons |  -.2181191    .048071    -4.54   0.000    -.3160366   -.1202016
 ---------------------------------------------------------------------------------
 (note: file Myfile.doc not found)
 Click to Open File:  Myfile.doc
@@ -81,518 +153,31 @@ Click to Open File:  Myfile.doc
 . 
 end of do-file
 
-. sum Country
-
-    Variable |        Obs        Mean    Std. Dev.       Min        Max
--------------+---------------------------------------------------------
-     Country |          0
-
-. tab Country
-
-                                Country |      Freq.     Percent        Cum.
-----------------------------------------+-----------------------------------
-                                AVERAGE |          1        0.34        0.34
-                            Afghanistan |          1        0.34        0.68
-            Africa Eastern and Southern |          1        0.34        1.01
-             Africa Western and Central |          1        0.34        1.35
-                                Albania |          1        0.34        1.69
-                                Algeria |          1        0.34        2.03
-                         American Samoa |          1        0.34        2.36
-                                Andorra |          1        0.34        2.70
-                                 Angola |          1        0.34        3.04
-                    Antigua and Barbuda |          1        0.34        3.38
-                             Arab World |          1        0.34        3.72
-                              Argentina |          1        0.34        4.05
-                                Armenia |          1        0.34        4.39
-                                  Aruba |          1        0.34        4.73
-                              Australia |          1        0.34        5.07
-                                Austria |          1        0.34        5.41
-                             Azerbaijan |          1        0.34        5.74
-                                Bahamas |          1        0.34        6.08
-                           Bahamas, The |          1        0.34        6.42
-                                Bahrain |          1        0.34        6.76
-                             Bangladesh |          1        0.34        7.09
-                               Barbados |          1        0.34        7.43
-                                Belarus |          1        0.34        7.77
-                                Belgium |          1        0.34        8.11
-                                 Belize |          1        0.34        8.45
-                                  Benin |          1        0.34        8.78
-                                Bermuda |          1        0.34        9.12
-                                 Bhutan |          1        0.34        9.46
-                                Bolivia |          1        0.34        9.80
-                 Bosnia and Herzegovina |          1        0.34       10.14
-                               Botswana |          1        0.34       10.47
-                                 Brazil |          1        0.34       10.81
-                 British Virgin Islands |          1        0.34       11.15
-                                 Brunei |          1        0.34       11.49
-                      Brunei Darussalam |          1        0.34       11.82
-                               Bulgaria |          1        0.34       12.16
-                           Burkina Faso |          1        0.34       12.50
-                                Burundi |          1        0.34       12.84
-                             Cabo Verde |          1        0.34       13.18
-                               Cambodia |          1        0.34       13.51
-                               Cameroon |          1        0.34       13.85
-                                 Canada |          1        0.34       14.19
-                 Caribbean small states |          1        0.34       14.53
-                         Cayman Islands |          1        0.34       14.86
-               Central African Republic |          1        0.34       15.20
-         Central Europe and the Baltics |          1        0.34       15.54
-                                   Chad |          1        0.34       15.88
-                        Channel Islands |          1        0.34       16.22
-                                  Chile |          1        0.34       16.55
-                                  China |          1        0.34       16.89
-                               Colombia |          1        0.34       17.23
-                                Comoros |          1        0.34       17.57
-                    Congo (Brazzaville) |          1        0.34       17.91
-            Congo (Democratic Republic) |          1        0.34       18.24
-                       Congo, Dem. Rep. |          1        0.34       18.58
-                            Congo, Rep. |          1        0.34       18.92
-                           Cook Islands |          1        0.34       19.26
-                             Costa Rica |          1        0.34       19.59
-                          Cote d'Ivoire |          1        0.34       19.93
-                                Croatia |          1        0.34       20.27
-                                   Cuba |          1        0.34       20.61
-                                Curacao |          1        0.34       20.95
-                                 Cyprus |          1        0.34       21.28
-                         Czech Republic |          1        0.34       21.62
-                          Côte d'Ivoire |          1        0.34       21.96
-                                Denmark |          1        0.34       22.30
-                               Djibouti |          1        0.34       22.64
-                               Dominica |          1        0.34       22.97
-                     Dominican Republic |          1        0.34       23.31
-             Early-demographic dividend |          1        0.34       23.65
-                    East Asia & Pacific |          1        0.34       23.99
-East Asia & Pacific (IDA & IBRD count.. |          1        0.34       24.32
-East Asia & Pacific (excluding high i.. |          1        0.34       24.66
-                                Ecuador |          1        0.34       25.00
-                                  Egypt |          1        0.34       25.34
-                       Egypt, Arab Rep. |          1        0.34       25.68
-                            El Salvador |          1        0.34       26.01
-                      Equatorial Guinea |          1        0.34       26.35
-                                Eritrea |          1        0.34       26.69
-                                Estonia |          1        0.34       27.03
-                               Eswatini |          1        0.34       27.36
-                               Ethiopia |          1        0.34       27.70
-                              Euro area |          1        0.34       28.04
-                  Europe & Central Asia |          1        0.34       28.38
-Europe & Central Asia (IDA & IBRD cou.. |          1        0.34       28.72
-Europe & Central Asia (excluding high.. |          1        0.34       29.05
-                         European Union |          1        0.34       29.39
-                          Faroe Islands |          1        0.34       29.73
-                                   Fiji |          1        0.34       30.07
-                                Finland |          1        0.34       30.41
-Fragile and conflict affected situati.. |          1        0.34       30.74
-                                 France |          1        0.34       31.08
-                       French Polynesia |          1        0.34       31.42
-                                  Gabon |          1        0.34       31.76
-                                 Gambia |          1        0.34       32.09
-                            Gambia, The |          1        0.34       32.43
-                                Georgia |          1        0.34       32.77
-                                Germany |          1        0.34       33.11
-                                  Ghana |          1        0.34       33.45
-                              Gibraltar |          1        0.34       33.78
-                                 Greece |          1        0.34       34.12
-                              Greenland |          1        0.34       34.46
-                                Grenada |          1        0.34       34.80
-                                   Guam |          1        0.34       35.14
-                              Guatemala |          1        0.34       35.47
-                                 Guinea |          1        0.34       35.81
-                          Guinea-Bissau |          1        0.34       36.15
-                                 Guyana |          1        0.34       36.49
-                                  Haiti |          1        0.34       36.82
- Heavily indebted poor countries (HIPC) |          1        0.34       37.16
-                            High income |          1        0.34       37.50
-                               Honduras |          1        0.34       37.84
-                   Hong Kong SAR, China |          1        0.34       38.18
-                                Hungary |          1        0.34       38.51
-                              IBRD only |          1        0.34       38.85
-                       IDA & IBRD total |          1        0.34       39.19
-                              IDA blend |          1        0.34       39.53
-                               IDA only |          1        0.34       39.86
-                              IDA total |          1        0.34       40.20
-                                Iceland |          1        0.34       40.54
-                                  India |          1        0.34       40.88
-                              Indonesia |          1        0.34       41.22
-                                   Iran |          1        0.34       41.55
-                     Iran, Islamic Rep. |          1        0.34       41.89
-                                   Iraq |          1        0.34       42.23
-                                Ireland |          1        0.34       42.57
-                            Isle of Man |          1        0.34       42.91
-                                 Israel |          1        0.34       43.24
-                                  Italy |          1        0.34       43.58
-                                Jamaica |          1        0.34       43.92
-                                  Japan |          1        0.34       44.26
-                                 Jordan |          1        0.34       44.59
-                             Kazakhstan |          1        0.34       44.93
-                                  Kenya |          1        0.34       45.27
-                               Kiribati |          1        0.34       45.61
-                                  Korea |          1        0.34       45.95
-              Korea, Dem. People's Rep. |          1        0.34       46.28
-                            Korea, Rep. |          1        0.34       46.62
-                                 Kosovo |          1        0.34       46.96
-                                 Kuwait |          1        0.34       47.30
-                        Kyrgyz Republic |          1        0.34       47.64
-                                Lao PDR |          1        0.34       47.97
-                                   Laos |          1        0.34       48.31
-              Late-demographic dividend |          1        0.34       48.65
-              Latin America & Caribbean |          1        0.34       48.99
-Latin America & Caribbean (excluding .. |          1        0.34       49.32
-Latin America & the Caribbean (IDA & .. |          1        0.34       49.66
-                                 Latvia |          1        0.34       50.00
-Least developed countries: UN classif.. |          1        0.34       50.34
-                                Lebanon |          1        0.34       50.68
-                                Lesotho |          1        0.34       51.01
-                                Liberia |          1        0.34       51.35
-                                  Libya |          1        0.34       51.69
-                          Liechtenstein |          1        0.34       52.03
-                              Lithuania |          1        0.34       52.36
-                    Low & middle income |          1        0.34       52.70
-                             Low income |          1        0.34       53.04
-                    Lower middle income |          1        0.34       53.38
-                             Luxembourg |          1        0.34       53.72
-                       Macao SAR, China |          1        0.34       54.05
-                              Macedonia |          1        0.34       54.39
-                             Madagascar |          1        0.34       54.73
-                                 Malawi |          1        0.34       55.07
-                               Malaysia |          1        0.34       55.41
-                               Maldives |          1        0.34       55.74
-                                   Mali |          1        0.34       56.08
-                                  Malta |          1        0.34       56.42
-                       Marshall Islands |          1        0.34       56.76
-                             Mauritania |          1        0.34       57.09
-                              Mauritius |          1        0.34       57.43
-                                 Mexico |          1        0.34       57.77
-                             Micronesia |          1        0.34       58.11
-                  Micronesia, Fed. Sts. |          1        0.34       58.45
-             Middle East & North Africa |          1        0.34       58.78
-Middle East & North Africa (IDA & IBR.. |          1        0.34       59.12
-Middle East & North Africa (excluding.. |          1        0.34       59.46
-                          Middle income |          1        0.34       59.80
-                                Moldova |          1        0.34       60.14
-                                 Monaco |          1        0.34       60.47
-                               Mongolia |          1        0.34       60.81
-                             Montenegro |          1        0.34       61.15
-                                Morocco |          1        0.34       61.49
-                             Mozambique |          1        0.34       61.82
-                                Myanmar |          1        0.34       62.16
-                                Namibia |          1        0.34       62.50
-                                  Nauru |          1        0.34       62.84
-                                  Nepal |          1        0.34       63.18
-                            Netherlands |          1        0.34       63.51
-                          New Caledonia |          1        0.34       63.85
-                            New Zealand |          1        0.34       64.19
-                              Nicaragua |          1        0.34       64.53
-                                  Niger |          1        0.34       64.86
-                                Nigeria |          1        0.34       65.20
-                                   Niue |          1        0.34       65.54
-                          North America |          1        0.34       65.88
-                            North Korea |          1        0.34       66.22
-                        North Macedonia |          1        0.34       66.55
-               Northern Mariana Islands |          1        0.34       66.89
-                                 Norway |          1        0.34       67.23
-                         Not classified |          1        0.34       67.57
-                           OECD members |          1        0.34       67.91
-                                   Oman |          1        0.34       68.24
-                     Other small states |          1        0.34       68.58
-            Pacific island small states |          1        0.34       68.92
-                               Pakistan |          1        0.34       69.26
-                                  Palau |          1        0.34       69.59
-                                 Panama |          1        0.34       69.93
-                       Papua New Guinea |          1        0.34       70.27
-                               Paraguay |          1        0.34       70.61
-                                   Peru |          1        0.34       70.95
-                            Philippines |          1        0.34       71.28
-                                 Poland |          1        0.34       71.62
-                               Portugal |          1        0.34       71.96
-              Post-demographic dividend |          1        0.34       72.30
-               Pre-demographic dividend |          1        0.34       72.64
-                            Puerto Rico |          1        0.34       72.97
-                                  Qatar |          1        0.34       73.31
-                                Romania |          1        0.34       73.65
-                                 Russia |          1        0.34       73.99
-                     Russian Federation |          1        0.34       74.32
-                                 Rwanda |          1        0.34       74.66
-                                  Samoa |          1        0.34       75.00
-                             San Marino |          1        0.34       75.34
-                  Sao Tome and Principe |          1        0.34       75.68
-                           Saudi Arabia |          1        0.34       76.01
-                                Senegal |          1        0.34       76.35
-                                 Serbia |          1        0.34       76.69
-                             Seychelles |          1        0.34       77.03
-                           Sierra Leone |          1        0.34       77.36
-                              Singapore |          1        0.34       77.70
-              Sint Maarten (Dutch part) |          1        0.34       78.04
-                        Slovak Republic |          1        0.34       78.38
-                               Slovakia |          1        0.34       78.72
-                               Slovenia |          1        0.34       79.05
-                           Small states |          1        0.34       79.39
-                        Solomon Islands |          1        0.34       79.73
-                                Somalia |          1        0.34       80.07
-                           South Africa |          1        0.34       80.41
-                             South Asia |          1        0.34       80.74
-                South Asia (IDA & IBRD) |          1        0.34       81.08
-                            South Korea |          1        0.34       81.42
-                            South Sudan |          1        0.34       81.76
-                                  Spain |          1        0.34       82.09
-                              Sri Lanka |          1        0.34       82.43
-                     St Kitts and Nevis |          1        0.34       82.77
-                               St Lucia |          1        0.34       83.11
-          St Vincent and The Grenadines |          1        0.34       83.45
-                    St. Kitts and Nevis |          1        0.34       83.78
-                              St. Lucia |          1        0.34       84.12
-               St. Martin (French part) |          1        0.34       84.46
-         St. Vincent and the Grenadines |          1        0.34       84.80
-                     Sub-Saharan Africa |          1        0.34       85.14
-Sub-Saharan Africa (IDA & IBRD countr.. |          1        0.34       85.47
-Sub-Saharan Africa (excluding high in.. |          1        0.34       85.81
-                                  Sudan |          1        0.34       86.15
-                               Suriname |          1        0.34       86.49
-                                 Sweden |          1        0.34       86.82
-                            Switzerland |          1        0.34       87.16
-                                  Syria |          1        0.34       87.50
-                   Syrian Arab Republic |          1        0.34       87.84
-                  São Tomé and Príncipe |          1        0.34       88.18
-                                 Taiwan |          1        0.34       88.51
-                             Tajikistan |          1        0.34       88.85
-                               Tanzania |          1        0.34       89.19
-                               Thailand |          1        0.34       89.53
-                            Timor-Leste |          1        0.34       89.86
-                                   Togo |          1        0.34       90.20
-                                  Tonga |          1        0.34       90.54
-                    Trinidad and Tobago |          1        0.34       90.88
-                                Tunisia |          1        0.34       91.22
-                                 Turkey |          1        0.34       91.55
-                           Turkmenistan |          1        0.34       91.89
-               Turks and Caicos Islands |          1        0.34       92.23
-                                 Tuvalu |          1        0.34       92.57
-                                     UK |          1        0.34       92.91
-                                 Uganda |          1        0.34       93.24
-                                Ukraine |          1        0.34       93.58
-                   United Arab Emirates |          1        0.34       93.92
-                         United Kingdom |          1        0.34       94.26
-                          United States |          1        0.34       94.59
-                    Upper middle income |          1        0.34       94.93
-                                Uruguay |          1        0.34       95.27
-                             Uzbekistan |          1        0.34       95.61
-                                Vanuatu |          1        0.34       95.95
-                              Venezuela |          1        0.34       96.28
-                          Venezuela, RB |          1        0.34       96.62
-                                Vietnam |          1        0.34       96.96
-                  Virgin Islands (U.S.) |          1        0.34       97.30
-                     West Bank and Gaza |          1        0.34       97.64
-                                  World |          1        0.34       97.97
-                                  Yemen |          1        0.34       98.31
-                            Yemen, Rep. |          1        0.34       98.65
-                             Yugoslavia |          1        0.34       98.99
-                                 Zambia |          1        0.34       99.32
-                               Zimbabwe |          1        0.34       99.66
-                   eSwatini (Swaziland) |          1        0.34      100.00
-----------------------------------------+-----------------------------------
-                                  Total |        296      100.00
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
-
-. drop if WHO_2018_HE_GDP ==.
-(109 observations deleted)
-
-. drop if dstr_WHO2 ==.
-(155 observations deleted)
-
-. 
-end of do-file
-
-. tab Country
-
-                                Country |      Freq.     Percent        Cum.
-----------------------------------------+-----------------------------------
-                              Argentina |          1        3.13        3.13
-                              Australia |          1        3.13        6.25
-                                Austria |          1        3.13        9.38
-                                Belgium |          1        3.13       12.50
-                                 Brazil |          1        3.13       15.63
-                                 Canada |          1        3.13       18.75
-                                  Chile |          1        3.13       21.88
-                                  China |          1        3.13       25.00
-                                Croatia |          1        3.13       28.13
-                         Czech Republic |          1        3.13       31.25
-                                Denmark |          1        3.13       34.38
-                                 France |          1        3.13       37.50
-                                Germany |          1        3.13       40.63
-                                 Greece |          1        3.13       43.75
-                                  India |          1        3.13       46.88
-                                 Israel |          1        3.13       50.00
-                                  Italy |          1        3.13       53.13
-                                  Japan |          1        3.13       56.25
-                               Malaysia |          1        3.13       59.38
-                                 Mexico |          1        3.13       62.50
-                            Netherlands |          1        3.13       65.63
-                            New Zealand |          1        3.13       68.75
-                                 Poland |          1        3.13       71.88
-                                 Serbia |          1        3.13       75.00
-                              Singapore |          1        3.13       78.13
-                           South Africa |          1        3.13       81.25
-                                  Spain |          1        3.13       84.38
-                                 Sweden |          1        3.13       87.50
-                            Switzerland |          1        3.13       90.63
-                                 Turkey |          1        3.13       93.75
-                          United States |          1        3.13       96.88
-                                Vietnam |          1        3.13      100.00
-----------------------------------------+-----------------------------------
-                                  Total |         32      100.00
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
 . use "./Data/pandemic_master.dta", clear
 
 . keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
 
 . 
-. 
-. //graphing for presentation - 
-. gen pos = 3
-
-. replace pos = 6 if id=="ITA"
-(1 real change made)
-
-. replace pos = 5 if id=="DNK"
-(1 real change made)
-
-. replace pos = 6 if id=="SGP"
-(1 real change made)
-
-. replace pos = 6 if id=="ESP"
-(1 real change made)
-
-. replace pos = 7 if id=="BRA"
-(1 real change made)
-
-. replace pos =9 if id=="TUR"
-(1 real change made)
-
-. replace pos =6 if id=="NZI"
-(0 real changes made)
-
-. 
-. 
-. set scheme plottig
-
-. twoway scatter dstr_WHO WB_hb_p1000, msize (1pt) mlabel(id) mlabsize(tiny) mlabv
-> (pos) title("Hospital Beds and Stock Index Performance (week of WHO Announcement
-> )", size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "
-> 06/03/20 and 13/03/20") || lfit dstr_WHO WB_hb_p1000
-
-. 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
-. use "./Data/pandemic_master.dta", clear
+. asdoc reg dstr_WHO2 WB_hb_p1000, robust replace dec(5) //n = 32, negative and insignificant.
 
-. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
-
-. 
-. 
-. //graphing for presentation - 
-. gen pos = 3
-
-. replace pos = 6 if id=="ITA"
-(1 real change made)
-
-. replace pos = 5 if id=="DNK"
-(1 real change made)
-
-. replace pos = 6 if id=="SGP"
-(1 real change made)
-
-. replace pos = 6 if id=="ESP"
-(1 real change made)
-
-. replace pos = 7 if id=="BRA"
-(1 real change made)
-
-. replace pos =9 if id=="TUR"
-(1 real change made)
-
-. replace pos =6 if id=="NZI"
-(0 real changes made)
-
-. 
-. 
-. set scheme plottig
-
-. twoway scatter dstr_WHO WB_hb_p1000, msize (1pt) mlabel(id) mlabsize(tiny) mlabv
-> (pos) title("Hospital Beds and Stock Index Performance (week of WHO Announcement
-> )", size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "
-> 06/03/20 and 13/03/20") || lfit dstr_WHO WB_hb_p1000, lcolor(black)
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
-
-. 
-. 
-. //graphing for presentation - 
-. gen pos = 3
-
-. replace pos = 6 if id=="ITA"
-(1 real change made)
-
-. replace pos = 5 if id=="DNK"
-(1 real change made)
-
-. replace pos = 6 if id=="SGP"
-(1 real change made)
-
-. replace pos = 6 if id=="ESP"
-(1 real change made)
-
-. replace pos = 7 if id=="BRA"
-(1 real change made)
-
-. replace pos =9 if id=="TUR"
-(1 real change made)
-
-. replace pos =6 if id=="NZI"
-(0 real changes made)
-
-. 
-. 
-. set scheme plottig
-
-. twoway scatter dstr_WHO WB_hb_p1000, msize (1pt) mlabel(id) mlabsize(tiny) mlabv
-> (pos) title("Hospital Beds and Stock Index Performance (week of WHO Announcement
-> )", size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "
-> 06/03/20 and 13/03/20") legend(off)|| lfit dstr_WHO WB_hb_p1000, lcolor(black)
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. asdoc reg dstr_WHO WB_hb_p1000, robust replace dec(5) //n =32, negative and insi
-> gnificant
-
-Linear regression                               Number of obs     =         32
-                                                F(1, 30)          =       0.26
-                                                Prob > F          =     0.6168
-                                                R-squared         =     0.0090
-                                                Root MSE          =     .05012
+Linear regression                               Number of obs     =         34
+                                                F(1, 32)          =       1.26
+                                                Prob > F          =     0.2697
+                                                R-squared         =     0.0148
+                                                Root MSE          =     .07333
 
 ------------------------------------------------------------------------------
              |               Robust
-    dstr_WHO |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
 -------------+----------------------------------------------------------------
- WB_hb_p1000 |   -.001897    .003752    -0.51   0.617    -.0095595    .0057655
-       _cons |  -.1317442   .0170122    -7.74   0.000    -.1664879   -.0970006
+ WB_hb_p1000 |   .0031452      .0028     1.12   0.270    -.0025581    .0088485
+       _cons |  -.2069098   .0210798    -9.82   0.000     -.249848   -.1639715
 ------------------------------------------------------------------------------
 (note: file Myfile.doc not found)
 Click to Open File:  Myfile.doc
@@ -600,179 +185,11 @@ Click to Open File:  Myfile.doc
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
 
-. use "./Data/pandemic_master.dta", clear
+. clear
 
-. keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
+. cd "C:/Users/gauta/Documents/GitHub/pandemic"
+C:\Users\gauta\Documents\GitHub\pandemic
 
-. drop if WHO_2018_HE_GDP ==.
-(109 observations deleted)
-
-. drop if dstr_WHO2 ==.
-(155 observations deleted)
-
-. gen pos = 3
-
-. 
-. scatter dstr_WHO WHO_2018_HE_GDP, title({bf: Health Expenditure and Stock Index 
-> Performance:} {it: 6th March - 13th March}, size(8pt)) xtitle("Health Expenditur
-> e as % of GDP") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20") mlab
-> el(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off|| lfit dstr_WHO WHO_2018_
-> HE_GDP lcolor(black)
-parentheses do not balance
-r(198);
-
-end of do-file
-
-r(198);
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. *Analysis 6: dstr_WHO ~ WB Health Expenditure.
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
-
-. drop if WHO_2018_HE_GDP ==.
-(109 observations deleted)
-
-. drop if dstr_WHO2 ==.
-(155 observations deleted)
-
-. gen pos = 3
-
-. 
-. scatter dstr_WHO WHO_2018_HE_GDP, title({bf: Health Expenditure and Stock Index 
-> Performance:} {it: 6th March - 13th March}, size(8pt)) xtitle("Health Expenditur
-> e as % of GDP") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20") mlab
-> el(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off)|| lfit dstr_WHO WHO_2018
-> _HE_GDP lcolor(black)
-variable black not found
-r(111);
-
-end of do-file
-
-r(111);
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
-
-. drop if WHO_2018_HE_GDP ==.
-(109 observations deleted)
-
-. drop if dstr_WHO2 ==.
-(155 observations deleted)
-
-. gen pos = 3
-
-. 
-. scatter dstr_WHO WHO_2018_HE_GDP, title({bf: Health Expenditure and Stock Index 
-> Performance:} {it: 6th March - 13th March}, size(8pt)) xtitle("Health Expenditur
-> e as % of GDP") ytitle("Stock Fluctuation between" "06/03/20 and 13/03/20") mlab
-> el(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off)|| lfit dstr_WHO WHO_2018
-> _HE_GDP, lcolor(black)
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
-
-. 
-. 
-. //graphing for presentation - 
-. gen pos = 3
-
-. replace pos = 6 if id=="ITA"
-(1 real change made)
-
-. replace pos = 5 if id=="DNK"
-(1 real change made)
-
-. replace pos = 6 if id=="SGP"
-(1 real change made)
-
-. replace pos = 6 if id=="ESP"
-(1 real change made)
-
-. replace pos = 7 if id=="BRA"
-(1 real change made)
-
-. replace pos =9 if id=="TUR"
-(1 real change made)
-
-. replace pos =6 if id=="NZI"
-(0 real changes made)
-
-. 
-. 
-. set scheme plottig
-
-. twoway scatter dstr_WHO WB_hb_p1000, msize (1pt) mlabel(id) mlabsize(tiny) mlabv
-> (pos) title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 13th
->  March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation betwe
-> en" "06/03/20 and 13/03/20") legend(off)|| lfit dstr_WHO WB_hb_p1000, lcolor(bla
-> ck)
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. asdoc reg dstr_WHO WHO_2018_HE_GDP, robust replace dec(5)
-variable WHO_2018_HE_GDP not found
-r(111);
-
-end of do-file
-
-r(111);
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
-
-. drop if WHO_2018_HE_GDP ==.
-(109 observations deleted)
-
-. drop if dstr_WHO2 ==.
-(155 observations deleted)
-
-. gen pos = 3
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD6e28_000000.tmp"
-
-. 
-. asdoc reg dstr_WHO WHO_2018_HE_GDP, robust replace dec(5)
-
-Linear regression                               Number of obs     =         32
-                                                F(1, 30)          =       0.24
-                                                Prob > F          =     0.6245
-                                                R-squared         =     0.0121
-                                                Root MSE          =     .05004
-
----------------------------------------------------------------------------------
-                |               Robust
-       dstr_WHO |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
-----------------+----------------------------------------------------------------
-WHO_2018_HE_GDP |  -.0019261   .0038941    -0.49   0.624    -.0098789    .0060267
-          _cons |  -.1228512   .0371917    -3.30   0.002    -.1988068   -.0468956
----------------------------------------------------------------------------------
-(note: file Myfile.doc not found)
-Click to Open File:  Myfile.doc
-
-. 
-end of do-file
-
-. exit, clear
+. capture log close
