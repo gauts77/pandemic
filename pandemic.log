@@ -2,91 +2,244 @@
       name:  <unnamed>
        log:  C:\Users\gauta\Documents\GitHub\pandemic\pandemic.log
   log type:  text
- opened on:   9 Oct 2021, 16:14:06
+ opened on:  26 Oct 2021, 14:52:55
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
 
-. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
+. use "./Data/pandemic_master.dta", clear
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+
 . use "./Data/pandemic_master.dta", clear
 
 . keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
 
-. drop if WB_hb_p1000 > 15
-(48 observations deleted)
-
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+. drop if WB_hb_p1000 ==.
+(47 observations deleted)
 
-. gen pos = 3
+. sum
 
-. 
-end of do-file
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+     Country |          0
+    dstr_WHO |         34   -.1394365    .0485387  -.2352116  -.0101876
+   dstr_WHO2 |         34   -.1936212    .0727543  -.3266388  -.0336828
+ WB_hb_p1000 |        249    3.052215    2.740999         .1      18.68
+          id |          0
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+. tab id
 
-. set scheme plottig
+   ISO 3166 |
+    alpha-3 |
+       code |      Freq.     Percent        Cum.
+------------+-----------------------------------
+        AFG |          1        0.51        0.51
+        AGO |          1        0.51        1.03
+        ALB |          1        0.51        1.54
+        AND |          1        0.51        2.05
+        ARE |          1        0.51        2.56
+        ARG |          1        0.51        3.08
+        ARM |          1        0.51        3.59
+        ATG |          1        0.51        4.10
+        AUS |          1        0.51        4.62
+        AUT |          1        0.51        5.13
+        AZE |          1        0.51        5.64
+        BDI |          1        0.51        6.15
+        BEL |          1        0.51        6.67
+        BEN |          1        0.51        7.18
+        BFA |          1        0.51        7.69
+        BGD |          1        0.51        8.21
+        BGR |          1        0.51        8.72
+        BHR |          1        0.51        9.23
+        BHS |          1        0.51        9.74
+        BIH |          1        0.51       10.26
+        BLR |          1        0.51       10.77
+        BLZ |          1        0.51       11.28
+        BMU |          1        0.51       11.79
+        BOL |          1        0.51       12.31
+        BRA |          1        0.51       12.82
+        BRB |          1        0.51       13.33
+        BRN |          1        0.51       13.85
+        BTN |          1        0.51       14.36
+        BWA |          1        0.51       14.87
+        CAF |          1        0.51       15.38
+        CAN |          1        0.51       15.90
+        CHE |          1        0.51       16.41
+        CHL |          1        0.51       16.92
+        CHN |          1        0.51       17.44
+        CIV |          1        0.51       17.95
+        CMR |          1        0.51       18.46
+        COD |          1        0.51       18.97
+        COG |          1        0.51       19.49
+        COL |          1        0.51       20.00
+        COM |          1        0.51       20.51
+        CRI |          1        0.51       21.03
+        CUB |          1        0.51       21.54
+        CYM |          1        0.51       22.05
+        CYP |          1        0.51       22.56
+        CZE |          1        0.51       23.08
+        DEU |          1        0.51       23.59
+        DJI |          1        0.51       24.10
+        DMA |          1        0.51       24.62
+        DNK |          1        0.51       25.13
+        DOM |          1        0.51       25.64
+        DZA |          1        0.51       26.15
+        ECU |          1        0.51       26.67
+        EGY |          1        0.51       27.18
+        ERI |          1        0.51       27.69
+        ESP |          1        0.51       28.21
+        EST |          1        0.51       28.72
+        ETH |          1        0.51       29.23
+        FIN |          1        0.51       29.74
+        FJI |          1        0.51       30.26
+        FRA |          1        0.51       30.77
+        FSM |          1        0.51       31.28
+        GAB |          1        0.51       31.79
+        GBR |          1        0.51       32.31
+        GEO |          1        0.51       32.82
+        GHA |          1        0.51       33.33
+        GIN |          1        0.51       33.85
+        GMB |          1        0.51       34.36
+        GNB |          1        0.51       34.87
+        GNQ |          1        0.51       35.38
+        GRC |          1        0.51       35.90
+        GRD |          1        0.51       36.41
+        GRL |          1        0.51       36.92
+        GTM |          1        0.51       37.44
+        GUY |          1        0.51       37.95
+        HND |          1        0.51       38.46
+        HRV |          1        0.51       38.97
+        HTI |          1        0.51       39.49
+        HUN |          1        0.51       40.00
+        IDN |          1        0.51       40.51
+        IND |          1        0.51       41.03
+        IRL |          1        0.51       41.54
+        IRN |          1        0.51       42.05
+        IRQ |          1        0.51       42.56
+        ISL |          1        0.51       43.08
+        ISR |          1        0.51       43.59
+        ITA |          1        0.51       44.10
+        JAM |          1        0.51       44.62
+        JOR |          1        0.51       45.13
+        JPN |          1        0.51       45.64
+        KAZ |          1        0.51       46.15
+        KEN |          1        0.51       46.67
+        KGZ |          1        0.51       47.18
+        KHM |          1        0.51       47.69
+        KIR |          1        0.51       48.21
+        KNA |          1        0.51       48.72
+        KOR |          2        1.03       49.74
+        KWT |          1        0.51       50.26
+        LAO |          1        0.51       50.77
+        LBN |          1        0.51       51.28
+        LBR |          1        0.51       51.79
+        LBY |          1        0.51       52.31
+        LCA |          1        0.51       52.82
+        LKA |          1        0.51       53.33
+        LSO |          1        0.51       53.85
+        LTU |          1        0.51       54.36
+        LUX |          1        0.51       54.87
+        LVA |          1        0.51       55.38
+        MAR |          1        0.51       55.90
+        MCO |          1        0.51       56.41
+        MDA |          1        0.51       56.92
+        MDG |          1        0.51       57.44
+        MDV |          1        0.51       57.95
+        MEX |          1        0.51       58.46
+        MHL |          1        0.51       58.97
+        MLI |          1        0.51       59.49
+        MLT |          1        0.51       60.00
+        MMR |          1        0.51       60.51
+        MNE |          1        0.51       61.03
+        MNG |          1        0.51       61.54
+        MOZ |          1        0.51       62.05
+        MRT |          1        0.51       62.56
+        MUS |          1        0.51       63.08
+        MWI |          1        0.51       63.59
+        MYS |          1        0.51       64.10
+        NAM |          1        0.51       64.62
+        NER |          1        0.51       65.13
+        NGA |          1        0.51       65.64
+        NIC |          1        0.51       66.15
+        NLD |          1        0.51       66.67
+        NOR |          1        0.51       67.18
+        NPL |          1        0.51       67.69
+        NRU |          1        0.51       68.21
+        NZL |          1        0.51       68.72
+        OMN |          1        0.51       69.23
+        PAK |          1        0.51       69.74
+        PAN |          1        0.51       70.26
+        PER |          1        0.51       70.77
+        PHL |          1        0.51       71.28
+        PLW |          1        0.51       71.79
+        PNG |          1        0.51       72.31
+        POL |          1        0.51       72.82
+        PRI |          1        0.51       73.33
+        PRK |          1        0.51       73.85
+        PRT |          1        0.51       74.36
+        PRY |          1        0.51       74.87
+        PSE |          1        0.51       75.38
+        QAT |          1        0.51       75.90
+        ROU |          1        0.51       76.41
+        RUS |          1        0.51       76.92
+        RWA |          1        0.51       77.44
+        SAU |          1        0.51       77.95
+        SDN |          1        0.51       78.46
+        SEN |          1        0.51       78.97
+        SGP |          1        0.51       79.49
+        SLB |          1        0.51       80.00
+        SLE |          1        0.51       80.51
+        SLV |          1        0.51       81.03
+        SMR |          1        0.51       81.54
+        SOM |          1        0.51       82.05
+        SRB |          1        0.51       82.56
+        STP |          1        0.51       83.08
+        SUR |          1        0.51       83.59
+        SVK |          1        0.51       84.10
+        SVN |          1        0.51       84.62
+        SWE |          1        0.51       85.13
+        SYC |          1        0.51       85.64
+        SYR |          1        0.51       86.15
+        TCD |          1        0.51       86.67
+        TGO |          1        0.51       87.18
+        THA |          1        0.51       87.69
+        TJK |          1        0.51       88.21
+        TKM |          1        0.51       88.72
+        TLS |          1        0.51       89.23
+        TON |          1        0.51       89.74
+        TTO |          1        0.51       90.26
+        TUN |          1        0.51       90.77
+        TUR |          1        0.51       91.28
+        TUV |          1        0.51       91.79
+        TZA |          1        0.51       92.31
+        UGA |          1        0.51       92.82
+        UKR |          1        0.51       93.33
+        URY |          1        0.51       93.85
+        USA |          1        0.51       94.36
+        UZB |          1        0.51       94.87
+        VCT |          1        0.51       95.38
+        VEN |          1        0.51       95.90
+        VIR |          1        0.51       96.41
+        VNM |          1        0.51       96.92
+        VUT |          1        0.51       97.44
+        WSM |          1        0.51       97.95
+        YEM |          1        0.51       98.46
+        ZAF |          1        0.51       98.97
+        ZMB |          1        0.51       99.49
+        ZWE |          1        0.51      100.00
+------------+-----------------------------------
+      Total |        195      100.00
 
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
-
-. replace pos = 12 if id=="NLD"
-(1 real change made)
-
-. replace pos = 2 if id=="VNM"
-(1 real change made)
-
-. replace pos = 4 if id=="TUR"
-(1 real change made)
-
-. replace pos = 6 if id=="NZL"
-(1 real change made)
-
-. replace pos = 12 if id=="POL"
-(1 real change made)
-
-. replace pos = 1 if id=="HRV"
-(1 real change made)
-
-. replace pos = 2 if id=="DEU"
-(1 real change made)
-
-. replace pos = 8 if id=="ESP"
-(1 real change made)
-
-. replace pos = 12 if id=="SWE"
-(1 real change made)
-
-. replace pos = 6 if id=="MEX"
-(1 real change made)
-
-. replace pos = 4 if id=="ISR"
-(1 real change made)
-
-. replace pos = 12 if id=="KOR"
-(2 real changes made)
-
-. replace pos = 9 if id== "GBR"
-(1 real change made)
-
-. 
-. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle(
-> "Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black) 
-
-. 
-. graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_1.gph", replace
-(file C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_1.gph saved)
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
 
 . use "./Data/pandemic_master.dta", clear
 
@@ -95,101 +248,366 @@ end of do-file
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+. drop if WHO_2018_HE_GDP ==.
+(107 observations deleted)
 
-. gen pos = 3
+. sum
 
-. replace pos = 2 if id=="DEU"
-(1 real change made)
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+     Country |          0
+    dstr_WHO |         34   -.1394365    .0485387  -.2352116  -.0101876
+   dstr_WHO2 |         34   -.1936212    .0727543  -.3266388  -.0336828
+WHO_2018_H~P |        189    6.610934    2.896636   1.597385   19.04736
+          id |          0
 
-. replace pos = 6 if id=="SGP"
-(1 real change made)
+. tab id
 
-. replace pos = 6 if id=="NZL"
-(1 real change made)
+   ISO 3166 |
+    alpha-3 |
+       code |      Freq.     Percent        Cum.
+------------+-----------------------------------
+        AFG |          1        0.54        0.54
+        AGO |          1        0.54        1.08
+        ALB |          1        0.54        1.61
+        AND |          1        0.54        2.15
+        ARE |          1        0.54        2.69
+        ARG |          1        0.54        3.23
+        ARM |          1        0.54        3.76
+        ATG |          1        0.54        4.30
+        AUS |          1        0.54        4.84
+        AUT |          1        0.54        5.38
+        AZE |          1        0.54        5.91
+        BDI |          1        0.54        6.45
+        BEL |          1        0.54        6.99
+        BEN |          1        0.54        7.53
+        BFA |          1        0.54        8.06
+        BGD |          1        0.54        8.60
+        BGR |          1        0.54        9.14
+        BHR |          1        0.54        9.68
+        BHS |          1        0.54       10.22
+        BIH |          1        0.54       10.75
+        BLR |          1        0.54       11.29
+        BLZ |          1        0.54       11.83
+        BOL |          1        0.54       12.37
+        BRA |          1        0.54       12.90
+        BRB |          1        0.54       13.44
+        BRN |          1        0.54       13.98
+        BTN |          1        0.54       14.52
+        BWA |          1        0.54       15.05
+        CAF |          1        0.54       15.59
+        CAN |          1        0.54       16.13
+        CHE |          1        0.54       16.67
+        CHL |          1        0.54       17.20
+        CHN |          1        0.54       17.74
+        CIV |          1        0.54       18.28
+        CMR |          1        0.54       18.82
+        COD |          1        0.54       19.35
+        COG |          1        0.54       19.89
+        COL |          1        0.54       20.43
+        COM |          1        0.54       20.97
+        CRI |          1        0.54       21.51
+        CUB |          1        0.54       22.04
+        CYP |          1        0.54       22.58
+        CZE |          1        0.54       23.12
+        DEU |          1        0.54       23.66
+        DJI |          1        0.54       24.19
+        DMA |          1        0.54       24.73
+        DNK |          1        0.54       25.27
+        DOM |          1        0.54       25.81
+        DZA |          1        0.54       26.34
+        ECU |          1        0.54       26.88
+        EGY |          1        0.54       27.42
+        ERI |          1        0.54       27.96
+        ESP |          1        0.54       28.49
+        EST |          1        0.54       29.03
+        ETH |          1        0.54       29.57
+        FIN |          1        0.54       30.11
+        FJI |          1        0.54       30.65
+        FRA |          1        0.54       31.18
+        FSM |          1        0.54       31.72
+        GAB |          1        0.54       32.26
+        GBR |          2        1.08       33.33
+        GEO |          1        0.54       33.87
+        GHA |          1        0.54       34.41
+        GIN |          1        0.54       34.95
+        GMB |          1        0.54       35.48
+        GNB |          1        0.54       36.02
+        GNQ |          1        0.54       36.56
+        GRC |          1        0.54       37.10
+        GRD |          1        0.54       37.63
+        GTM |          1        0.54       38.17
+        GUY |          1        0.54       38.71
+        HND |          1        0.54       39.25
+        HRV |          1        0.54       39.78
+        HTI |          1        0.54       40.32
+        HUN |          1        0.54       40.86
+        IDN |          1        0.54       41.40
+        IND |          1        0.54       41.94
+        IRL |          1        0.54       42.47
+        IRN |          1        0.54       43.01
+        IRQ |          1        0.54       43.55
+        ISL |          1        0.54       44.09
+        ISR |          1        0.54       44.62
+        ITA |          1        0.54       45.16
+        JAM |          1        0.54       45.70
+        JOR |          1        0.54       46.24
+        JPN |          1        0.54       46.77
+        KAZ |          1        0.54       47.31
+        KEN |          1        0.54       47.85
+        KGZ |          1        0.54       48.39
+        KHM |          1        0.54       48.92
+        KIR |          1        0.54       49.46
+        KNA |          1        0.54       50.00
+        KOR |          2        1.08       51.08
+        KWT |          1        0.54       51.61
+        LAO |          1        0.54       52.15
+        LBN |          1        0.54       52.69
+        LBR |          1        0.54       53.23
+        LCA |          1        0.54       53.76
+        LKA |          1        0.54       54.30
+        LSO |          1        0.54       54.84
+        LTU |          1        0.54       55.38
+        LUX |          1        0.54       55.91
+        LVA |          1        0.54       56.45
+        MAR |          1        0.54       56.99
+        MCO |          1        0.54       57.53
+        MDA |          1        0.54       58.06
+        MDG |          1        0.54       58.60
+        MDV |          1        0.54       59.14
+        MEX |          1        0.54       59.68
+        MHL |          1        0.54       60.22
+        MLI |          1        0.54       60.75
+        MLT |          1        0.54       61.29
+        MMR |          1        0.54       61.83
+        MNE |          1        0.54       62.37
+        MNG |          1        0.54       62.90
+        MOZ |          1        0.54       63.44
+        MRT |          1        0.54       63.98
+        MUS |          1        0.54       64.52
+        MWI |          1        0.54       65.05
+        MYS |          1        0.54       65.59
+        NAM |          1        0.54       66.13
+        NER |          1        0.54       66.67
+        NGA |          1        0.54       67.20
+        NIC |          1        0.54       67.74
+        NLD |          1        0.54       68.28
+        NOR |          1        0.54       68.82
+        NPL |          1        0.54       69.35
+        NRU |          1        0.54       69.89
+        NZL |          1        0.54       70.43
+        OMN |          1        0.54       70.97
+        PAK |          1        0.54       71.51
+        PAN |          1        0.54       72.04
+        PER |          1        0.54       72.58
+        PHL |          1        0.54       73.12
+        PLW |          1        0.54       73.66
+        PNG |          1        0.54       74.19
+        POL |          1        0.54       74.73
+        PRT |          1        0.54       75.27
+        PRY |          1        0.54       75.81
+        QAT |          1        0.54       76.34
+        ROU |          1        0.54       76.88
+        RUS |          1        0.54       77.42
+        RWA |          1        0.54       77.96
+        SAU |          1        0.54       78.49
+        SDN |          1        0.54       79.03
+        SEN |          1        0.54       79.57
+        SGP |          1        0.54       80.11
+        SLB |          1        0.54       80.65
+        SLE |          1        0.54       81.18
+        SLV |          1        0.54       81.72
+        SMR |          1        0.54       82.26
+        SRB |          1        0.54       82.80
+        SSD |          1        0.54       83.33
+        STP |          1        0.54       83.87
+        SUR |          1        0.54       84.41
+        SVK |          1        0.54       84.95
+        SVN |          1        0.54       85.48
+        SWE |          1        0.54       86.02
+        SYC |          1        0.54       86.56
+        TCD |          1        0.54       87.10
+        TGO |          1        0.54       87.63
+        THA |          1        0.54       88.17
+        TJK |          1        0.54       88.71
+        TKM |          1        0.54       89.25
+        TLS |          1        0.54       89.78
+        TON |          1        0.54       90.32
+        TTO |          1        0.54       90.86
+        TUN |          1        0.54       91.40
+        TUR |          1        0.54       91.94
+        TUV |          1        0.54       92.47
+        TZA |          1        0.54       93.01
+        UGA |          1        0.54       93.55
+        UKR |          1        0.54       94.09
+        URY |          1        0.54       94.62
+        USA |          1        0.54       95.16
+        UZB |          1        0.54       95.70
+        VCT |          1        0.54       96.24
+        VEN |          1        0.54       96.77
+        VNM |          1        0.54       97.31
+        VUT |          1        0.54       97.85
+        WSM |          1        0.54       98.39
+        ZAF |          1        0.54       98.92
+        ZMB |          1        0.54       99.46
+        ZWE |          1        0.54      100.00
+------------+-----------------------------------
+      Total |        186      100.00
 
-. replace pos = 6 if id=="AUT"
-(1 real change made)
-
-. replace pos = 2 if id=="BEL"
-(1 real change made)
-
-. replace pos = 9 if id=="JPN"
-(1 real change made)
-
-. 
-. 
-. scatter dstr_WHO2 WHO_2018_HE_GDP, title({bf:Health Expenditure and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Health Expenditure as % of
->  GDP") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off)|| lfit dstr_WHO2 WHO_2018_HE_GDP, lcolor(
-> black)
-
-. 
-. graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_2.gph", replace
-(file C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_2.gph saved)
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
-
-. asdoc reg dstr_WHO2 WHO_2018_HE_GDP, robust replace dec(5)
-
-Linear regression                               Number of obs     =         34
-                                                F(1, 32)          =       0.30
-                                                Prob > F          =     0.5873
-                                                R-squared         =     0.0117
-                                                Root MSE          =     .07345
-
----------------------------------------------------------------------------------
-                |               Robust
-      dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
-----------------+----------------------------------------------------------------
-WHO_2018_HE_GDP |   .0028513   .0052009     0.55   0.587    -.0077426    .0134452
-          _cons |  -.2181191    .048071    -4.54   0.000    -.3160366   -.1202016
----------------------------------------------------------------------------------
-(note: file Myfile.doc not found)
-Click to Open File:  Myfile.doc
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
-
-. asdoc reg dstr_WHO2 WB_hb_p1000, robust replace dec(5) //n = 32, negative and insignificant.
-
-Linear regression                               Number of obs     =         34
-                                                F(1, 32)          =       1.26
-                                                Prob > F          =     0.2697
-                                                R-squared         =     0.0148
-                                                Root MSE          =     .07333
-
-------------------------------------------------------------------------------
-             |               Robust
-   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
--------------+----------------------------------------------------------------
- WB_hb_p1000 |   .0031452      .0028     1.12   0.270    -.0025581    .0088485
-       _cons |  -.2069098   .0210798    -9.82   0.000     -.249848   -.1639715
-------------------------------------------------------------------------------
-(note: file Myfile.doc not found)
-Click to Open File:  Myfile.doc
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD1d08_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
 
 . clear
 
-. cd "C:/Users/gauta/Documents/GitHub/pandemic"
-C:\Users\gauta\Documents\GitHub\pandemic
+. cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
+C:\Users\gauta\Documents\GitHub\pandemic\Data\Xvar
 
-. capture log close
+. *X Variables
+. //GHSI DATA (X1a)
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+
+. import excel "WB_Hosp_Beds_p1000.xlsx", sheet("Table2") firstrow clear
+(3 vars, 4,897 obs)
+
+. encode CountryName, gen(id)
+
+. rename Attribute Year
+
+. encode Year, gen(Yearid)
+
+. rename Value WB_hb_p1000
+
+. xtset id Yearid
+       panel variable:  id (unbalanced)
+        time variable:  Yearid, 1 to 60, but with gaps
+                delta:  1 unit
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+
+. bysort CountryName(Year) : gen diff = CountryName != CountryName[_n+1]
+
+. 
+end of do-file
+
+. keep Yearid diff
+
+. drop if diff == 0
+(4,649 observations deleted)
+
+. tab Yearid
+
+  Attribute |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       1960 |          1        0.40        0.40
+       1970 |          2        0.81        1.21
+       1981 |          1        0.40        1.61
+       1985 |          1        0.40        2.02
+       1990 |         11        4.44        6.45
+       1996 |          4        1.61        8.06
+       2001 |          1        0.40        8.47
+       2004 |          2        0.81        9.27
+       2005 |          3        1.21       10.48
+       2006 |          8        3.23       13.71
+       2007 |          2        0.81       14.52
+       2008 |          2        0.81       15.32
+       2009 |          6        2.42       17.74
+       2010 |         22        8.87       26.61
+       2011 |         14        5.65       32.26
+       2012 |          9        3.63       35.89
+       2013 |          2        0.81       36.69
+       2014 |         15        6.05       42.74
+       2015 |          3        1.21       43.95
+       2016 |         11        4.44       48.39
+       2017 |         87       35.08       83.47
+       2018 |         33       13.31       96.77
+       2019 |          8        3.23      100.00
+------------+-----------------------------------
+      Total |        248      100.00
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+
+. import excel "WB_Hosp_Beds_p1000.xlsx", sheet("Table2") firstrow clear
+(3 vars, 4,897 obs)
+
+. encode CountryName, gen(id)
+
+. rename Attribute Year
+
+. encode Year, gen(Yearid)
+
+. rename Value WB_hb_p1000
+
+. xtset id Yearid
+       panel variable:  id (unbalanced)
+        time variable:  Yearid, 1 to 60, but with gaps
+                delta:  1 unit
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+
+. bysort CountryName(Year) : gen diff = CountryName != CountryName[_n+1]
+
+. 
+end of do-file
+
+. keep CountryName Yearid diff
+
+. drop if diff == 0
+(4,649 observations deleted)
+
+. sum year
+variable year not found
+r(111);
+
+. sum Year
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      Yearid |        248    53.33871    8.812842          1         60
+
+. sum
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+ CountryName |          0
+      Yearid |        248    53.33871    8.812842          1         60
+        diff |        248           1           0          1          1
+
+. tab Year
+
+  Attribute |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       1960 |          1        0.40        0.40
+       1970 |          2        0.81        1.21
+       1981 |          1        0.40        1.61
+       1985 |          1        0.40        2.02
+       1990 |         11        4.44        6.45
+       1996 |          4        1.61        8.06
+       2001 |          1        0.40        8.47
+       2004 |          2        0.81        9.27
+       2005 |          3        1.21       10.48
+       2006 |          8        3.23       13.71
+       2007 |          2        0.81       14.52
+       2008 |          2        0.81       15.32
+       2009 |          6        2.42       17.74
+       2010 |         22        8.87       26.61
+       2011 |         14        5.65       32.26
+       2012 |          9        3.63       35.89
+       2013 |          2        0.81       36.69
+       2014 |         15        6.05       42.74
+       2015 |          3        1.21       43.95
+       2016 |         11        4.44       48.39
+       2017 |         87       35.08       83.47
+       2018 |         33       13.31       96.77
+       2019 |          8        3.23      100.00
+------------+-----------------------------------
+      Total |        248      100.00
+
+. exit, clear
