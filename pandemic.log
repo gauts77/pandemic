@@ -1,613 +1,1791 @@
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
        log:  C:\Users\gauta\Documents\GitHub\pandemic\pandemic.log
   log type:  text
- opened on:  26 Oct 2021, 14:52:55
+ opened on:  20 Dec 2021, 10:56:14
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-. use "./Data/pandemic_master.dta", clear
-
-. 
-end of do-file
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
+. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
+. use "./Data/pandemic_master_surface.dta", clear
 
 . 
 end of do-file
 
-. drop if WB_hb_p1000 ==.
-(47 observations deleted)
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-. sum
-
-    Variable |        Obs        Mean    Std. Dev.       Min        Max
--------------+---------------------------------------------------------
-     Country |          0
-    dstr_WHO |         34   -.1394365    .0485387  -.2352116  -.0101876
-   dstr_WHO2 |         34   -.1936212    .0727543  -.3266388  -.0336828
- WB_hb_p1000 |        249    3.052215    2.740999         .1      18.68
-          id |          0
-
-. tab id
-
-   ISO 3166 |
-    alpha-3 |
-       code |      Freq.     Percent        Cum.
-------------+-----------------------------------
-        AFG |          1        0.51        0.51
-        AGO |          1        0.51        1.03
-        ALB |          1        0.51        1.54
-        AND |          1        0.51        2.05
-        ARE |          1        0.51        2.56
-        ARG |          1        0.51        3.08
-        ARM |          1        0.51        3.59
-        ATG |          1        0.51        4.10
-        AUS |          1        0.51        4.62
-        AUT |          1        0.51        5.13
-        AZE |          1        0.51        5.64
-        BDI |          1        0.51        6.15
-        BEL |          1        0.51        6.67
-        BEN |          1        0.51        7.18
-        BFA |          1        0.51        7.69
-        BGD |          1        0.51        8.21
-        BGR |          1        0.51        8.72
-        BHR |          1        0.51        9.23
-        BHS |          1        0.51        9.74
-        BIH |          1        0.51       10.26
-        BLR |          1        0.51       10.77
-        BLZ |          1        0.51       11.28
-        BMU |          1        0.51       11.79
-        BOL |          1        0.51       12.31
-        BRA |          1        0.51       12.82
-        BRB |          1        0.51       13.33
-        BRN |          1        0.51       13.85
-        BTN |          1        0.51       14.36
-        BWA |          1        0.51       14.87
-        CAF |          1        0.51       15.38
-        CAN |          1        0.51       15.90
-        CHE |          1        0.51       16.41
-        CHL |          1        0.51       16.92
-        CHN |          1        0.51       17.44
-        CIV |          1        0.51       17.95
-        CMR |          1        0.51       18.46
-        COD |          1        0.51       18.97
-        COG |          1        0.51       19.49
-        COL |          1        0.51       20.00
-        COM |          1        0.51       20.51
-        CRI |          1        0.51       21.03
-        CUB |          1        0.51       21.54
-        CYM |          1        0.51       22.05
-        CYP |          1        0.51       22.56
-        CZE |          1        0.51       23.08
-        DEU |          1        0.51       23.59
-        DJI |          1        0.51       24.10
-        DMA |          1        0.51       24.62
-        DNK |          1        0.51       25.13
-        DOM |          1        0.51       25.64
-        DZA |          1        0.51       26.15
-        ECU |          1        0.51       26.67
-        EGY |          1        0.51       27.18
-        ERI |          1        0.51       27.69
-        ESP |          1        0.51       28.21
-        EST |          1        0.51       28.72
-        ETH |          1        0.51       29.23
-        FIN |          1        0.51       29.74
-        FJI |          1        0.51       30.26
-        FRA |          1        0.51       30.77
-        FSM |          1        0.51       31.28
-        GAB |          1        0.51       31.79
-        GBR |          1        0.51       32.31
-        GEO |          1        0.51       32.82
-        GHA |          1        0.51       33.33
-        GIN |          1        0.51       33.85
-        GMB |          1        0.51       34.36
-        GNB |          1        0.51       34.87
-        GNQ |          1        0.51       35.38
-        GRC |          1        0.51       35.90
-        GRD |          1        0.51       36.41
-        GRL |          1        0.51       36.92
-        GTM |          1        0.51       37.44
-        GUY |          1        0.51       37.95
-        HND |          1        0.51       38.46
-        HRV |          1        0.51       38.97
-        HTI |          1        0.51       39.49
-        HUN |          1        0.51       40.00
-        IDN |          1        0.51       40.51
-        IND |          1        0.51       41.03
-        IRL |          1        0.51       41.54
-        IRN |          1        0.51       42.05
-        IRQ |          1        0.51       42.56
-        ISL |          1        0.51       43.08
-        ISR |          1        0.51       43.59
-        ITA |          1        0.51       44.10
-        JAM |          1        0.51       44.62
-        JOR |          1        0.51       45.13
-        JPN |          1        0.51       45.64
-        KAZ |          1        0.51       46.15
-        KEN |          1        0.51       46.67
-        KGZ |          1        0.51       47.18
-        KHM |          1        0.51       47.69
-        KIR |          1        0.51       48.21
-        KNA |          1        0.51       48.72
-        KOR |          2        1.03       49.74
-        KWT |          1        0.51       50.26
-        LAO |          1        0.51       50.77
-        LBN |          1        0.51       51.28
-        LBR |          1        0.51       51.79
-        LBY |          1        0.51       52.31
-        LCA |          1        0.51       52.82
-        LKA |          1        0.51       53.33
-        LSO |          1        0.51       53.85
-        LTU |          1        0.51       54.36
-        LUX |          1        0.51       54.87
-        LVA |          1        0.51       55.38
-        MAR |          1        0.51       55.90
-        MCO |          1        0.51       56.41
-        MDA |          1        0.51       56.92
-        MDG |          1        0.51       57.44
-        MDV |          1        0.51       57.95
-        MEX |          1        0.51       58.46
-        MHL |          1        0.51       58.97
-        MLI |          1        0.51       59.49
-        MLT |          1        0.51       60.00
-        MMR |          1        0.51       60.51
-        MNE |          1        0.51       61.03
-        MNG |          1        0.51       61.54
-        MOZ |          1        0.51       62.05
-        MRT |          1        0.51       62.56
-        MUS |          1        0.51       63.08
-        MWI |          1        0.51       63.59
-        MYS |          1        0.51       64.10
-        NAM |          1        0.51       64.62
-        NER |          1        0.51       65.13
-        NGA |          1        0.51       65.64
-        NIC |          1        0.51       66.15
-        NLD |          1        0.51       66.67
-        NOR |          1        0.51       67.18
-        NPL |          1        0.51       67.69
-        NRU |          1        0.51       68.21
-        NZL |          1        0.51       68.72
-        OMN |          1        0.51       69.23
-        PAK |          1        0.51       69.74
-        PAN |          1        0.51       70.26
-        PER |          1        0.51       70.77
-        PHL |          1        0.51       71.28
-        PLW |          1        0.51       71.79
-        PNG |          1        0.51       72.31
-        POL |          1        0.51       72.82
-        PRI |          1        0.51       73.33
-        PRK |          1        0.51       73.85
-        PRT |          1        0.51       74.36
-        PRY |          1        0.51       74.87
-        PSE |          1        0.51       75.38
-        QAT |          1        0.51       75.90
-        ROU |          1        0.51       76.41
-        RUS |          1        0.51       76.92
-        RWA |          1        0.51       77.44
-        SAU |          1        0.51       77.95
-        SDN |          1        0.51       78.46
-        SEN |          1        0.51       78.97
-        SGP |          1        0.51       79.49
-        SLB |          1        0.51       80.00
-        SLE |          1        0.51       80.51
-        SLV |          1        0.51       81.03
-        SMR |          1        0.51       81.54
-        SOM |          1        0.51       82.05
-        SRB |          1        0.51       82.56
-        STP |          1        0.51       83.08
-        SUR |          1        0.51       83.59
-        SVK |          1        0.51       84.10
-        SVN |          1        0.51       84.62
-        SWE |          1        0.51       85.13
-        SYC |          1        0.51       85.64
-        SYR |          1        0.51       86.15
-        TCD |          1        0.51       86.67
-        TGO |          1        0.51       87.18
-        THA |          1        0.51       87.69
-        TJK |          1        0.51       88.21
-        TKM |          1        0.51       88.72
-        TLS |          1        0.51       89.23
-        TON |          1        0.51       89.74
-        TTO |          1        0.51       90.26
-        TUN |          1        0.51       90.77
-        TUR |          1        0.51       91.28
-        TUV |          1        0.51       91.79
-        TZA |          1        0.51       92.31
-        UGA |          1        0.51       92.82
-        UKR |          1        0.51       93.33
-        URY |          1        0.51       93.85
-        USA |          1        0.51       94.36
-        UZB |          1        0.51       94.87
-        VCT |          1        0.51       95.38
-        VEN |          1        0.51       95.90
-        VIR |          1        0.51       96.41
-        VNM |          1        0.51       96.92
-        VUT |          1        0.51       97.44
-        WSM |          1        0.51       97.95
-        YEM |          1        0.51       98.46
-        ZAF |          1        0.51       98.97
-        ZMB |          1        0.51       99.49
-        ZWE |          1        0.51      100.00
-------------+-----------------------------------
-      Total |        195      100.00
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
-
-. use "./Data/pandemic_master.dta", clear
-
-. keep Country id dstr_WHO dstr_WHO2 WHO_2018_HE_GDP
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
 
 . 
 end of do-file
 
-. drop if WHO_2018_HE_GDP ==.
-(107 observations deleted)
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-. sum
+. pctile gdp_cap_quart = gdp_cap, nquintiles(4)
+option nquintiles() not allowed
+r(198);
 
-    Variable |        Obs        Mean    Std. Dev.       Min        Max
--------------+---------------------------------------------------------
-     Country |          0
-    dstr_WHO |         34   -.1394365    .0485387  -.2352116  -.0101876
-   dstr_WHO2 |         34   -.1936212    .0727543  -.3266388  -.0336828
-WHO_2018_H~P |        189    6.610934    2.896636   1.597385   19.04736
-          id |          0
-
-. tab id
-
-   ISO 3166 |
-    alpha-3 |
-       code |      Freq.     Percent        Cum.
-------------+-----------------------------------
-        AFG |          1        0.54        0.54
-        AGO |          1        0.54        1.08
-        ALB |          1        0.54        1.61
-        AND |          1        0.54        2.15
-        ARE |          1        0.54        2.69
-        ARG |          1        0.54        3.23
-        ARM |          1        0.54        3.76
-        ATG |          1        0.54        4.30
-        AUS |          1        0.54        4.84
-        AUT |          1        0.54        5.38
-        AZE |          1        0.54        5.91
-        BDI |          1        0.54        6.45
-        BEL |          1        0.54        6.99
-        BEN |          1        0.54        7.53
-        BFA |          1        0.54        8.06
-        BGD |          1        0.54        8.60
-        BGR |          1        0.54        9.14
-        BHR |          1        0.54        9.68
-        BHS |          1        0.54       10.22
-        BIH |          1        0.54       10.75
-        BLR |          1        0.54       11.29
-        BLZ |          1        0.54       11.83
-        BOL |          1        0.54       12.37
-        BRA |          1        0.54       12.90
-        BRB |          1        0.54       13.44
-        BRN |          1        0.54       13.98
-        BTN |          1        0.54       14.52
-        BWA |          1        0.54       15.05
-        CAF |          1        0.54       15.59
-        CAN |          1        0.54       16.13
-        CHE |          1        0.54       16.67
-        CHL |          1        0.54       17.20
-        CHN |          1        0.54       17.74
-        CIV |          1        0.54       18.28
-        CMR |          1        0.54       18.82
-        COD |          1        0.54       19.35
-        COG |          1        0.54       19.89
-        COL |          1        0.54       20.43
-        COM |          1        0.54       20.97
-        CRI |          1        0.54       21.51
-        CUB |          1        0.54       22.04
-        CYP |          1        0.54       22.58
-        CZE |          1        0.54       23.12
-        DEU |          1        0.54       23.66
-        DJI |          1        0.54       24.19
-        DMA |          1        0.54       24.73
-        DNK |          1        0.54       25.27
-        DOM |          1        0.54       25.81
-        DZA |          1        0.54       26.34
-        ECU |          1        0.54       26.88
-        EGY |          1        0.54       27.42
-        ERI |          1        0.54       27.96
-        ESP |          1        0.54       28.49
-        EST |          1        0.54       29.03
-        ETH |          1        0.54       29.57
-        FIN |          1        0.54       30.11
-        FJI |          1        0.54       30.65
-        FRA |          1        0.54       31.18
-        FSM |          1        0.54       31.72
-        GAB |          1        0.54       32.26
-        GBR |          2        1.08       33.33
-        GEO |          1        0.54       33.87
-        GHA |          1        0.54       34.41
-        GIN |          1        0.54       34.95
-        GMB |          1        0.54       35.48
-        GNB |          1        0.54       36.02
-        GNQ |          1        0.54       36.56
-        GRC |          1        0.54       37.10
-        GRD |          1        0.54       37.63
-        GTM |          1        0.54       38.17
-        GUY |          1        0.54       38.71
-        HND |          1        0.54       39.25
-        HRV |          1        0.54       39.78
-        HTI |          1        0.54       40.32
-        HUN |          1        0.54       40.86
-        IDN |          1        0.54       41.40
-        IND |          1        0.54       41.94
-        IRL |          1        0.54       42.47
-        IRN |          1        0.54       43.01
-        IRQ |          1        0.54       43.55
-        ISL |          1        0.54       44.09
-        ISR |          1        0.54       44.62
-        ITA |          1        0.54       45.16
-        JAM |          1        0.54       45.70
-        JOR |          1        0.54       46.24
-        JPN |          1        0.54       46.77
-        KAZ |          1        0.54       47.31
-        KEN |          1        0.54       47.85
-        KGZ |          1        0.54       48.39
-        KHM |          1        0.54       48.92
-        KIR |          1        0.54       49.46
-        KNA |          1        0.54       50.00
-        KOR |          2        1.08       51.08
-        KWT |          1        0.54       51.61
-        LAO |          1        0.54       52.15
-        LBN |          1        0.54       52.69
-        LBR |          1        0.54       53.23
-        LCA |          1        0.54       53.76
-        LKA |          1        0.54       54.30
-        LSO |          1        0.54       54.84
-        LTU |          1        0.54       55.38
-        LUX |          1        0.54       55.91
-        LVA |          1        0.54       56.45
-        MAR |          1        0.54       56.99
-        MCO |          1        0.54       57.53
-        MDA |          1        0.54       58.06
-        MDG |          1        0.54       58.60
-        MDV |          1        0.54       59.14
-        MEX |          1        0.54       59.68
-        MHL |          1        0.54       60.22
-        MLI |          1        0.54       60.75
-        MLT |          1        0.54       61.29
-        MMR |          1        0.54       61.83
-        MNE |          1        0.54       62.37
-        MNG |          1        0.54       62.90
-        MOZ |          1        0.54       63.44
-        MRT |          1        0.54       63.98
-        MUS |          1        0.54       64.52
-        MWI |          1        0.54       65.05
-        MYS |          1        0.54       65.59
-        NAM |          1        0.54       66.13
-        NER |          1        0.54       66.67
-        NGA |          1        0.54       67.20
-        NIC |          1        0.54       67.74
-        NLD |          1        0.54       68.28
-        NOR |          1        0.54       68.82
-        NPL |          1        0.54       69.35
-        NRU |          1        0.54       69.89
-        NZL |          1        0.54       70.43
-        OMN |          1        0.54       70.97
-        PAK |          1        0.54       71.51
-        PAN |          1        0.54       72.04
-        PER |          1        0.54       72.58
-        PHL |          1        0.54       73.12
-        PLW |          1        0.54       73.66
-        PNG |          1        0.54       74.19
-        POL |          1        0.54       74.73
-        PRT |          1        0.54       75.27
-        PRY |          1        0.54       75.81
-        QAT |          1        0.54       76.34
-        ROU |          1        0.54       76.88
-        RUS |          1        0.54       77.42
-        RWA |          1        0.54       77.96
-        SAU |          1        0.54       78.49
-        SDN |          1        0.54       79.03
-        SEN |          1        0.54       79.57
-        SGP |          1        0.54       80.11
-        SLB |          1        0.54       80.65
-        SLE |          1        0.54       81.18
-        SLV |          1        0.54       81.72
-        SMR |          1        0.54       82.26
-        SRB |          1        0.54       82.80
-        SSD |          1        0.54       83.33
-        STP |          1        0.54       83.87
-        SUR |          1        0.54       84.41
-        SVK |          1        0.54       84.95
-        SVN |          1        0.54       85.48
-        SWE |          1        0.54       86.02
-        SYC |          1        0.54       86.56
-        TCD |          1        0.54       87.10
-        TGO |          1        0.54       87.63
-        THA |          1        0.54       88.17
-        TJK |          1        0.54       88.71
-        TKM |          1        0.54       89.25
-        TLS |          1        0.54       89.78
-        TON |          1        0.54       90.32
-        TTO |          1        0.54       90.86
-        TUN |          1        0.54       91.40
-        TUR |          1        0.54       91.94
-        TUV |          1        0.54       92.47
-        TZA |          1        0.54       93.01
-        UGA |          1        0.54       93.55
-        UKR |          1        0.54       94.09
-        URY |          1        0.54       94.62
-        USA |          1        0.54       95.16
-        UZB |          1        0.54       95.70
-        VCT |          1        0.54       96.24
-        VEN |          1        0.54       96.77
-        VNM |          1        0.54       97.31
-        VUT |          1        0.54       97.85
-        WSM |          1        0.54       98.39
-        ZAF |          1        0.54       98.92
-        ZMB |          1        0.54       99.46
-        ZWE |          1        0.54      100.00
-------------+-----------------------------------
-      Total |        186      100.00
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
-
-. clear
-
-. cd "C:/Users/gauta/Documents/GitHub/pandemic/Data/Xvar"
-C:\Users\gauta\Documents\GitHub\pandemic\Data\Xvar
-
-. *X Variables
-. //GHSI DATA (X1a)
-. 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+r(198);
 
-. import excel "WB_Hosp_Beds_p1000.xlsx", sheet("Table2") firstrow clear
-(3 vars, 4,897 obs)
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-. encode CountryName, gen(id)
-
-. rename Attribute Year
-
-. encode Year, gen(Yearid)
-
-. rename Value WB_hb_p1000
-
-. xtset id Yearid
-       panel variable:  id (unbalanced)
-        time variable:  Yearid, 1 to 60, but with gaps
-                delta:  1 unit
+. pctile gdp_cap_quart = gdp_cap, nquantiles(4)
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-. bysort CountryName(Year) : gen diff = CountryName != CountryName[_n+1]
-
-. 
-end of do-file
-
-. keep Yearid diff
-
-. drop if diff == 0
-(4,649 observations deleted)
-
-. tab Yearid
-
-  Attribute |      Freq.     Percent        Cum.
-------------+-----------------------------------
-       1960 |          1        0.40        0.40
-       1970 |          2        0.81        1.21
-       1981 |          1        0.40        1.61
-       1985 |          1        0.40        2.02
-       1990 |         11        4.44        6.45
-       1996 |          4        1.61        8.06
-       2001 |          1        0.40        8.47
-       2004 |          2        0.81        9.27
-       2005 |          3        1.21       10.48
-       2006 |          8        3.23       13.71
-       2007 |          2        0.81       14.52
-       2008 |          2        0.81       15.32
-       2009 |          6        2.42       17.74
-       2010 |         22        8.87       26.61
-       2011 |         14        5.65       32.26
-       2012 |          9        3.63       35.89
-       2013 |          2        0.81       36.69
-       2014 |         15        6.05       42.74
-       2015 |          3        1.21       43.95
-       2016 |         11        4.44       48.39
-       2017 |         87       35.08       83.47
-       2018 |         33       13.31       96.77
-       2019 |          8        3.23      100.00
-------------+-----------------------------------
-      Total |        248      100.00
-
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
-
-. import excel "WB_Hosp_Beds_p1000.xlsx", sheet("Table2") firstrow clear
-(3 vars, 4,897 obs)
-
-. encode CountryName, gen(id)
-
-. rename Attribute Year
-
-. encode Year, gen(Yearid)
-
-. rename Value WB_hb_p1000
-
-. xtset id Yearid
-       panel variable:  id (unbalanced)
-        time variable:  Yearid, 1 to 60, but with gaps
-                delta:  1 unit
+. gen pos = 3
 
 . 
 end of do-file
 
-. do "C:\Users\gauta\AppData\Local\Temp\STD607c_000000.tmp"
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-. bysort CountryName(Year) : gen diff = CountryName != CountryName[_n+1]
+. set scheme plottig
 
 . 
 end of do-file
 
-. keep CountryName Yearid diff
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-. drop if diff == 0
-(4,649 observations deleted)
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("
+> Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black) 
 
-. sum year
-variable year not found
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. pctile gdp_cap_quart = gdp_cap, nquantiles(4)
+
+. drop if gdp_cap > gdp_cap_quart[1]
+(296 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 25%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. pctile gdp_cap_quart = gdp_cap, nquantiles(4)
+
+. drop if gdp_cap > gdp_cap_quart[2]
+(250 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. //graphing for presentation - 
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 50%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. pctile gdp_cap_quart = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quart[2]
+(268 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 40%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 40%.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 40%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. pctile gdp_cap_quart = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quart[3]
+(232 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 60%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+variable pos not found
 r(111);
 
-. sum Year
+end of do-file
 
-    Variable |        Obs        Mean    Std. Dev.       Min        Max
--------------+---------------------------------------------------------
-      Yearid |        248    53.33871    8.812842          1         60
+r(111);
 
-. sum
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
 
-    Variable |        Obs        Mean    Std. Dev.       Min        Max
--------------+---------------------------------------------------------
- CountryName |          0
-      Yearid |        248    53.33871    8.812842          1         60
-        diff |        248           1           0          1          1
+. gen pos = 3
 
-. tab Year
+. 
+end of do-file
 
-  Attribute |      Freq.     Percent        Cum.
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 60%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 60%.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 60%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. pctile gdp_cap_quart = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quart[4]
+(195 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 80%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 80%.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 80%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 80%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\all countries.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\all countries.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap < gdp_cap_quant[1]
+(11 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[1]
+(50 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (bottom 20%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/10
+> 00") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black)
+>  
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 20%.gph"
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 20%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 20%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 20%.gph", replace
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 20%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[2]
+(38 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 40%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 40%.gph", replace
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 40%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[3]
+(26 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 60%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 60%.gph", replace
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 60%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[4]
+(14 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (poorest 80%):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1
+> 000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black
+> ) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 80%.gph", replace
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\poorest 80%.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[5]
+(0 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. replace pos = 3
+(0 real changes made)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. graph save "Graph" "C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\all countries.gph", replace
+(file C:\Users\gauta\Documents\GitHub\pandemic\figures\nonlinear\all countries.gph saved)
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 WB_hb_p1000, robust replace dec(5) //n = 32, negative and insignificant.
+
+Linear regression                               Number of obs     =         58
+                                                F(1, 56)          =       0.70
+                                                Prob > F          =     0.4068
+                                                R-squared         =     0.0123
+                                                Root MSE          =     .08937
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   -.004169   .0049877    -0.84   0.407    -.0141606    .0058225
+       _cons |  -.2121544   .0254681    -8.33   0.000    -.2631731   -.1611358
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. keep if gdp_cap_quant[2] < gdp_cap < gdp_cap_quant[3] 
+(0 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. //graphing for presentation - 
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[2]
+(38 observations deleted)
+
+. drop if gdp_cap < gdp_cap_quant[1]
+(11 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. //graphing for presentation - 
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[3]
+(26 observations deleted)
+
+. drop if gdp_cap < gdp_cap_quant[2]
+(36 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+(note:  regress could not fit model)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[3]
+(26 observations deleted)
+
+. drop if gdp_cap < gdp_cap_quant[2]
+(36 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. 
+end of do-file
+
+. tab gdp_cap if gdp_cap > gdp_cap_quant[2]
+
+    gdp_cap |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-       1960 |          1        0.40        0.40
-       1970 |          2        0.81        1.21
-       1981 |          1        0.40        1.61
-       1985 |          1        0.40        2.02
-       1990 |         11        4.44        6.45
-       1996 |          4        1.61        8.06
-       2001 |          1        0.40        8.47
-       2004 |          2        0.81        9.27
-       2005 |          3        1.21       10.48
-       2006 |          8        3.23       13.71
-       2007 |          2        0.81       14.52
-       2008 |          2        0.81       15.32
-       2009 |          6        2.42       17.74
-       2010 |         22        8.87       26.61
-       2011 |         14        5.65       32.26
-       2012 |          9        3.63       35.89
-       2013 |          2        0.81       36.69
-       2014 |         15        6.05       42.74
-       2015 |          3        1.21       43.95
-       2016 |         11        4.44       48.39
-       2017 |         87       35.08       83.47
-       2018 |         33       13.31       96.77
-       2019 |          8        3.23      100.00
+   26208.84 |          1        2.86        2.86
+   26753.35 |          1        2.86        5.71
+   26991.43 |          1        2.86        8.57
+   27010.99 |          1        2.86       11.43
+    27438.8 |          1        2.86       14.29
+    28428.7 |          1        2.86       17.14
+   28587.16 |          1        2.86       20.00
+   30628.45 |          1        2.86       22.86
+   31395.75 |          1        2.86       25.71
+   31495.97 |          1        2.86       28.57
+   32244.73 |          1        2.86       31.43
+    32259.8 |          1        2.86       34.29
+   36626.32 |          1        2.86       37.14
+   37618.04 |          1        2.86       40.00
+   39820.14 |          1        2.86       42.86
+    39835.7 |          1        2.86       45.71
+   40497.73 |          1        2.86       48.57
+   40565.64 |          1        2.86       51.43
+   43477.06 |          1        2.86       54.29
+   44370.81 |          1        2.86       57.14
+      44402 |          1        2.86       60.00
+   45718.52 |          1        2.86       62.86
+   49628.05 |          1        2.86       65.71
+   51389.05 |          1        2.86       68.57
+   51612.24 |          1        2.86       71.43
+   52613.57 |          1        2.86       74.29
+   52692.26 |          1        2.86       77.14
+   52866.27 |          1        2.86       80.00
+   55389.51 |          1        2.86       82.86
+   61537.18 |          1        2.86       85.71
+   66171.42 |          1        2.86       88.57
+   69952.46 |          1        2.86       91.43
+    75222.6 |          1        2.86       94.29
+   83521.27 |          1        2.86       97.14
+   91508.89 |          1        2.86      100.00
 ------------+-----------------------------------
-      Total |        248      100.00
+      Total |         35      100.00
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. 
+. *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[3]
+(26 observations deleted)
+
+. drop if gdp_cap < gdp_cap_quant[2]
+(36 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. //graphing for presentation - 
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+(note:  regress could not fit model)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. drop if gdp_cap > gdp_cap_quant[3]
+(26 observations deleted)
+
+. drop if gdp_cap < gdp_cap_quant[1]
+(11 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds
+> /1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(bla
+> ck) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. scatter WB_hb_p1000 gdp_cap
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. scatter WB_hb_p1000 gdp_cap|| lfit WB_hb_p1000 gdp_cap
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. scatter WB_hb_p1000 gdp_cap|| qfit WB_hb_p1000 gdp_cap
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. scatter dstr_WHO2 WB_hb_p1000 || lfit dstr_WHO2 WB_hb_p1000
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_median = gdp_cap
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen poor = 1 if gdp_cap < gdp_cap_median
+(3 missing values generated)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_median = gdp_cap
+
+. gen poor = 1 if gdp_cap < gdp_cap_median[1]
+(33 missing values generated)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. asdoc reg dstr_WHO2 WB_hb_p1000 poor, robust replace dec(5)
+note: poor omitted because of collinearity
+
+Linear regression                               Number of obs     =         28
+                                                F(1, 26)          =       0.01
+                                                Prob > F          =     0.9355
+                                                R-squared         =     0.0003
+                                                Root MSE          =     .11273
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   .0008086   .0099006     0.08   0.936    -.0195423    .0211595
+        poor |          0  (omitted)
+       _cons |  -.2161692   .0401011    -5.39   0.000    -.2985983   -.1337401
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap, robust replace dec(5)
+
+Linear regression                               Number of obs     =         58
+                                                F(2, 55)          =       0.64
+                                                Prob > F          =     0.5303
+                                                R-squared         =     0.0218
+                                                Root MSE          =     .08974
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0035059   .0050821    -0.69   0.493    -.0136907    .0066789
+     gdp_cap |  -4.34e-07   6.03e-07    -0.72   0.475    -1.64e-06    7.74e-07
+       _cons |  -.2004744   .0317806    -6.31   0.000    -.2641642   -.1367847
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap WB_hb_p1000*poor, robust replace dec(5)
+variable WB_hb_p1000*poor not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen interaction = WB_hb_p1000 * poor
+(34 missing values generated)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap interaction, robust replace dec(5)
+note: interaction omitted because of collinearity
+
+Linear regression                               Number of obs     =         28
+                                                F(2, 25)          =       0.63
+                                                Prob > F          =     0.5425
+                                                R-squared         =     0.0354
+                                                Root MSE          =     .11292
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   .0056923   .0112832     0.50   0.618    -.0175459    .0289305
+     gdp_cap |  -3.17e-06   2.94e-06    -1.08   0.292    -9.23e-06    2.90e-06
+ interaction |          0  (omitted)
+       _cons |  -.1793769   .0420008    -4.27   0.000    -.2658791   -.0928747
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_median = gdp_cap
+
+. gen rich = 1 if gdp_cap > gdp_cap_median[1]
+(30 missing values generated)
+
+. gen interaction = WB_hb_p1000 * rich
+(33 missing values generated)
+
+. 
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap interaction, robust replace dec(5)
+note: interaction omitted because of collinearity
+
+Linear regression                               Number of obs     =         29
+                                                F(2, 26)          =       0.36
+                                                Prob > F          =     0.7025
+                                                R-squared         =     0.0302
+                                                Root MSE          =     .06254
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0038179   .0046628    -0.82   0.420    -.0134024    .0057666
+     gdp_cap |   2.22e-07   7.33e-07     0.30   0.765    -1.28e-06    1.73e-06
+ interaction |          0  (omitted)
+       _cons |  -.2328511    .039545    -5.89   0.000     -.314137   -.1515652
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap, robust replace dec(5)
+
+Linear regression                               Number of obs     =         58
+                                                F(2, 55)          =       0.64
+                                                Prob > F          =     0.5303
+                                                R-squared         =     0.0218
+                                                Root MSE          =     .08974
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0035059   .0050821    -0.69   0.493    -.0136907    .0066789
+     gdp_cap |  -4.34e-07   6.03e-07    -0.72   0.475    -1.64e-06    7.74e-07
+       _cons |  -.2004744   .0317806    -6.31   0.000    -.2641642   -.1367847
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap, robust replace dec(5)
+
+Linear regression                               Number of obs     =         58
+                                                F(2, 55)          =       0.64
+                                                Prob > F          =     0.5303
+                                                R-squared         =     0.0218
+                                                Root MSE          =     .08974
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0035059   .0050821    -0.69   0.493    -.0136907    .0066789
+     gdp_cap |  -4.34e-07   6.03e-07    -0.72   0.475    -1.64e-06    7.74e-07
+       _cons |  -.2004744   .0317806    -6.31   0.000    -.2641642   -.1367847
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_median = gdp_cap
+
+. gen rich = 1 if gdp_cap > gdp_cap_median[1]
+(30 missing values generated)
+
+. gen interaction = WB_hb_p1000 * gdp_cap
+(4 missing values generated)
+
+. 
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap interaction, robust replace dec(5)
+
+Linear regression                               Number of obs     =         58
+                                                F(3, 54)          =       1.28
+                                                Prob > F          =     0.2916
+                                                R-squared         =     0.0491
+                                                Root MSE          =      .0893
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   .0088015   .0131683     0.67   0.507    -.0175994    .0352024
+     gdp_cap |   8.35e-07   1.31e-06     0.64   0.528    -1.80e-06    3.47e-06
+ interaction |  -4.01e-07   3.48e-07    -1.15   0.254    -1.10e-06    2.96e-07
+       _cons |  -.2355285   .0500825    -4.70   0.000    -.3359378   -.1351191
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 ln(WB_hb_p1000) ln(gdp_cap), robust replace dec(5)
+variable ln not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen loghosp = ln(WB_hb_p1000)
+(4 missing values generated)
+
+. gen logy = ln(gdp_cap)
+(3 missing values generated)
+
+. 
+. asdoc reg dstr_WHO2 loghosp logy , robust replace dec(5)
+
+Linear regression                               Number of obs     =         58
+                                                F(2, 55)          =       1.84
+                                                Prob > F          =     0.1686
+                                                R-squared         =     0.0466
+                                                Root MSE          =      .0886
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+     loghosp |  -.0076975     .02335    -0.33   0.743     -.054492     .039097
+        logy |  -.0199953   .0198076    -1.01   0.317    -.0596906    .0196999
+       _cons |  -.0162153   .1840678    -0.09   0.930    -.3850955    .3526648
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. reg dstr_WHO2 WB_hb_p1000 gdp_cap
+
+      Source |       SS           df       MS      Number of obs   =        58
+-------------+----------------------------------   F(2, 55)        =      0.61
+       Model |  .009872716         2  .004936358   Prob > F        =    0.5454
+    Residual |  .442944681        55   .00805354   R-squared       =    0.0218
+-------------+----------------------------------   Adj R-squared   =   -0.0138
+       Total |  .452817397        57  .007944165   Root MSE        =    .08974
+
+------------------------------------------------------------------------------
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0035059   .0050975    -0.69   0.494    -.0137215    .0067097
+     gdp_cap |  -4.34e-07   5.93e-07    -0.73   0.468    -1.62e-06    7.54e-07
+       _cons |  -.2004744   .0275934    -7.27   0.000    -.2557728    -.145176
+------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. predict yhat
+(option xb assumed; fitted values)
+(4 missing values generated)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_median = gdp_cap
+
+. gen rich = 1 if gdp_cap > gdp_cap_median[1]
+(30 missing values generated)
+
+. replace rich = 0 if gdp_cap < gdp_cap_median[1]
+(29 real changes made)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen interaction = WB_hb_p1000 * rich
+(5 missing values generated)
+
+. 
+. reg dstr_WHO2 WB_hb_p1000 rich interaction, robust
+
+Linear regression                               Number of obs     =         57
+                                                F(3, 53)          =       0.78
+                                                Prob > F          =     0.5099
+                                                R-squared         =     0.0270
+                                                Root MSE          =     .09032
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   .0008086   .0098939     0.08   0.935     -.019036    .0206533
+        rich |  -.0040404   .0493549    -0.08   0.935    -.1030337     .094953
+ interaction |  -.0050413   .0110757    -0.46   0.651    -.0272565    .0171738
+       _cons |  -.2161692   .0400741    -5.39   0.000    -.2965477   -.1357907
+------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. reg dstr_WHO2 WB_hb_p1000 gdp_cap
+
+      Source |       SS           df       MS      Number of obs   =        58
+-------------+----------------------------------   F(2, 55)        =      0.61
+       Model |  .009872716         2  .004936358   Prob > F        =    0.5454
+    Residual |  .442944681        55   .00805354   R-squared       =    0.0218
+-------------+----------------------------------   Adj R-squared   =   -0.0138
+       Total |  .452817397        57  .007944165   Root MSE        =    .08974
+
+------------------------------------------------------------------------------
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0035059   .0050975    -0.69   0.494    -.0137215    .0067097
+     gdp_cap |  -4.34e-07   5.93e-07    -0.73   0.468    -1.62e-06    7.54e-07
+       _cons |  -.2004744   .0275934    -7.27   0.000    -.2557728    -.145176
+------------------------------------------------------------------------------
+
+. predict yhat
+(option xb assumed; fitted values)
+(4 missing values generated)
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) (scatter dstr_WHO2 yha
+> t if rich == 0) (scatter dstr_WHO2 yhat if rich == 1)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) (scatter dstr_WHO2 yha
+> t if rich == 0) (scatter dstr_WHO2 yhat if rich == 1, mcolor = red)
+option mcolor not allowed
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) (scatter dstr_WHO2 yha
+> t if rich == 0) (scatter dstr_WHO2 yhat if rich == 1, mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) /*(scatter dstr_WHO2 y
+> hat if rich == 0) (scatter dstr_WHO2 yhat if rich == 1, mcolor(red))
+
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. reg dstr_WHO2 WB_hb_p1000 gdp_cap
+
+      Source |       SS           df       MS      Number of obs   =        58
+-------------+----------------------------------   F(2, 55)        =      0.61
+       Model |  .009872716         2  .004936358   Prob > F        =    0.5454
+    Residual |  .442944681        55   .00805354   R-squared       =    0.0218
+-------------+----------------------------------   Adj R-squared   =   -0.0138
+       Total |  .452817397        57  .007944165   Root MSE        =    .08974
+
+------------------------------------------------------------------------------
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0035059   .0050975    -0.69   0.494    -.0137215    .0067097
+     gdp_cap |  -4.34e-07   5.93e-07    -0.73   0.468    -1.62e-06    7.54e-07
+       _cons |  -.2004744   .0275934    -7.27   0.000    -.2557728    -.145176
+------------------------------------------------------------------------------
+
+. predict yhat
+variable yhat already defined
+r(110);
+
+end of do-file
+
+r(110);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) (scatter dstr_WHO2 yha
+> t if rich == 0, mcolor(blue)) (scatter dstr_WHO2 yhat if rich == 1, mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) (scatter dstr_WHO2 yha
+> t if rich == 0, mcolor(blue)) (scatter dstr_WHO2 yhat if rich == 1, mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) (scatter dstr_WHO2 yha
+> t if rich == 0, mcolor(blue)) (scatter dstr_WHO2 yhat if rich == 1, mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit dstr_WHO2 yhat if rich == 0, sort) (lfit dstr_WHO2 yhat if rich == 1, sort) (scatter dstr_WHO2 WB_
+> hb_p1000 if rich == 0, mcolor(blue)) (scatter dstr_WHO2 WB_hb_p1000 if rich == 1, mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. twoway (lfit yhat WB_hb_p1000 if rich == 0, sort) (lfit yhat WB_hb_p1000 if rich == 1, sort) (scatter dstr_WHO2
+>  WB_hb_p1000 if rich == 0, mcolor(blue)) (scatter dstr_WHO2 WB_hb_p1000 if rich == 1, mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit yhat WB_hb_p1000 if rich == 0, sort lcolor(blue)) (lfit yhat WB_hb_p1000 if rich == 1, sort) (scat
+> ter dstr_WHO2 WB_hb_p1000 if rich == 0, mcolor(blue)) (scatter dstr_WHO2 WB_hb_p1000 if rich == 1, mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway (lfit yhat WB_hb_p1000 if rich == 0, sort lcolor(blue)) (lfit yhat WB_hb_p1000 if rich == 1, sort lcolor
+> (red)) (scatter dstr_WHO2 WB_hb_p1000 if rich == 0, mcolor(blue)) (scatter dstr_WHO2 WB_hb_p1000 if rich == 1, 
+> mcolor(red))
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_median = gdp_cap
+variable gdp_cap_median already defined
+r(110);
+
+end of do-file
+
+r(110);
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. pctile gdp_cap_median = gdp_cap
+
+. gen rich = 1 if gdp_cap > gdp_cap_median[1]
+(30 missing values generated)
+
+. replace rich = 0 if gdp_cap < gdp_cap_median[1]
+(29 real changes made)
+
+. gen interaction = WB_hb_p1000 * rich
+(5 missing values generated)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. 
+. reg dstr_WHO2 WB_hb_p1000 rich interaction, robust
+
+Linear regression                               Number of obs     =         57
+                                                F(3, 53)          =       0.78
+                                                Prob > F          =     0.5099
+                                                R-squared         =     0.0270
+                                                Root MSE          =     .09032
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   .0008086   .0098939     0.08   0.935     -.019036    .0206533
+        rich |  -.0040404   .0493549    -0.08   0.935    -.1030337     .094953
+ interaction |  -.0050413   .0110757    -0.46   0.651    -.0272565    .0171738
+       _cons |  -.2161692   .0400741    -5.39   0.000    -.2965477   -.1357907
+------------------------------------------------------------------------------
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 WB_hb_p1000 rich interaction, robust replace dec(5)
+
+Linear regression                               Number of obs     =         57
+                                                F(3, 53)          =       0.78
+                                                Prob > F          =     0.5099
+                                                R-squared         =     0.0270
+                                                Root MSE          =     .09032
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   .0008086   .0098939     0.08   0.935     -.019036    .0206533
+        rich |  -.0040404   .0493549    -0.08   0.935    -.1030337     .094953
+ interaction |  -.0050413   .0110757    -0.46   0.651    -.0272565    .0171738
+       _cons |  -.2161692   .0400741    -5.39   0.000    -.2965477   -.1357907
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. use "./Data/pandemic_master_surface.dta", clear
+
+. keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+
+. drop if dstr_WHO ==.
+(280 observations deleted)
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. gen pos = 3
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. set scheme plottig
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it
+> :6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 
+> and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolo
+> r(black) 
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 WB_hb_p1000, robust replace dec(5) //n = 32, negative and insignificant.
+
+Linear regression                               Number of obs     =         58
+                                                F(1, 56)          =       0.70
+                                                Prob > F          =     0.4068
+                                                R-squared         =     0.0123
+                                                Root MSE          =     .08937
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |   -.004169   .0049877    -0.84   0.407    -.0141606    .0058225
+       _cons |  -.2121544   .0254681    -8.33   0.000    -.2631731   -.1611358
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
+
+. do "C:\Users\gauta\AppData\Local\Temp\STD1bd4_000000.tmp"
+
+. asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap, robust replace dec(5) //n = 32, negative and insignificant.
+
+Linear regression                               Number of obs     =         58
+                                                F(2, 55)          =       0.64
+                                                Prob > F          =     0.5303
+                                                R-squared         =     0.0218
+                                                Root MSE          =     .08974
+
+------------------------------------------------------------------------------
+             |               Robust
+   dstr_WHO2 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+ WB_hb_p1000 |  -.0035059   .0050821    -0.69   0.493    -.0136907    .0066789
+     gdp_cap |  -4.34e-07   6.03e-07    -0.72   0.475    -1.64e-06    7.74e-07
+       _cons |  -.2004744   .0317806    -6.31   0.000    -.2641642   -.1367847
+------------------------------------------------------------------------------
+(note: file Myfile.doc not found)
+Click to Open File:  Myfile.doc
+
+. 
+end of do-file
 
 . exit, clear

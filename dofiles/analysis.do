@@ -49,9 +49,14 @@ asdoc reg dstr_WHO2 WHO_ACHB_p100k, robust replace dec(5)
 
 
 *Analysis 5: dstr_WHO ~ WB Hospital Beds. (30/09/21).
-use "./Data/pandemic_master.dta", clear
-keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000
-//drop if WB_hb_p1000 > 15 (for graphing purposes)
+use "./Data/pandemic_master_surface.dta", clear
+keep Country id dstr_WHO dstr_WHO2 WB_hb_p1000 gdp_cap
+drop if dstr_WHO ==.
+
+/*pctile gdp_cap_quant = gdp_cap, nquantiles(5)
+drop if gdp_cap > gdp_cap_quant[3]
+drop if gdp_cap < gdp_cap_quant[1]*/
+
 
 //graphing for presentation - 
 gen pos = 3
@@ -83,12 +88,23 @@ replace pos = 4 if id=="ISR"
 replace pos = 12 if id=="KOR"
 replace pos = 9 if id== "GBR"
 
-twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance:} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black) 
+twoway scatter dstr_WHO2 WB_hb_p1000, title({bf:Hospital Beds and Stock Index Performance (all countries):} {it:6th March - 20th March}, size(8pt)) xtitle("Hospital Beds/1000") ytitle("Stock Fluctuation between" "06/03/20 and 20/03/20") mlabel(id) msize(1pt) mlabsize(tiny) mlabv(pos) legend(off) || lfit dstr_WHO2 WB_hb_p1000, lcolor(black) 
 
 graph save "C:/Users/gauta/Documents/GitHub/pandemic/figures/scatterplots/pres_1_1.gph", replace
 
 asdoc reg dstr_WHO WB_hb_p1000, robust replace dec(5) //n =32, negative and insignificant
-asdoc reg dstr_WHO2 WB_hb_p1000, robust replace dec(5) //n = 32, negative and insignificant.
+asdoc reg dstr_WHO2 WB_hb_p1000 gdp_cap, robust replace dec(5) //n = 32, negative and insignificant.
+
+
+*thinking about modelling a non linear relationship.
+*most basic model - dummy interaction for rich country.
+pctile gdp_cap_median = gdp_cap
+gen rich = 1 if gdp_cap > gdp_cap_median[1]
+replace rich = 0 if gdp_cap < gdp_cap_median[1]
+gen interaction = WB_hb_p1000 * rich
+
+asdoc reg dstr_WHO2 WB_hb_p1000 rich interaction, robust replace dec(5)
+
 
 *Analysis 6: dstr_WHO ~ WB Health Expenditure.
 use "./Data/pandemic_master.dta", clear
